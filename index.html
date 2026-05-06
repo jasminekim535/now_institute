@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Now Institute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Sofia Sans', sans-serif;
+      background: white;
+      color: black;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { display: block; }
+
+    /* ── HEADER ─────────────────────────────────── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: white;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 16px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-logo { height: 42px; width: auto; }
+
+    .menu-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'Sofia Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+    }
+
+    /* ── MEGA NAV ────────────────────────────────── */
+    .mega-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: white;
+      padding: 32px 80px 48px;
+      overflow-y: auto;
+    }
+
+    .mega-nav.open { display: flex; flex-direction: column; }
+
+    .mega-nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+
+    .mega-nav-header .logo { height: 52px; width: auto; }
+
+    .close-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .mega-nav-links {
+      display: flex;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+
+    .nav-col { display: flex; flex-direction: column; gap: 0; }
+
+    .nav-col-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .nav-col-title:hover { text-decoration: underline; }
+
+    .nav-col ul { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+
+    .nav-col ul li {
+      font-size: 22px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .nav-col ul li:hover { text-decoration: underline; }
+
+    /* ── HERO ────────────────────────────────────── */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      background: #d9d9d9;
+    }
+
+    .hero-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 55%;
+    }
+
+    .hero-logo-wrap {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-logo { height: 105px; width: auto; }
+
+    /* ── PHOTO GRID ──────────────────────────────── */
+    .photo-grid {
+      max-width: 1343px;
+      margin: 48px auto 0;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .photo-row { display: flex; gap: 16px; }
+
+    .photo-cell {
+      background: #d9d9d9;
+      flex: 1;
+    }
+
+    .photo-row.row-1 .photo-cell { height: 194px; }
+    .photo-row.row-2 .photo-cell,
+    .photo-row.row-3 .photo-cell { height: 296px; }
+
+    /* ── ABOUT ───────────────────────────────────── */
+    .about-section {
+      max-width: 1306px;
+      margin: 0 auto;
+      padding: 48px 24px 0;
+    }
+
+    .about-intro {
+      font-size: 30px;
+      line-height: 1.35;
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    .about-intro strong { font-weight: 700; }
+
+    .about-body {
+      font-size: 24px;
+      line-height: 1.55;
+      font-weight: 400;
+    }
+
+    /* ── BUTTON ──────────────────────────────────── */
+    .btn-outline {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 7px 28px;
+      border: 1px solid #525252;
+      border-radius: 26px;
+      font-family: 'Sofia Sans', sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      background: white;
+      color: black;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .btn-outline:hover { background: #f4f4f4; }
+
+    /* ── SECTION HEADER ──────────────────────────── */
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-header h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .underline-bar {
+      width: 100px;
+      height: 5px;
+      background: black;
+      margin: 0 auto;
+    }
+
+    /* ── RESEARCH NETWORK ────────────────────────── */
+    .research-network {
+      max-width: 1343px;
+      margin: 80px auto 0;
+      padding: 0 24px;
+    }
+
+    .uni-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .uni-row-bottom {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .uni-row-bottom .uni-card { width: calc(33.33% - 16px); }
+
+    .uni-card {
+      position: relative;
+      height: 194px;
+      overflow: hidden;
+      background: #d9d9d9;
+    }
+
+    .uni-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .uni-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+    }
+
+    .uni-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 16px;
+      z-index: 1;
+    }
+
+    .see-more-wrap { text-align: center; }
+
+    /* ── PEOPLE ──────────────────────────────────── */
+    .people-section {
+      max-width: 1100px;
+      margin: 80px auto 0;
+      padding: 0 24px;
+    }
+
+    .people-grid {
+      display: flex;
+      gap: 80px;
+      justify-content: center;
+    }
+
+    .person-card {
+      position: relative;
+      width: 495px;
+      height: 540px;
+      overflow: hidden;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    .person-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 0.3s;
+    }
+
+    .person-card:hover img { transform: scale(1.03); }
+
+    .person-info {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .person-bar {
+      width: 4px;
+      height: 66px;
+      background: white;
+      flex-shrink: 0;
+    }
+
+    .person-text {
+      color: white;
+      font-size: 24px;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* ── CONTACT ─────────────────────────────────── */
+    .contact-section {
+      max-width: 1247px;
+      margin: 80px auto 0;
+      padding: 0 24px 80px;
+    }
+
+    .contact-section h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 48px;
+    }
+
+    .contact-section p {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    .contact-section a {
+      text-decoration: underline;
+      color: black;
+    }
+
+    /* ── FOOTER ──────────────────────────────────── */
+    footer {
+      background: white;
+      border-top: 1px solid #e5e5e5;
+      padding: 48px 0;
+    }
+
+    .footer-inner {
+      max-width: 1247px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 200px;
+    }
+
+    .footer-logo { height: 78px; width: auto; flex-shrink: 0; }
+
+    .footer-links { display: flex; gap: 140px; }
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.45;
+      color: black;
+    }
+
+    .footer-col a { text-decoration: underline; }
+
+    .footer-copyright {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .footer-copyright a {
+      text-decoration: underline;
+      color: black;
+    }
+
+    /* ── RESPONSIVE ──────────────────────────────── */
+    @media (max-width: 1100px) {
+      .footer-top { gap: 80px; }
+      .footer-links { gap: 60px; }
+      .people-grid { gap: 40px; }
+      .person-card { width: 420px; }
+    }
+
+    @media (max-width: 900px) {
+      .site-header { padding: 16px 24px; }
+      .uni-grid { grid-template-columns: repeat(2, 1fr); }
+      .uni-row-bottom .uni-card { width: calc(50% - 12px); }
+      .people-grid { flex-direction: column; align-items: center; }
+      .person-card { width: 100%; max-width: 495px; }
+      .footer-top { flex-direction: column; gap: 32px; }
+      .footer-links { gap: 40px; }
+      .mega-nav-links { gap: 40px; }
+      .mega-nav { padding: 32px 32px 48px; }
+    }
+
+    @media (max-width: 600px) {
+      .hero { height: 300px; }
+      .hero-logo { height: 65px; }
+      .photo-row { flex-wrap: wrap; }
+      .photo-cell { min-width: calc(50% - 8px); }
+      .about-intro { font-size: 22px; }
+      .about-body { font-size: 18px; }
+      .uni-grid { grid-template-columns: 1fr; }
+      .uni-row-bottom { flex-direction: column; }
+      .uni-row-bottom .uni-card { width: 100%; }
+      .section-header h2 { font-size: 30px; }
+      .footer-links { flex-direction: column; gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="#">
+    <img class="header-logo" src="https://www.figma.com/api/mcp/asset/ee9e814e-4061-43ee-8213-03aafec8aff8" alt="The Now Institute">
+  </a>
+  <button class="menu-toggle" onclick="toggleNav()" aria-label="Open navigation">MENU</button>
+</header>
+
+<!-- MEGA NAV -->
+<nav class="mega-nav" id="megaNav" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <div class="mega-nav-header">
+    <a href="#" onclick="toggleNav()">
+      <img class="logo" src="https://www.figma.com/api/mcp/asset/ee9e814e-4061-43ee-8213-03aafec8aff8" alt="The Now Institute">
+    </a>
+    <button class="close-btn" onclick="toggleNav()" aria-label="Close navigation">✕</button>
+  </div>
+  <div class="mega-nav-links">
+    <div class="nav-col">
+      <p class="nav-col-title">About</p>
+      <ul>
+        <li>Overview</li>
+        <li>Research Network</li>
+        <li>Clientele</li>
+      </ul>
+    </div>
+    <div class="nav-col">
+      <p class="nav-col-title">People</p>
+      <ul>
+        <li>Thom Mayne</li>
+        <li>Eui-Sung Yi</li>
+        <li>Research Staff</li>
+      </ul>
+    </div>
+    <div class="nav-col">
+      <p class="nav-col-title">Projects</p>
+      <ul>
+        <li>Haiti Now</li>
+        <li>Culture Now</li>
+        <li>New Orleans Now</li>
+        <li>Madrid Now</li>
+        <li>L.A. Now</li>
+      </ul>
+    </div>
+    <div class="nav-col">
+      <p class="nav-col-title">Research</p>
+      <ul>
+        <li>Post-industrial Asia</li>
+        <li>Emerging Asia</li>
+        <li>Informal Settlements / Post-Disaster Setting</li>
+      </ul>
+    </div>
+    <div class="nav-col">
+      <p class="nav-col-title">Contact</p>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-bg" src="https://www.figma.com/api/mcp/asset/de07f631-0d14-456c-bdfc-aa6fcd6cc8bf" alt="Aerial city view">
+  <div class="hero-logo-wrap">
+    <img class="hero-logo" src="https://www.figma.com/api/mcp/asset/21c7415d-6d39-40ba-9566-0bf8fbe989f3" alt="NOW">
+  </div>
+</section>
+
+<!-- PHOTO GRID (project thumbnails) -->
+<div class="photo-grid">
+  <div class="photo-row row-1">
+    <div class="photo-cell"></div>
+    <div class="photo-cell"></div>
+    <div class="photo-cell"></div>
+  </div>
+  <div class="photo-row row-2">
+    <div class="photo-cell"></div>
+    <div class="photo-cell"></div>
+  </div>
+  <div class="photo-row row-3">
+    <div class="photo-cell"></div>
+    <div class="photo-cell"></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-section">
+  <p class="about-intro">
+    <strong>The Now Institute</strong> is an urban research center at UCLA Architecture and Urban Design that applies strategic urban thinking to real world issues.
+  </p>
+  <p class="about-body">
+    Over the past 10 years, the Institute has partnered with private organizations, policymakers and non-governmental organizations in Los Angeles, New Orleans, Madrid, Beijing and Port-au-Prince.
+    <br><br>
+    The Now Institute provides opportunities for thinkers trained as architects to participate in city-scale research and urban implementation across disciplines, with real world partners in fields that include culture, mobility, urban revitalization and sustainability.
+  </p>
+  <a href="#" class="btn-outline">learn more</a>
+</section>
+
+<!-- RESEARCH NETWORK -->
+<section class="research-network">
+  <div class="section-header">
+    <h2>Research Network</h2>
+    <div class="underline-bar"></div>
+  </div>
+
+  <div class="uni-grid">
+    <div class="uni-card">
+      <img src="https://www.figma.com/api/mcp/asset/92845a19-cb0d-4321-9111-361ff234e6b8" alt="Columbia University">
+      <div class="uni-overlay"></div>
+      <div class="uni-label">Columbia</div>
+    </div>
+    <div class="uni-card">
+      <img src="https://www.figma.com/api/mcp/asset/1bff9f06-a410-4252-9095-0b9fdd7c227d" alt="Cornell University">
+      <div class="uni-overlay"></div>
+      <div class="uni-label">Cornell</div>
+    </div>
+    <div class="uni-card">
+      <img src="https://www.figma.com/api/mcp/asset/8e0f19e3-87b8-49c6-9127-16c7b00f8aae" alt="Harvard GSD">
+      <div class="uni-overlay"></div>
+      <div class="uni-label">Harvard GSD</div>
+    </div>
+    <div class="uni-card">
+      <img src="https://www.figma.com/api/mcp/asset/f8355080-b6cb-46e1-a3d9-91d7da468f50" alt="University of Kentucky">
+      <div class="uni-overlay"></div>
+      <div class="uni-label">University of Kentucky</div>
+    </div>
+    <div class="uni-card">
+      <img src="https://www.figma.com/api/mcp/asset/746b7eef-2e22-4965-889c-6f567016987e" alt="University of Pennsylvania">
+      <div class="uni-overlay"></div>
+      <div class="uni-label">University of Pennsylvania</div>
+    </div>
+    <div class="uni-card">
+      <img src="https://www.figma.com/api/mcp/asset/fda3567b-4d55-4ad2-a42e-5895ebd97dde" alt="Pratt Institute">
+      <div class="uni-overlay"></div>
+      <div class="uni-label">Pratt</div>
+    </div>
+  </div>
+
+  <div class="uni-row-bottom">
+    <div class="uni-card">
+      <img src="https://www.figma.com/api/mcp/asset/f6a52c50-9f90-4ba1-9284-10a8901b7e4f" alt="Inha University">
+      <div class="uni-overlay"></div>
+      <div class="uni-label">Inha University</div>
+    </div>
+    <div class="uni-card">
+      <img src="https://www.figma.com/api/mcp/asset/eb09d1fc-8c5d-47de-b4b6-1ee470bc7017" alt="Beijing University of Technology">
+      <div class="uni-overlay"></div>
+      <div class="uni-label">Beijing University of Technology</div>
+    </div>
+  </div>
+
+  <div class="see-more-wrap">
+    <a href="#" class="btn-outline">see more</a>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section class="people-section">
+  <div class="section-header">
+    <h2>People</h2>
+    <div class="underline-bar"></div>
+  </div>
+  <div class="people-grid">
+    <a href="#" class="person-card">
+      <img src="https://www.figma.com/api/mcp/asset/60835769-e9f8-48a1-a3c9-b657670ad588" alt="Thom Mayne">
+      <div class="person-info">
+        <div class="person-bar"></div>
+        <div class="person-text">
+          <p>Thom Mayne</p>
+          <p>Founding Executive Director</p>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="person-card">
+      <img src="https://www.figma.com/api/mcp/asset/6fdeb939-9a3f-4a56-9d97-02760089b82b" alt="Eui-Sung Yi">
+      <div class="person-info">
+        <div class="person-bar"></div>
+        <div class="person-text">
+          <p>Eui-Sung Yi</p>
+          <p>Director</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <h2>Contact</h2>
+  <p>
+    Contact us at <a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a><br>
+    The Now Institute<br>
+    3440 Wesley Street<br>
+    Culver City, CA 90232<br>
+    +1 (424) 258-6209
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img class="footer-logo" src="https://www.figma.com/api/mcp/asset/f0977858-e340-4ffc-a0ce-93c4b10eddb9" alt="The Now Institute">
+      <div class="footer-links">
+        <div class="footer-col">
+          <p>About</p>
+          <p>People</p>
+          <p>Projects</p>
+          <p>Research</p>
+        </div>
+        <div class="footer-col">
+          <p>Contact</p>
+          <a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a>
+          <p>+1 (424) 258-6209</p>
+          <p>3440 Wesley Street<br>Culver City, CA 90232</p>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copyright">
+      Copyright &copy; 2016 <a href="https://www.thenowinstitute.org/" target="_blank" rel="noopener">The Now Institute</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    const nav = document.getElementById('megaNav');
+    const isOpen = nav.classList.toggle('open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  document.getElementById('megaNav').addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') toggleNav();
+  });
+</script>
+
+</body>
+</html>
