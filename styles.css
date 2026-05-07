@@ -295,46 +295,126 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; }
 .footer-copyright { font-size: 20px; font-weight: 400; }
 .footer-copyright a { text-decoration: underline; color: black; }
 
+/* ── PROJECT ROW (responsive side-by-side layouts) ── */
+.project-row { display: flex; }
+.project-vol2-box { background: black; padding: 40px 60px; margin: 0 -75px; }
+.project-vol2-box > div { color: white; display: flex; flex-direction: column; gap: 24px; max-width: 1117px; }
+.project-img-pair { display: flex; gap: 20px; flex-shrink: 0; }
+
 /* ── RESPONSIVE ──────────────────────────────── */
+
+/* Large tablet (≤ 1100px) */
 @media (max-width: 1100px) {
+  .people-grid { gap: 40px; }
+  .person-card { flex: 1; width: auto; min-width: 0; }
   .footer-top { gap: 80px; }
   .footer-links { gap: 60px; }
-  .people-grid { gap: 40px; }
-  .person-card { width: 420px; }
-  .person-hero { padding: 60px 48px; gap: 60px; }
-  .person-content { padding: 48px; }
   .awards-grid { grid-template-columns: 1fr; }
   .assoc-grid { grid-template-columns: 1fr; }
+  .person-hero { padding: 60px 48px; gap: 48px; }
+  .person-content { padding: 60px 48px; }
 }
+
+/* Tablet (≤ 900px) */
 @media (max-width: 900px) {
-  .site-header { padding: 16px 24px; }
+  .site-header { padding: 14px 24px; }
+
+  .hero { height: 360px; }
+  .hero-logo { height: 80px; }
+
+  .mega-nav { padding: 24px 24px 40px; }
+  .mega-nav-links { gap: 32px; flex-wrap: wrap; }
+
+  .photo-row { flex-wrap: wrap; }
+  .photo-cell { flex: 0 0 calc(50% - 8px); }
+  .photo-row.row-1 .photo-cell { height: 150px; }
+  .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 200px; }
+
+  .about-section { padding-top: 32px; }
+
   .uni-grid { grid-template-columns: repeat(2, 1fr); }
-  .uni-row-bottom .uni-card { width: calc(50% - 12px); }
+  .uni-row-bottom { flex-wrap: wrap; }
+  .uni-row-bottom .uni-card { flex: 0 0 calc(50% - 12px); width: auto; }
+
   .people-grid { flex-direction: column; align-items: center; }
-  .person-card { width: 100%; max-width: 495px; }
-  .person-hero { flex-direction: column; padding: 40px 24px; }
-  .person-photo { width: 100%; max-width: 495px; }
+  .person-card { width: 100%; max-width: 495px; height: 460px; }
+
+  .person-hero { flex-direction: column; padding: 40px 24px; gap: 32px; }
+  .person-hero > img { width: 100%; max-width: 495px; height: auto; }
   .person-content { padding: 40px 24px; }
+
+  .project-body { padding: 48px 24px; gap: 48px; }
+  .advisory-section { padding: 0 24px 48px; }
+  .advisory-grid { grid-template-columns: 1fr; }
+
+  /* Make all project body images fluid */
+  .project-body img { width: 100% !important; max-width: 100% !important; height: auto !important; }
+  /* Keep image pairs side-by-side */
+  .project-img-pair img { width: calc(50% - 10px) !important; }
+
+  /* Stack side-by-side project rows */
+  .project-row { flex-direction: column !important; }
+  .project-row > * { width: 100% !important; max-width: 100% !important; flex-shrink: 1 !important; }
+
+  /* Fix negative-margin bleed box */
+  .project-vol2-box { margin: 0 -24px; padding: 32px 24px; }
+
   .footer-top { flex-direction: column; gap: 32px; }
   .footer-links { gap: 40px; }
-  .mega-nav-links { gap: 40px; }
-  .mega-nav { padding: 32px 32px 48px; }
-  .advisory-grid { grid-template-columns: 1fr; }
-  .project-header, .project-body { padding-left: 24px; padding-right: 24px; }
+
+  .researchers-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Mobile (≤ 600px) */
 @media (max-width: 600px) {
-  .hero { height: 300px; }
-  .hero-logo { height: 65px; }
-  .photo-row { flex-wrap: wrap; }
-  .photo-cell { min-width: calc(50% - 8px); }
+  .hero { height: 240px; }
+  .hero-logo { height: 60px; }
+
+  .mega-nav-links { flex-direction: column; gap: 20px; }
+  .nav-col-title { font-size: 20px; }
+  .nav-col ul li { font-size: 18px; }
+
+  .photo-row { flex-direction: column; }
+  .photo-cell { flex: none; width: 100%; }
+  .photo-row.row-1 .photo-cell { height: 180px; }
+  .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 210px; }
+
   .about-intro { font-size: 22px; }
   .about-body { font-size: 18px; }
+
   .uni-grid { grid-template-columns: 1fr; }
-  .uni-row-bottom { flex-direction: column; }
-  .uni-row-bottom .uni-card { width: 100%; }
+  .uni-row-bottom { flex-direction: column; align-items: stretch; }
+  .uni-row-bottom .uni-card { flex: none; width: 100%; }
+
+  .person-card { height: 360px; }
+
+  .project-title { font-size: 30px; }
+  .project-section-title { font-size: 22px; }
   .section-header h2 { font-size: 30px; }
+  .person-hero-info h1 { font-size: 32px; }
+  .person-bio-name { font-size: 32px; }
+
   .footer-links { flex-direction: column; gap: 24px; }
-  .staff-grid { justify-content: center; }
+
+  .awards-grid, .assoc-grid { grid-template-columns: 1fr; }
+  .researchers-grid { grid-template-columns: 1fr; }
+  .edu-card { max-width: 100%; }
+  .teaching-card { max-width: 100%; }
+  .pub-card { max-width: 100%; }
+
+  .project-vol2-box { margin: 0 -24px; padding: 24px 16px; }
+
+  /* Culture Now: 2-col institution grid, 1-col project text */
+  .inst-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .project-cols { grid-template-columns: 1fr !important; }
+}
+
+/* Small mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .project-img-pair { flex-direction: column !important; }
+  .project-img-pair img { width: 100% !important; }
+  .inst-grid { grid-template-columns: 1fr !important; }
+  .person-card { height: 300px; }
 }
 
 /* ── CONTACT PAGE ────────────────────────────── */
@@ -416,15 +496,3 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; }
 .research-quote cite { display: block; margin-top: 12px; font-style: normal; font-size: 18px; color: #525252; }
 .research-section { display: flex; flex-direction: column; gap: 20px; }
 
-@media (max-width: 900px) {
-  .person-hero { flex-direction: column; padding: 48px 24px; gap: 32px; }
-  .person-hero > img { width: 100%; max-width: 495px; height: auto; }
-  .person-content { padding: 48px 24px; }
-  .advisory-grid { grid-template-columns: 1fr; }
-  .researchers-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 600px) {
-  .awards-grid, .assoc-grid { grid-template-columns: 1fr; }
-  .researchers-grid { grid-template-columns: 1fr; }
-  .research-title, .project-title { font-size: 30px; }
-}
