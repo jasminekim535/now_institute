@@ -14,10 +14,36 @@ ul { list-style: none; }
 }
 .header-logo { height: 42px; width: auto; }
 .menu-toggle {
+  display: none;
   background: none; border: none; cursor: pointer;
   font-family: 'Sofia Sans', sans-serif;
   font-size: 20px; font-weight: 600; letter-spacing: 0.08em;
 }
+
+/* ── MAIN NAV (desktop) ──────────────────────────── */
+.main-nav { display: flex; align-items: center; }
+.main-nav-list { display: flex; gap: 40px; list-style: none; margin: 0; padding: 0; }
+.main-nav-item { position: relative; }
+.main-nav-link {
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 18px; font-weight: 600; color: black;
+  text-decoration: none; display: block; padding: 8px 0;
+  letter-spacing: 0.04em; white-space: nowrap;
+}
+.main-nav-link:hover { text-decoration: underline; }
+.nav-dropdown {
+  display: none; list-style: none;
+  position: absolute; top: calc(100% + 12px); left: 0;
+  background: white; border: 1px solid #e5e5e5;
+  min-width: 220px; padding: 8px 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08); z-index: 300;
+}
+.main-nav-item:hover .nav-dropdown { display: block; }
+.nav-dropdown li a {
+  display: block; padding: 10px 20px;
+  font-size: 16px; font-weight: 500; color: black; white-space: nowrap;
+}
+.nav-dropdown li a:hover { background: #f4f4f4; }
 
 /* ── MEGA NAV ────────────────────────────────── */
 .mega-nav {
@@ -322,6 +348,8 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
   .hero { height: 360px; }
   .hero-logo { height: 80px; }
 
+  .main-nav { display: none; }
+  .menu-toggle { display: block; }
   .mega-nav { padding: 24px 24px 40px; }
   .mega-nav-links { gap: 32px; flex-wrap: wrap; }
 
