@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture Now – The Now Institute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .inst-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+    .inst-card { border: 1px solid #e5e5e5; padding: 25px; display: flex; flex-direction: column; gap: 8px; }
+    .inst-num { font-size: 20px; color: #525252; }
+    .inst-name { font-size: 20px; color: black; }
+    .project-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html"><img class="header-logo" src="https://www.figma.com/api/mcp/asset/f188a5b9-c3b6-474c-b470-6fefd36b1540" alt="The Now Institute"></a>
+  <button class="menu-toggle" onclick="toggleNav()" aria-label="Open navigation">MENU</button>
+</header>
+
+<nav class="mega-nav" id="megaNav" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <div class="mega-nav-header">
+    <a href="../index.html" onclick="toggleNav()"><img class="logo" src="https://www.figma.com/api/mcp/asset/f188a5b9-c3b6-474c-b470-6fefd36b1540" alt="The Now Institute"></a>
+    <button class="close-btn" onclick="toggleNav()">&#x2715;</button>
+  </div>
+  <div class="mega-nav-links">
+    <div class="nav-col"><p class="nav-col-title"><a href="../about.html">About</a></p><ul><li><a href="../about.html">Overview</a></li><li><a href="../research-network.html">Research Network</a></li><li><a href="../clientele.html">Clientele</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../people/thom-mayne.html">People</a></p><ul><li><a href="../people/thom-mayne.html">Thom Mayne</a></li><li><a href="../people/eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="../people/research-staff.html">Research Staff</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="haiti-now.html">Projects</a></p><ul><li><a href="haiti-now.html">Haiti Now</a></li><li><a href="culture-now.html">Culture Now</a></li><li><a href="new-orleans-now.html">New Orleans Now</a></li><li><a href="madrid-now.html">Madrid Now</a></li><li><a href="la-now.html">L.A. Now</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../research/post-industrial-city.html">Research</a></p><ul><li><a href="../research/post-industrial-city.html">Post-industrial Asia</a></li><li><a href="../research/emerging-asia.html">Emerging Asia</a></li><li><a href="#">Informal Settlements / Post-Disaster Setting</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../contact.html">Contact</a></p></div>
+  </div>
+</nav>
+
+<div class="project-page">
+  <div class="project-body">
+
+    <div class="project-section">
+      <div style="display:flex;gap:40px;align-items:flex-start;">
+        <div style="display:flex;flex-direction:column;gap:24px;flex:1;max-width:605px;">
+          <div class="project-accent"></div>
+          <h1 class="project-title">Culture Now</h1>
+          <p class="project-subtitle">How can we catalyze post-industrial cities with arts and culture?<br>Can culture bring new identity and competitiveness to shrinking cities?</p>
+          <p class="project-intro"><strong>The Now Institute</strong> provided strategic planning and cultural consulting services for mid-size American cities through the <strong>Culture Now Project</strong>, advising on issues of urban revitalization, masterplanning and cultural assets.</p>
+          <p class="project-intro">Initiated by Thom Mayne, Karen Lohrmann and UCLA Architecture and Urban Design in the summer of 2010, the project expanded in the fall of 2011 into a collaborative academic and civic engagement platform, supported by 13 schools of architecture across the country.</p>
+        </div>
+        <img src="https://www.figma.com/api/mcp/asset/4a36f5b6-16dc-48f3-bd74-1649d836eed7" alt="Culture Now Project Book" style="width:500px;flex-shrink:0;object-fit:cover;">
+      </div>
+    </div>
+
+    <div class="project-section">
+      <div class="section-header">
+        <h2>Participating Institutions</h2>
+        <div class="underline-bar"></div>
+      </div>
+      <p style="font-size:20px;color:#525252;">13 schools of architecture across the country</p>
+      <div class="inst-grid">
+        <div class="inst-card"><span class="inst-num">01</span><span class="inst-name">Columbia</span></div>
+        <div class="inst-card"><span class="inst-num">02</span><span class="inst-name">Cornell</span></div>
+        <div class="inst-card"><span class="inst-num">03</span><span class="inst-name">Harvard</span></div>
+        <div class="inst-card"><span class="inst-num">04</span><span class="inst-name">University of Kentucky</span></div>
+        <div class="inst-card"><span class="inst-num">05</span><span class="inst-name">University of Pennsylvania</span></div>
+        <div class="inst-card"><span class="inst-num">06</span><span class="inst-name">Pratt</span></div>
+        <div class="inst-card"><span class="inst-num">07</span><span class="inst-name">MIT</span></div>
+        <div class="inst-card"><span class="inst-num">08</span><span class="inst-name">Princeton</span></div>
+        <div class="inst-card"><span class="inst-num">09</span><span class="inst-name">Rensselaer Polytechnic</span></div>
+        <div class="inst-card"><span class="inst-num">10</span><span class="inst-name">Rice University</span></div>
+        <div class="inst-card"><span class="inst-num">11</span><span class="inst-name">Syracuse</span></div>
+        <div class="inst-card"><span class="inst-num">12</span><span class="inst-name">UCLA</span></div>
+        <div class="inst-card"><span class="inst-num">13</span><span class="inst-name">University of Michigan</span></div>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <div class="section-header">
+        <h2>The Project</h2>
+        <div class="underline-bar"></div>
+      </div>
+      <div class="project-cols">
+        <div class="about-body" style="display:flex;flex-direction:column;gap:18px;">
+          <p>The Culture Now Project operated as an immersive investigation into the intersection of public policy, urbanism, contemporary culture and its spatial manifestations. This study of social, political, and cultural evidence extended and expanded the dialogue across disciplines and encompassed institutional and political models of the public.</p>
+          <p>The Culture Now Project instigated a critical dialogue about the nature of art and culture in the American city. Art in itself functions to expand discourse; yet today, the very nature of this conversation is in question. Therefore, the goal of the project was to advance the conversation throughout society—beyond the sphere of institutions—and to study the significance of the arts to this country and to the identity of our cities. These operations identified existing systems, correlations, dependencies, initiatives, and interactions, and examined spatial, communal, economic, and ecological instruments of change.</p>
+        </div>
+        <div class="about-body" style="display:flex;flex-direction:column;gap:18px;">
+          <p>The Culture Now Project reconfigured the traditional architectural view of the city beyond the boundaries of built matter to reactivate the complexity inherent in the city. Ultimately, the attempt to define, establish, program, and implement the material and immaterial substance that drives contemporary urbanity and culture was the goal. The search for new possibilities also demanded embracing the actual challenges, changes, and potentials of the architectural profession.</p>
+          <p>The first study of the Culture Now Project, the Midsize America SUPRASTUDIO, focused on medium-sized American cities with population sizes smaller than 400,000 people. These cities are the grounds for possibility; their transitional state (between growth and decline) holds transformative potential. It is in this point in time that mid-sized American cities need change the most. These are the cities that can most immediately manifest the results of such change. The study culminated in a comprehensive publication including both the proposals from this studio as well as contributions from diverse thinkers and practitioners that was released in March 2012.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img class="footer-logo" src="https://www.figma.com/api/mcp/asset/157b4caf-6815-47e1-b1dc-1c11db6bb06d" alt="The Now Institute">
+      <div class="footer-links">
+        <div class="footer-col"><p><a href="../about.html">About</a></p><p><a href="../people/thom-mayne.html">People</a></p><p><a href="haiti-now.html">Projects</a></p><p><a href="../research/post-industrial-city.html">Research</a></p></div>
+        <div class="footer-col"><p><a href="../contact.html">Contact</a></p><a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a><p>+1 (424) 258-6209</p><p>3440 Wesley Street<br>Culver City, CA 90232</p></div>
+      </div>
+    </div>
+    <p class="footer-copyright">Copyright &copy; 2016 <a href="https://www.thenowinstitute.org/" target="_blank" rel="noopener">The Now Institute</a></p>
+  </div>
+</footer>
+
+<script>
+  function toggleNav(){const n=document.getElementById('megaNav');const o=n.classList.toggle('open');document.body.style.overflow=o?'hidden':'';}
+  document.getElementById('megaNav').addEventListener('keydown',e=>{if(e.key==='Escape')toggleNav();});
+</script>
+</body>
+</html>

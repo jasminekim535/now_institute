@@ -11,93 +11,124 @@
 <body>
 
 <header class="site-header">
-  <a href="../index.html"><img class="header-logo" src="https://www.figma.com/api/mcp/asset/ee9e814e-4061-43ee-8213-03aafec8aff8" alt="The Now Institute"></a>
-  <button class="menu-toggle" onclick="toggleNav()">MENU</button>
+  <a href="../index.html"><img class="header-logo" src="https://www.figma.com/api/mcp/asset/f188a5b9-c3b6-474c-b470-6fefd36b1540" alt="The Now Institute"></a>
+  <button class="menu-toggle" onclick="toggleNav()" aria-label="Open navigation">MENU</button>
 </header>
 
-<nav class="mega-nav" id="megaNav" role="dialog" aria-modal="true">
+<nav class="mega-nav" id="megaNav" role="dialog" aria-modal="true" aria-label="Site navigation">
   <div class="mega-nav-header">
-    <a href="../index.html" onclick="toggleNav()"><img class="logo" src="https://www.figma.com/api/mcp/asset/ee9e814e-4061-43ee-8213-03aafec8aff8" alt="The Now Institute"></a>
+    <a href="../index.html" onclick="toggleNav()"><img class="logo" src="https://www.figma.com/api/mcp/asset/f188a5b9-c3b6-474c-b470-6fefd36b1540" alt="The Now Institute"></a>
     <button class="close-btn" onclick="toggleNav()">&#x2715;</button>
   </div>
   <div class="mega-nav-links">
     <div class="nav-col"><p class="nav-col-title"><a href="../about.html">About</a></p><ul><li><a href="../about.html">Overview</a></li><li><a href="../research-network.html">Research Network</a></li><li><a href="../clientele.html">Clientele</a></li></ul></div>
     <div class="nav-col"><p class="nav-col-title"><a href="thom-mayne.html">People</a></p><ul><li><a href="thom-mayne.html">Thom Mayne</a></li><li><a href="eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="research-staff.html">Research Staff</a></li></ul></div>
-    <div class="nav-col"><p class="nav-col-title"><a href="../projects/haiti-now.html">Projects</a></p><ul><li><a href="../projects/haiti-now.html">Haiti Now</a></li><li><a href="#">Culture Now</a></li><li><a href="#">New Orleans Now</a></li><li><a href="#">Madrid Now</a></li><li><a href="#">L.A. Now</a></li></ul></div>
-    <div class="nav-col"><p class="nav-col-title"><a href="../research/post-industrial-city.html">Research</a></p><ul><li><a href="../research/post-industrial-city.html">Post-industrial Asia</a></li><li><a href="#">Emerging Asia</a></li><li><a href="#">Informal Settlements / Post-Disaster Setting</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../projects/haiti-now.html">Projects</a></p><ul><li><a href="../projects/haiti-now.html">Haiti Now</a></li><li><a href="../projects/culture-now.html">Culture Now</a></li><li><a href="../projects/new-orleans-now.html">New Orleans Now</a></li><li><a href="../projects/madrid-now.html">Madrid Now</a></li><li><a href="../projects/la-now.html">L.A. Now</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../research/post-industrial-city.html">Research</a></p><ul><li><a href="../research/post-industrial-city.html">Post-industrial Asia</a></li><li><a href="../research/emerging-asia.html">Emerging Asia</a></li><li><a href="#">Informal Settlements / Post-Disaster Setting</a></li></ul></div>
     <div class="nav-col"><p class="nav-col-title"><a href="../contact.html">Contact</a></p></div>
   </div>
 </nav>
 
-<div class="staff-page">
+<div class="staff-section">
+  <div class="staff-inner">
 
-  <section class="staff-section">
-    <div class="section-header">
-      <h2>Staff</h2>
-      <div class="underline-bar"></div>
-    </div>
-    <div class="staff-grid">
-      <div class="staff-card">
-        <div class="staff-photo-placeholder"></div>
-        <div class="staff-info">
+    <div class="staff-block">
+      <div class="staff-block-header">
+        <h2 class="staff-block-title">Staff</h2>
+        <div class="underline-bar" style="margin:0 auto;"></div>
+        <p class="staff-block-desc">Our dedicated staff members coordinate research initiatives, manage programs, and bring design expertise to the Now Institute.</p>
+      </div>
+      <div class="staff-grid">
+        <div class="staff-card">
           <p class="staff-name">Andrew Liang</p>
-          <p class="staff-role">Research Associate</p>
+          <p class="staff-role">Program Coordinator</p>
         </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-photo-placeholder"></div>
-        <div class="staff-info">
+        <div class="staff-card">
           <p class="staff-name">Bridget Ackeifi</p>
-          <p class="staff-role">Research Associate</p>
+          <p class="staff-role">Research Coordinator</p>
         </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-photo-placeholder"></div>
-        <div class="staff-info">
+        <div class="staff-card">
           <p class="staff-name">Zach Pauls</p>
-          <p class="staff-role">Research Associate</p>
+          <p class="staff-role">Designer</p>
         </div>
-      </div>
-      <div class="staff-card">
-        <div class="staff-photo-placeholder"></div>
-        <div class="staff-info">
+        <div class="staff-card">
           <p class="staff-name">James Janke</p>
-          <p class="staff-role">Research Associate</p>
+          <p class="staff-role">Designer</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <section class="staff-section">
-    <div class="section-header">
-      <h2>Researchers</h2>
-      <div class="underline-bar"></div>
+    <div class="staff-block">
+      <div class="staff-block-header">
+        <h2 class="staff-block-title">Researchers</h2>
+        <div class="underline-bar" style="margin:0 auto;"></div>
+        <p class="staff-block-desc">A multidisciplinary team of researchers conducting data-driven investigations and collaborative design proposals for the Now Institute.</p>
+      </div>
+      <div class="staff-grid">
+        <div class="staff-card">
+          <p class="researcher-name">Xuequi Bai</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Samuel Bent</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Omar Hague</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Shobitha Jacob</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Chenguang Li</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Xi Lao</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Marieh Mehrannezhad</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Apurva Purandare</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Andre Simapranata</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Jiani Song</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Tuo Sun</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Wei-Chieh Tsai</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Duo Wang</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Jue Wang</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Runzhi Wang</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Shuoyang Wang</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Kun Yang</p>
+        </div>
+        <div class="staff-card">
+          <p class="researcher-name">Hun Tao Yu</p>
+        </div>
+      </div>
     </div>
-    <div class="researchers-grid">
-      <div class="researcher-name">Alan Koch</div>
-      <div class="researcher-name">Alex Yuen</div>
-      <div class="researcher-name">Amanda Gunawan</div>
-      <div class="researcher-name">Andrew Atwood</div>
-      <div class="researcher-name">Barron Sherr</div>
-      <div class="researcher-name">Brandon Shigeta</div>
-      <div class="researcher-name">Brittany Utting</div>
-      <div class="researcher-name">Chris Baumgarten</div>
-      <div class="researcher-name">Darin Cook</div>
-      <div class="researcher-name">David Eskenazi</div>
-      <div class="researcher-name">Erik Doyle</div>
-      <div class="researcher-name">Jacqueline Blum</div>
-      <div class="researcher-name">Jenna Didier</div>
-      <div class="researcher-name">Joshua White</div>
-      <div class="researcher-name">Nate Hume</div>
-    </div>
-  </section>
 
+  </div>
 </div>
 
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <img class="footer-logo" src="https://www.figma.com/api/mcp/asset/f0977858-e340-4ffc-a0ce-93c4b10eddb9" alt="The Now Institute">
+      <img class="footer-logo" src="https://www.figma.com/api/mcp/asset/157b4caf-6815-47e1-b1dc-1c11db6bb06d" alt="The Now Institute">
       <div class="footer-links">
         <div class="footer-col"><p><a href="../about.html">About</a></p><p><a href="thom-mayne.html">People</a></p><p><a href="../projects/haiti-now.html">Projects</a></p><p><a href="../research/post-industrial-city.html">Research</a></p></div>
         <div class="footer-col"><p><a href="../contact.html">Contact</a></p><a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a><p>+1 (424) 258-6209</p><p>3440 Wesley Street<br>Culver City, CA 90232</p></div>

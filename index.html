@@ -12,13 +12,13 @@
 <body>
 
 <header class="site-header">
-  <a href="index.html"><img class="header-logo" src="https://www.figma.com/api/mcp/asset/ee9e814e-4061-43ee-8213-03aafec8aff8" alt="The Now Institute"></a>
+  <a href="index.html"><img class="header-logo" src="https://www.figma.com/api/mcp/asset/f188a5b9-c3b6-474c-b470-6fefd36b1540" alt="The Now Institute"></a>
   <button class="menu-toggle" onclick="toggleNav()" aria-label="Open navigation">MENU</button>
 </header>
 
 <nav class="mega-nav" id="megaNav" role="dialog" aria-modal="true" aria-label="Site navigation">
   <div class="mega-nav-header">
-    <a href="index.html" onclick="toggleNav()"><img class="logo" src="https://www.figma.com/api/mcp/asset/ee9e814e-4061-43ee-8213-03aafec8aff8" alt="The Now Institute"></a>
+    <a href="index.html" onclick="toggleNav()"><img class="logo" src="https://www.figma.com/api/mcp/asset/f188a5b9-c3b6-474c-b470-6fefd36b1540" alt="The Now Institute"></a>
     <button class="close-btn" onclick="toggleNav()" aria-label="Close">&#x2715;</button>
   </div>
   <div class="mega-nav-links">
@@ -42,17 +42,17 @@
       <p class="nav-col-title"><a href="projects/haiti-now.html">Projects</a></p>
       <ul>
         <li><a href="projects/haiti-now.html">Haiti Now</a></li>
-        <li><a href="#">Culture Now</a></li>
-        <li><a href="#">New Orleans Now</a></li>
-        <li><a href="#">Madrid Now</a></li>
-        <li><a href="#">L.A. Now</a></li>
+        <li><a href="projects/culture-now.html">Culture Now</a></li>
+        <li><a href="projects/new-orleans-now.html">New Orleans Now</a></li>
+        <li><a href="projects/madrid-now.html">Madrid Now</a></li>
+        <li><a href="projects/la-now.html">L.A. Now</a></li>
       </ul>
     </div>
     <div class="nav-col">
       <p class="nav-col-title"><a href="research/post-industrial-city.html">Research</a></p>
       <ul>
         <li><a href="research/post-industrial-city.html">Post-industrial Asia</a></li>
-        <li><a href="#">Emerging Asia</a></li>
+        <li><a href="research/emerging-asia.html">Emerging Asia</a></li>
         <li><a href="#">Informal Settlements / Post-Disaster Setting</a></li>
       </ul>
     </div>
@@ -64,26 +64,42 @@
 
 <!-- HERO -->
 <section class="hero">
-  <img class="hero-bg" src="https://www.figma.com/api/mcp/asset/de07f631-0d14-456c-bdfc-aa6fcd6cc8bf" alt="Aerial city view">
+  <img class="hero-bg" src="https://www.figma.com/api/mcp/asset/ab202a40-c5e1-497f-8a32-a604f1d5f4ff" alt="Aerial city view">
   <div class="hero-logo-wrap">
-    <img class="hero-logo" src="https://www.figma.com/api/mcp/asset/21c7415d-6d39-40ba-9566-0bf8fbe989f3" alt="NOW">
+    <img class="hero-logo" src="https://www.figma.com/api/mcp/asset/4b8328d0-3176-4bfd-895a-a8495860c427" alt="NOW">
   </div>
 </section>
 
 <!-- PHOTO GRID -->
 <div class="photo-grid">
   <div class="photo-row row-1">
-    <div class="photo-cell"></div>
-    <div class="photo-cell"></div>
-    <div class="photo-cell"></div>
+    <a href="projects/haiti-now.html" class="photo-cell photo-cell-linked">
+      <img src="https://www.figma.com/api/mcp/asset/d19b6fe5-2289-4f57-bbd6-50bfd7f3fe5b" alt="Haiti Now">
+      <div class="photo-overlay"></div>
+      <span class="photo-label">Haiti Now</span>
+    </a>
+    <a href="projects/culture-now.html" class="photo-cell photo-cell-linked">
+      <img src="https://www.figma.com/api/mcp/asset/ab202a40-c5e1-497f-8a32-a604f1d5f4ff" alt="Culture Now">
+      <div class="photo-overlay"></div>
+      <span class="photo-label">Culture Now</span>
+    </a>
+    <a href="projects/new-orleans-now.html" class="photo-cell photo-cell-linked">
+      <img src="https://www.figma.com/api/mcp/asset/39f4fe52-7586-412a-b3a1-a0c8ba260703" alt="New Orleans Now">
+      <div class="photo-overlay"></div>
+      <span class="photo-label">New Orleans Now</span>
+    </a>
   </div>
   <div class="photo-row row-2">
-    <div class="photo-cell"></div>
-    <div class="photo-cell"></div>
-  </div>
-  <div class="photo-row row-3">
-    <div class="photo-cell"></div>
-    <div class="photo-cell"></div>
+    <a href="projects/madrid-now.html" class="photo-cell photo-cell-linked">
+      <img src="https://www.figma.com/api/mcp/asset/4d45843a-7fcc-4328-a90e-d18bd7bc9a23" alt="Madrid Now">
+      <div class="photo-overlay"></div>
+      <span class="photo-label">Madrid Now</span>
+    </a>
+    <a href="projects/la-now.html" class="photo-cell photo-cell-linked">
+      <img src="https://www.figma.com/api/mcp/asset/02cd44f7-2c0e-43fa-a0a5-1e3e5be1f23e" alt="L.A. Now">
+      <div class="photo-overlay"></div>
+      <span class="photo-label">L.A. Now</span>
+    </a>
   </div>
 </div>
 
@@ -107,16 +123,16 @@
     <div class="underline-bar"></div>
   </div>
   <div class="uni-grid">
-    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/92845a19-cb0d-4321-9111-361ff234e6b8" alt="Columbia"><div class="uni-overlay"></div><div class="uni-label">Columbia</div></div>
-    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/1bff9f06-a410-4252-9095-0b9fdd7c227d" alt="Cornell"><div class="uni-overlay"></div><div class="uni-label">Cornell</div></div>
-    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/8e0f19e3-87b8-49c6-9127-16c7b00f8aae" alt="Harvard GSD"><div class="uni-overlay"></div><div class="uni-label">Harvard GSD</div></div>
-    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/f8355080-b6cb-46e1-a3d9-91d7da468f50" alt="University of Kentucky"><div class="uni-overlay"></div><div class="uni-label">University of Kentucky</div></div>
-    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/746b7eef-2e22-4965-889c-6f567016987e" alt="University of Pennsylvania"><div class="uni-overlay"></div><div class="uni-label">University of Pennsylvania</div></div>
-    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/fda3567b-4d55-4ad2-a42e-5895ebd97dde" alt="Pratt"><div class="uni-overlay"></div><div class="uni-label">Pratt</div></div>
+    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/cdad4e96-034b-4c80-a757-d8c62db8ea07" alt="Columbia"><div class="uni-overlay"></div><div class="uni-label">Columbia</div></div>
+    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/ca8b011a-33e3-4619-9528-e55d1647bb75" alt="Cornell"><div class="uni-overlay"></div><div class="uni-label">Cornell</div></div>
+    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/2cbfc245-2986-4f01-9b6a-4976aaf618a4" alt="Harvard GSD"><div class="uni-overlay"></div><div class="uni-label">Harvard GSD</div></div>
+    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/d0a1a71d-5913-4c3f-916c-30c38de2c870" alt="University of Kentucky"><div class="uni-overlay"></div><div class="uni-label">University of Kentucky</div></div>
+    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/a9660e53-4004-4b1f-88bc-a99aa5e5dbb5" alt="University of Pennsylvania"><div class="uni-overlay"></div><div class="uni-label">University of Pennsylvania</div></div>
+    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/8c28276c-ad3d-43e7-9af0-e652297b1924" alt="Pratt"><div class="uni-overlay"></div><div class="uni-label">Pratt</div></div>
   </div>
   <div class="uni-row-bottom">
-    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/f6a52c50-9f90-4ba1-9284-10a8901b7e4f" alt="Inha University"><div class="uni-overlay"></div><div class="uni-label">Inha University</div></div>
-    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/eb09d1fc-8c5d-47de-b4b6-1ee470bc7017" alt="Beijing University of Technology"><div class="uni-overlay"></div><div class="uni-label">Beijing University of Technology</div></div>
+    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/9a068c3c-e922-4d76-8e7d-95d9c0158a2d" alt="Inha University"><div class="uni-overlay"></div><div class="uni-label">Inha University</div></div>
+    <div class="uni-card"><img src="https://www.figma.com/api/mcp/asset/862bfa41-1538-499d-97d2-fef9d9729150" alt="Beijing University of Technology"><div class="uni-overlay"></div><div class="uni-label">Beijing University of Technology</div></div>
   </div>
   <div class="see-more-wrap"><a href="research-network.html" class="btn-outline">see more</a></div>
 </section>
@@ -129,14 +145,14 @@
   </div>
   <div class="people-grid">
     <a href="people/thom-mayne.html" class="person-card">
-      <img src="https://www.figma.com/api/mcp/asset/60835769-e9f8-48a1-a3c9-b657670ad588" alt="Thom Mayne">
+      <img src="https://www.figma.com/api/mcp/asset/c3510187-9da3-403a-bdd0-bcc92affea88" alt="Thom Mayne">
       <div class="person-info">
         <div class="person-bar"></div>
         <div class="person-text"><p>Thom Mayne</p><p>Founding Executive Director</p></div>
       </div>
     </a>
     <a href="people/eui-sung-yi.html" class="person-card">
-      <img src="https://www.figma.com/api/mcp/asset/6fdeb939-9a3f-4a56-9d97-02760089b82b" alt="Eui-Sung Yi">
+      <img src="https://www.figma.com/api/mcp/asset/0327031e-7e79-46f6-b62a-7f694b985d2e" alt="Eui-Sung Yi">
       <div class="person-info">
         <div class="person-bar"></div>
         <div class="person-text"><p>Eui-Sung Yi</p><p>Director</p></div>
@@ -145,19 +161,10 @@
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="contact-section" id="contact">
-  <h2>Contact</h2>
-  <p>
-    Contact us at <a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a><br>
-    The Now Institute<br>3440 Wesley Street<br>Culver City, CA 90232<br>+1 (424) 258-6209
-  </p>
-</section>
-
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <img class="footer-logo" src="https://www.figma.com/api/mcp/asset/f0977858-e340-4ffc-a0ce-93c4b10eddb9" alt="The Now Institute">
+      <img class="footer-logo" src="https://www.figma.com/api/mcp/asset/157b4caf-6815-47e1-b1dc-1c11db6bb06d" alt="The Now Institute">
       <div class="footer-links">
         <div class="footer-col">
           <p><a href="about.html">About</a></p>
