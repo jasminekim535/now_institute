@@ -66,13 +66,19 @@ ul { list-style: none; }
   transition: transform 0.3s;
 }
 .photo-cell-linked:hover img { transform: scale(1.03); }
-.photo-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.3); }
+.photo-overlay {
+  position: absolute; inset: 0; background: rgba(0,0,0,0.4);
+  opacity: 0; transition: opacity 0.3s;
+}
 .photo-label {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
   color: white; font-size: 24px; font-weight: 500;
   text-align: center; padding: 0 16px; z-index: 1;
+  opacity: 0; transition: opacity 0.3s;
 }
+.photo-cell-linked:hover .photo-overlay,
+.photo-cell-linked:hover .photo-label { opacity: 1; }
 
 /* ── ABOUT ───────────────────────────────────── */
 .about-section { max-width: 1306px; margin: 0 auto; padding: 48px 24px 0; }
