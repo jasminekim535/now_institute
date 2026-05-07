@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – The Now Institute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-video-placeholder { background: #d9d9d9; height: 665px; width: 100%; }
+    .about-page-content { max-width: 1224px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 27px; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html"><img class="header-logo" src="https://www.figma.com/api/mcp/asset/ee9e814e-4061-43ee-8213-03aafec8aff8" alt="The Now Institute"></a>
+  <button class="menu-toggle" onclick="toggleNav()">MENU</button>
+</header>
+
+<nav class="mega-nav" id="megaNav" role="dialog" aria-modal="true">
+  <div class="mega-nav-header">
+    <a href="index.html" onclick="toggleNav()"><img class="logo" src="https://www.figma.com/api/mcp/asset/ee9e814e-4061-43ee-8213-03aafec8aff8" alt="The Now Institute"></a>
+    <button class="close-btn" onclick="toggleNav()">&#x2715;</button>
+  </div>
+  <div class="mega-nav-links">
+    <div class="nav-col"><p class="nav-col-title"><a href="about.html">About</a></p><ul><li><a href="about.html">Overview</a></li><li><a href="research-network.html">Research Network</a></li><li><a href="clientele.html">Clientele</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="people/thom-mayne.html">People</a></p><ul><li><a href="people/thom-mayne.html">Thom Mayne</a></li><li><a href="people/eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="people/research-staff.html">Research Staff</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="projects/haiti-now.html">Projects</a></p><ul><li><a href="projects/haiti-now.html">Haiti Now</a></li><li><a href="#">Culture Now</a></li><li><a href="#">New Orleans Now</a></li><li><a href="#">Madrid Now</a></li><li><a href="#">L.A. Now</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="research/post-industrial-city.html">Research</a></p><ul><li><a href="research/post-industrial-city.html">Post-industrial Asia</a></li><li><a href="#">Emerging Asia</a></li><li><a href="#">Informal Settlements / Post-Disaster Setting</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="contact.html">Contact</a></p></div>
+  </div>
+</nav>
+
+<div class="about-page-content">
+  <div class="about-video-placeholder"></div>
+
+  <div style="display:flex;flex-direction:column;gap:27px;">
+    <p class="about-intro">
+      <strong>The Now Institute</strong> is an academic research thinktank and masterplanning / design group.
+    </p>
+    <div class="about-body" style="display:flex;flex-direction:column;gap:18px;">
+      <p>Led by Pritzker Prize-winning architect and UCLA Distinguished Professor <a href="people/thom-mayne.html">Thom Mayne</a> and Director <a href="people/eui-sung-yi.html">Eui-Sung Yi</a>, the Now Institute is an outgrowth of over 10 years of research initiatives in collaboration with A.UD's SUPRASTUDIO, establishing a new territory that integrates academic and professional pursuits, spanning cities across the United States and the world, including Los Angeles, New Orleans, Madrid, Beijing and Port-au-Prince.</p>
+      <p>The Now Institute leads through the investigation and application of urban strategies to complex problems in modern advanced metropolises and informal settlements, encompassing cities affected by challenges of resilience, culture, sustainability and mobility. The full spectrum of urban manifestations is engaged, accepted and observed.</p>
+      <p>Beginning with the <a href="#">L.A. Now series</a>, these research studios study the complexity of urban phenomena from an interdisciplinary, integrative approach and hybridize interactions amongst diverse disciplines. These initiatives expand beyond architecture and urban research in the academic sphere to respond to complex, current, concrete issues. The results of these initiatives have included publications such as <a href="#">L.A. Now Volumes 1–4</a>, <a href="#">Madrid Now</a>; realized projects such as the <a href="#">Float House</a>; and consulting with cities, with the <a href="#">Culture Now Project</a>. These projects have been received with much acclaim in both the architectural community as well as with a broader audience, including policymakers.</p>
+      <p>With such diverse outputs, these initiatives stimulate discourse on current issues and encourage civic and business leaders, developers, architects, urbanists, cultural producers, students, and the general public to rethink urban, cultural and contemporary conditions. The Now Institute continues and builds on this ethos and approach to research and implementation.</p>
+      <p>The Now Institute is embedded in UCLA Department Architecture and Urban Design with yearlong studios that provide students continuity for studying problems, and offer graduate researchers the opportunity to engage with the professional sphere to implement proposals. Additionally, the Institute provides a platform for collaborating with diverse leaders and agencies, such as the <a href="http://www.rand.org/" target="_blank" rel="noopener">RAND Corporation</a> and the <a href="#" target="_blank">Mayor's Institute on City Design</a>, that integrates visionary research inquiry with the complexities and needs of real scenarios.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img class="footer-logo" src="https://www.figma.com/api/mcp/asset/f0977858-e340-4ffc-a0ce-93c4b10eddb9" alt="The Now Institute">
+      <div class="footer-links">
+        <div class="footer-col"><p><a href="about.html">About</a></p><p><a href="people/thom-mayne.html">People</a></p><p><a href="projects/haiti-now.html">Projects</a></p><p><a href="research/post-industrial-city.html">Research</a></p></div>
+        <div class="footer-col"><p><a href="contact.html">Contact</a></p><a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a><p>+1 (424) 258-6209</p><p>3440 Wesley Street<br>Culver City, CA 90232</p></div>
+      </div>
+    </div>
+    <p class="footer-copyright">Copyright &copy; 2016 <a href="https://www.thenowinstitute.org/" target="_blank" rel="noopener">The Now Institute</a></p>
+  </div>
+</footer>
+
+<script>
+  function toggleNav(){const n=document.getElementById('megaNav');const o=n.classList.toggle('open');document.body.style.overflow=o?'hidden':'';}
+  document.getElementById('megaNav').addEventListener('keydown',e=>{if(e.key==='Escape')toggleNav();});
+</script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+/* ── RESET ───────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Sofia Sans', sans-serif; background: white; color: black; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; }
+img { display: block; }
+ul { list-style: none; }
+
+/* ── HEADER ──────────────────────────────────── */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: white; border-bottom: 1px solid #e5e5e5;
+  padding: 16px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.header-logo { height: 42px; width: auto; }
+.menu-toggle {
+  background: none; border: none; cursor: pointer;
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 20px; font-weight: 600; letter-spacing: 0.08em;
+}
+
+/* ── MEGA NAV ────────────────────────────────── */
+.mega-nav {
+  display: none; position: fixed; inset: 0; z-index: 200;
+  background: white; padding: 32px 80px 48px; overflow-y: auto;
+}
+.mega-nav.open { display: flex; flex-direction: column; }
+.mega-nav-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 48px;
+}
+.mega-nav-header .logo { height: 52px; width: auto; }
+.close-btn { background: none; border: none; cursor: pointer; font-size: 30px; line-height: 1; }
+.mega-nav-links { display: flex; gap: 80px; flex-wrap: wrap; }
+.nav-col { display: flex; flex-direction: column; }
+.nav-col-title { font-size: 24px; font-weight: 700; margin-bottom: 20px; cursor: pointer; }
+.nav-col-title:hover { text-decoration: underline; }
+.nav-col ul { display: flex; flex-direction: column; gap: 16px; }
+.nav-col ul li { font-size: 22px; font-weight: 600; cursor: pointer; }
+.nav-col ul li a { display: block; }
+.nav-col ul li:hover { text-decoration: underline; }
+
+/* ── HERO ────────────────────────────────────── */
+.hero {
+  position: relative; width: 100%; height: 500px;
+  overflow: hidden; background: #d9d9d9;
+}
+.hero-bg { width: 100%; height: 100%; object-fit: cover; object-position: center 55%; }
+.hero-logo-wrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.hero-logo { height: 105px; width: auto; }
+
+/* ── PHOTO GRID ──────────────────────────────── */
+.photo-grid {
+  max-width: 1343px; margin: 48px auto 0; padding: 0 24px;
+  display: flex; flex-direction: column; gap: 16px;
+}
+.photo-row { display: flex; gap: 16px; }
+.photo-cell { background: #d9d9d9; flex: 1; }
+.photo-row.row-1 .photo-cell { height: 194px; }
+.photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 296px; }
+
+/* ── ABOUT ───────────────────────────────────── */
+.about-section { max-width: 1306px; margin: 0 auto; padding: 48px 24px 0; }
+.about-intro { font-size: 30px; line-height: 1.35; margin-bottom: 24px; font-weight: 400; }
+.about-intro strong { font-weight: 700; }
+.about-body { font-size: 24px; line-height: 1.55; font-weight: 400; }
+.about-body a { text-decoration: underline; }
+
+/* ── BUTTON ──────────────────────────────────── */
+.btn-outline {
+  display: inline-block; margin-top: 32px; padding: 7px 28px;
+  border: 1px solid #525252; border-radius: 26px;
+  font-family: 'Sofia Sans', sans-serif; font-size: 22px; font-weight: 400;
+  background: white; color: black; cursor: pointer; transition: background 0.15s;
+}
+.btn-outline:hover { background: #f4f4f4; }
+
+/* ── SECTION HEADER ──────────────────────────── */
+.section-header { text-align: center; margin-bottom: 48px; }
+.section-header h2 { font-size: 40px; font-weight: 700; margin-bottom: 16px; }
+.underline-bar { width: 100px; height: 5px; background: black; margin: 0 auto; }
+.underline-bar-sm { width: 80px; height: 4px; background: black; }
+
+/* ── UNIVERSITY GRID ─────────────────────────── */
+.uni-section { max-width: 1343px; margin: 80px auto 0; padding: 0 24px; }
+.uni-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 24px; }
+.uni-row-bottom { display: flex; gap: 24px; justify-content: center; margin-bottom: 40px; }
+.uni-row-bottom .uni-card { width: calc(33.33% - 16px); }
+.uni-card { position: relative; height: 194px; overflow: hidden; background: #d9d9d9; }
+.uni-card img { width: 100%; height: 100%; object-fit: cover; }
+.uni-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.35); }
+.uni-label {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 28px; font-weight: 700;
+  text-align: center; padding: 0 16px; z-index: 1;
+}
+.see-more-wrap { text-align: center; }
+
+/* ── PEOPLE (LANDING) ────────────────────────── */
+.people-section { max-width: 1100px; margin: 80px auto 0; padding: 0 24px; }
+.people-grid { display: flex; gap: 80px; justify-content: center; }
+.person-card {
+  position: relative; width: 495px; height: 540px;
+  overflow: hidden; flex-shrink: 0; display: block;
+}
+.person-card img {
+  width: 100%; height: 100%; object-fit: cover;
+  object-position: top center; transition: transform 0.3s;
+}
+.person-card:hover img { transform: scale(1.03); }
+.person-info { position: absolute; bottom: 24px; left: 24px; display: flex; align-items: center; gap: 14px; }
+.person-bar { width: 4px; height: 66px; background: white; flex-shrink: 0; }
+.person-text { color: white; font-size: 24px; font-weight: 500; display: flex; flex-direction: column; gap: 8px; }
+
+/* ── PERSON BIO PAGE ─────────────────────────── */
+.person-bg-top { background: #fafafa; }
+.person-hero {
+  max-width: 1440px; margin: 0 auto; padding: 77px 100px;
+  display: flex; gap: 94px; align-items: center; background: #fafafa;
+}
+.person-photo { width: 495px; height: 540px; flex-shrink: 0; overflow: hidden; position: relative; }
+.person-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.person-bio { display: flex; flex-direction: column; gap: 24px; max-width: 542px; }
+.person-bio-name { font-size: 40px; font-weight: 700; }
+.person-bio-roles { display: flex; flex-direction: column; gap: 4px; }
+.person-bio-role-label { font-size: 20px; color: #525252; line-height: 1.4; }
+.person-bio-role-org { font-size: 24px; color: black; line-height: 1.4; margin-bottom: 8px; }
+.person-content { max-width: 1235px; margin: 0 auto; padding: 64px 100px; display: flex; flex-direction: column; gap: 64px; }
+.person-section { display: flex; flex-direction: column; gap: 24px; }
+.person-section-title { font-size: 30px; font-weight: 500; }
+.person-section-text { font-size: 24px; line-height: 1.55; }
+.person-section-text a { text-decoration: underline; }
+
+/* ── EDUCATION / ASSOCIATION CARD ────────────── */
+.edu-list { display: flex; flex-direction: column; gap: 16px; }
+.edu-card {
+  display: flex; border: 1px solid #e5e5e5;
+  position: relative; min-height: 98px; align-items: center;
+  padding: 16px 25px; max-width: 430px;
+  border-left: 4px solid black;
+}
+.edu-card-inner { display: flex; flex-direction: column; gap: 4px; }
+.edu-card-degree { font-size: 24px; font-weight: 400; color: black; line-height: 1.4; }
+.edu-card-school { font-size: 20px; color: #525252; line-height: 1.4; }
+
+/* ── AWARDS GRID ─────────────────────────────── */
+.awards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.award-card {
+  display: flex; gap: 16px; align-items: flex-start;
+  border: 1px solid #e5e5e5; padding: 14px 17px; min-height: 76px;
+}
+.award-year { font-size: 20px; font-weight: 400; min-width: 56px; color: black; }
+.award-desc { font-size: 20px; font-weight: 400; color: black; line-height: 1.4; }
+
+/* ── ASSOCIATIONS GRID ───────────────────────── */
+.assoc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.assoc-card {
+  display: flex; border: 1px solid #e5e5e5;
+  min-height: 74px; align-items: center;
+  padding: 17px 25px; border-left: 4px solid black;
+}
+.assoc-card p { font-size: 20px; font-weight: 400; line-height: 1.4; }
+
+/* ── TEACHING CARDS ──────────────────────────── */
+.teaching-list { display: flex; flex-direction: column; gap: 16px; }
+.teaching-card {
+  display: flex; border: 1px solid #e5e5e5;
+  min-height: 174px; align-items: center;
+  padding: 16px 37px; border-left: 5px solid black; max-width: 927px;
+}
+.teaching-card-inner { display: flex; flex-direction: column; gap: 4px; }
+.teaching-card-inst { font-size: 24px; font-weight: 400; color: black; line-height: 1.4; }
+.teaching-card-detail { font-size: 20px; color: #525252; line-height: 1.4; }
+.teaching-card-detail em { font-style: italic; }
+
+/* ── PUBLICATIONS LIST ───────────────────────── */
+.pub-list { display: flex; flex-direction: column; gap: 16px; }
+.pub-card {
+  display: flex; border: 1px solid #e5e5e5;
+  min-height: 81px; align-items: flex-start;
+  padding: 14px 25px; border-left: 5px solid black; max-width: 734px;
+}
+.pub-card p { font-size: 20px; font-weight: 400; line-height: 1.45; }
+
+/* ── STAFF GRID ──────────────────────────────── */
+.staff-section { background: #fafafa; padding: 80px 0; }
+.staff-inner { max-width: 1389px; margin: 0 auto; padding: 0 24px; display: flex; flex-direction: column; gap: 64px; }
+.staff-block { display: flex; flex-direction: column; gap: 24px; }
+.staff-block-header { display: flex; flex-direction: column; gap: 16px; align-items: center; }
+.staff-block-title { font-size: 40px; font-weight: 700; text-align: center; }
+.staff-block-desc { font-size: 24px; color: #525252; text-align: center; max-width: 749px; margin: 0 auto; line-height: 1.4; }
+.staff-grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+.staff-card {
+  background: white; border: 2px solid #e5e5e5;
+  width: 300px; height: 230px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 14px; text-align: center;
+}
+.staff-name { font-size: 30px; font-weight: 400; color: black; }
+.staff-role { font-size: 24px; color: #525252; }
+.researcher-name { font-size: 30px; font-weight: 400; color: black; text-align: center; }
+
+/* ── PROJECT PAGE ────────────────────────────── */
+.project-page { max-width: 1440px; margin: 0 auto; }
+.project-header { max-width: 875px; margin: 0 auto; padding: 87px 75px 40px; display: flex; flex-direction: column; gap: 40px; }
+.project-header-inner { display: flex; flex-direction: column; gap: 24px; }
+.project-accent { width: 64px; height: 4px; background: black; }
+.project-title { font-size: 40px; font-weight: 700; }
+.project-subtitle { font-size: 20px; color: #525252; font-style: italic; line-height: 1.5; }
+.project-intro { font-size: 24px; line-height: 1.45; }
+.project-intro strong { font-weight: 700; }
+.project-blockquote {
+  border: 1px solid #e5e5e5; border-left: 4px solid black;
+  padding: 24px 48px; font-size: 20px; line-height: 1.6; max-width: 865px;
+}
+.project-image-placeholder { background: #d9d9d9; width: 100%; }
+.project-body { max-width: 1345px; margin: 0 auto; padding: 0 75px 80px; display: flex; flex-direction: column; gap: 64px; }
+.project-body-text { font-size: 24px; line-height: 1.55; max-width: 1263px; }
+.project-section { display: flex; flex-direction: column; gap: 24px; }
+.project-section-title { font-size: 30px; font-weight: 500; line-height: 1.3; }
+.project-section-text { font-size: 24px; line-height: 1.55; }
+
+/* ── RESEARCH PAGE ───────────────────────────── */
+.research-page { max-width: 1247px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 40px; }
+.research-title { font-size: 40px; font-weight: 700; }
+.research-img-wrap { display: flex; flex-direction: column; gap: 24px; }
+.research-img { background: #d9d9d9; width: 100%; height: 524px; }
+.research-quote { font-size: 20px; font-style: italic; color: #525252; line-height: 1.6; }
+.research-text { font-size: 24px; line-height: 1.55; }
+.research-text strong { font-weight: 700; }
+
+/* ── ADVISORY BOARD ──────────────────────────── */
+.advisory-section { max-width: 1345px; margin: 0 auto; padding: 64px 75px; display: flex; flex-direction: column; gap: 24px; }
+.advisory-title { font-size: 30px; font-weight: 500; }
+.advisory-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+.advisory-card { display: flex; flex-direction: column; gap: 4px; border: 1px solid #e5e5e5; border-left: 5px solid black; padding: 16px 25px; min-height: 146px; justify-content: center; }
+.advisory-card-name { font-size: 24px; font-weight: 400; color: black; line-height: 1.4; }
+.advisory-card-role { font-size: 20px; color: #525252; line-height: 1.4; }
+
+/* ── PAGE HEADER (inner pages) ───────────────── */
+.page-hero { background: #fafafa; padding: 64px 24px; text-align: center; }
+.page-hero h1 { font-size: 40px; font-weight: 700; margin-bottom: 16px; }
+.page-content { max-width: 1247px; margin: 0 auto; padding: 64px 24px 80px; }
+
+/* ── CONTACT ─────────────────────────────────── */
+.contact-section { max-width: 1247px; margin: 80px auto 0; padding: 0 24px 80px; }
+.contact-section h2 { font-size: 40px; font-weight: 700; margin-bottom: 48px; }
+.contact-section p { font-size: 24px; font-weight: 400; line-height: 1.7; }
+.contact-section a { text-decoration: underline; color: black; }
+
+/* ── FOOTER ──────────────────────────────────── */
+footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; }
+.footer-inner { max-width: 1247px; margin: 0 auto; padding: 0 24px; display: flex; flex-direction: column; gap: 40px; }
+.footer-top { display: flex; align-items: flex-start; gap: 200px; }
+.footer-logo { height: 78px; width: auto; flex-shrink: 0; }
+.footer-links { display: flex; gap: 140px; }
+.footer-col { display: flex; flex-direction: column; gap: 16px; }
+.footer-col p, .footer-col a { font-size: 22px; font-weight: 400; line-height: 1.45; color: black; }
+.footer-col a { text-decoration: underline; }
+.footer-copyright { font-size: 20px; font-weight: 400; }
+.footer-copyright a { text-decoration: underline; color: black; }
+
+/* ── RESPONSIVE ──────────────────────────────── */
+@media (max-width: 1100px) {
+  .footer-top { gap: 80px; }
+  .footer-links { gap: 60px; }
+  .people-grid { gap: 40px; }
+  .person-card { width: 420px; }
+  .person-hero { padding: 60px 48px; gap: 60px; }
+  .person-content { padding: 48px; }
+  .awards-grid { grid-template-columns: 1fr; }
+  .assoc-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
+  .site-header { padding: 16px 24px; }
+  .uni-grid { grid-template-columns: repeat(2, 1fr); }
+  .uni-row-bottom .uni-card { width: calc(50% - 12px); }
+  .people-grid { flex-direction: column; align-items: center; }
+  .person-card { width: 100%; max-width: 495px; }
+  .person-hero { flex-direction: column; padding: 40px 24px; }
+  .person-photo { width: 100%; max-width: 495px; }
+  .person-content { padding: 40px 24px; }
+  .footer-top { flex-direction: column; gap: 32px; }
+  .footer-links { gap: 40px; }
+  .mega-nav-links { gap: 40px; }
+  .mega-nav { padding: 32px 32px 48px; }
+  .advisory-grid { grid-template-columns: 1fr; }
+  .project-header, .project-body { padding-left: 24px; padding-right: 24px; }
+}
+@media (max-width: 600px) {
+  .hero { height: 300px; }
+  .hero-logo { height: 65px; }
+  .photo-row { flex-wrap: wrap; }
+  .photo-cell { min-width: calc(50% - 8px); }
+  .about-intro { font-size: 22px; }
+  .about-body { font-size: 18px; }
+  .uni-grid { grid-template-columns: 1fr; }
+  .uni-row-bottom { flex-direction: column; }
+  .uni-row-bottom .uni-card { width: 100%; }
+  .section-header h2 { font-size: 30px; }
+  .footer-links { flex-direction: column; gap: 24px; }
+  .staff-grid { justify-content: center; }
+}
+
+/* ── CONTACT PAGE ────────────────────────────── */
+.contact-page { max-width: 1247px; margin: 0 auto; padding: 80px 24px; }
+.contact-page-inner { display: flex; flex-direction: column; gap: 48px; }
+.contact-details { display: flex; flex-direction: column; gap: 12px; }
+.contact-details p { font-size: 24px; line-height: 1.6; }
+.contact-details a { text-decoration: underline; color: black; }
+.contact-map-placeholder { background: #d9d9d9; height: 400px; width: 100%; }
+
+/* ── PERSON HERO (new layout) ────────────────── */
+.person-hero {
+  max-width: 1440px; margin: 0 auto; padding: 77px 100px;
+  display: flex; gap: 94px; align-items: flex-start; background: #fafafa;
+}
+.person-hero > img { width: 495px; height: 540px; object-fit: cover; object-position: top center; flex-shrink: 0; }
+.person-hero-info { display: flex; flex-direction: column; gap: 32px; }
+.person-hero-info h1 { font-size: 40px; font-weight: 700; }
+.person-roles { display: flex; flex-direction: column; gap: 20px; }
+.person-role-item { display: flex; flex-direction: column; gap: 2px; }
+.person-role-title { font-size: 20px; color: #525252; line-height: 1.4; }
+.person-role-org { font-size: 24px; color: black; line-height: 1.4; font-weight: 500; }
+
+/* ── PERSON CONTENT SECTIONS ─────────────────── */
+.person-content { max-width: 1235px; margin: 0 auto; padding: 64px 100px; display: flex; flex-direction: column; gap: 64px; }
+.person-section { display: flex; flex-direction: column; gap: 24px; }
+
+/* ── EDUCATION CARD VARIATIONS ───────────────── */
+.edu-degree { font-size: 24px; font-weight: 400; color: black; line-height: 1.4; }
+.edu-school { font-size: 20px; color: #525252; line-height: 1.4; }
+.edu-card { display: flex; flex-direction: column; gap: 4px; border: 1px solid #e5e5e5; padding: 16px 25px; max-width: 430px; border-left: 4px solid black; }
+
+/* ── AWARD CARD PLAIN ────────────────────────── */
+.award-card { border: 1px solid #e5e5e5; padding: 14px 20px; min-height: 56px; display: flex; align-items: center; font-size: 20px; line-height: 1.4; }
+
+/* ── ASSOC CARD PLAIN ────────────────────────── */
+.assoc-card { border: 1px solid #e5e5e5; border-left: 4px solid black; padding: 14px 20px; min-height: 56px; display: flex; align-items: center; font-size: 20px; line-height: 1.4; }
+
+/* ── TEACHING LIST ───────────────────────────── */
+.teaching-list { display: flex; flex-direction: column; gap: 16px; }
+.teaching-card { border: 1px solid #e5e5e5; border-left: 5px solid black; padding: 16px 25px; display: flex; flex-direction: column; gap: 4px; }
+.teaching-role { font-size: 20px; color: #525252; }
+.teaching-school { font-size: 24px; font-weight: 500; }
+
+/* ── PUBLICATION LIST ────────────────────────── */
+.pub-list { display: flex; flex-direction: column; gap: 16px; }
+.pub-card { border: 1px solid #e5e5e5; border-left: 5px solid black; padding: 16px 25px; display: flex; flex-direction: column; gap: 4px; }
+.pub-title { font-size: 22px; font-weight: 500; }
+.pub-meta { font-size: 18px; color: #525252; }
+
+/* ── STAFF PAGE ──────────────────────────────── */
+.staff-page { display: flex; flex-direction: column; gap: 0; }
+.staff-section { padding: 80px 0; }
+.staff-section:nth-child(even) { background: #fafafa; }
+.staff-section .section-header { margin-bottom: 48px; }
+.staff-grid { display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.staff-card { width: 260px; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+.staff-photo-placeholder { width: 100%; height: 200px; background: #d9d9d9; }
+.staff-info { display: flex; flex-direction: column; gap: 4px; }
+.staff-name { font-size: 22px; font-weight: 600; }
+.staff-role { font-size: 18px; color: #525252; }
+.researchers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 900px; margin: 0 auto; padding: 0 24px; }
+.researcher-name { font-size: 22px; font-weight: 400; text-align: center; padding: 12px 0; border-bottom: 1px solid #e5e5e5; }
+
+/* ── PROJECT PAGE ────────────────────────────── */
+.project-subtitle-questions { display: flex; flex-direction: column; gap: 8px; }
+.project-question { font-size: 22px; font-style: italic; color: #525252; line-height: 1.5; }
+.project-image-placeholder { background: #d9d9d9; width: 100%; height: 480px; }
+.project-body { max-width: 1100px; margin: 0 auto; padding: 64px 24px; display: flex; flex-direction: column; gap: 56px; }
+.project-section { display: flex; flex-direction: column; gap: 20px; }
+
+/* ── ADVISORY SECTION ────────────────────────── */
+.advisory-section { max-width: 1100px; margin: 0 auto; padding: 0 24px 80px; display: flex; flex-direction: column; gap: 40px; }
+.advisory-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.advisory-card { border: 1px solid #e5e5e5; border-left: 5px solid black; padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; justify-content: center; min-height: 100px; }
+.advisory-name { font-size: 22px; font-weight: 600; }
+.advisory-role { font-size: 18px; color: #525252; line-height: 1.4; }
+
+/* ── RESEARCH PAGE ───────────────────────────── */
+.research-page { max-width: 1100px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 48px; }
+.research-header { display: flex; flex-direction: column; gap: 12px; }
+.research-title { font-size: 40px; font-weight: 700; }
+.research-subtitle { font-size: 22px; color: #525252; }
+.research-image-placeholder { background: #d9d9d9; width: 100%; height: 480px; }
+.research-body { display: flex; flex-direction: column; gap: 40px; }
+.research-quote { border-left: 4px solid black; padding: 16px 32px; font-size: 22px; font-style: italic; line-height: 1.6; color: #404040; }
+.research-quote cite { display: block; margin-top: 12px; font-style: normal; font-size: 18px; color: #525252; }
+.research-section { display: flex; flex-direction: column; gap: 20px; }
+
+@media (max-width: 900px) {
+  .person-hero { flex-direction: column; padding: 48px 24px; gap: 32px; }
+  .person-hero > img { width: 100%; max-width: 495px; height: auto; }
+  .person-content { padding: 48px 24px; }
+  .advisory-grid { grid-template-columns: 1fr; }
+  .researchers-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .awards-grid, .assoc-grid { grid-template-columns: 1fr; }
+  .researchers-grid { grid-template-columns: 1fr; }
+  .research-title, .project-title { font-size: 30px; }
+}
