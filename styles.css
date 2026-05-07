@@ -155,6 +155,8 @@ ul { list-style: none; }
 .person-bio-role-label { font-size: 20px; color: #525252; line-height: 1.4; }
 .person-bio-role-org { font-size: 24px; color: black; line-height: 1.4; margin-bottom: 8px; }
 .person-content { max-width: 1235px; margin: 0 auto; padding: 64px 100px; display: flex; flex-direction: column; gap: 64px; }
+.person-content .section-header { text-align: left; }
+.person-content .underline-bar { margin: 0; }
 .person-section { display: flex; flex-direction: column; gap: 24px; }
 .person-section-title { font-size: 30px; font-weight: 500; }
 .person-section-text { font-size: 24px; line-height: 1.55; }
@@ -354,6 +356,8 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; }
 
 /* ── PERSON CONTENT SECTIONS ─────────────────── */
 .person-content { max-width: 1235px; margin: 0 auto; padding: 64px 100px; display: flex; flex-direction: column; gap: 64px; }
+.person-content .section-header { text-align: left; }
+.person-content .underline-bar { margin: 0; }
 .person-section { display: flex; flex-direction: column; gap: 24px; }
 
 /* ── EDUCATION CARD VARIATIONS ───────────────── */
