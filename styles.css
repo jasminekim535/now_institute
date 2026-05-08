@@ -44,6 +44,8 @@ ul { list-style: none; }
   box-shadow: 0 4px 20px rgba(0,0,0,0.08); z-index: 300;
 }
 .main-nav-item:hover .nav-dropdown { display: block; }
+.main-nav-item:last-child .nav-dropdown,
+.main-nav-item:nth-last-child(2) .nav-dropdown { left: auto; right: 0; }
 .nav-dropdown li a {
   display: block; padding: 10px 20px;
   font-size: 16px; font-weight: 500; color: black; white-space: nowrap;
