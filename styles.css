@@ -509,12 +509,13 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
 
 /* ── PERSON HERO (new layout) ────────────────── */
 .person-hero {
-  max-width: 1440px; margin: 0 auto; padding: 77px 100px;
-  display: flex; gap: 94px; align-items: flex-start; background: #fafafa;
+  max-width: 1440px; margin: 0 auto; padding: 77px 155px;
+  display: flex; gap: 94px; align-items: center; background: #fafafa;
 }
 .person-hero > img { width: 495px; height: 540px; object-fit: cover; object-position: top center; flex-shrink: 0; }
-.person-hero-info { display: flex; flex-direction: column; gap: 32px; }
-.person-hero-info h1 { font-size: 28px; font-weight: 700; }
+.person-hero-info { display: flex; flex-direction: column; gap: 24px; }
+.person-hero-name { display: flex; flex-direction: column; gap: 16px; }
+.person-hero-info h1 { font-size: 28px; font-weight: 700; margin: 0; }
 .person-roles { display: flex; flex-direction: column; gap: 20px; }
 .person-role-item { display: flex; flex-direction: column; gap: 2px; }
 .person-role-title { font-size: 13px; color: #525252; line-height: 1.4; }
@@ -526,7 +527,6 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
 .person-content .section-header h2 { font-size: 20px; font-weight: 500; margin-bottom: 12px; }
 .person-content .underline-bar { margin: 0; }
 .person-section { display: flex; flex-direction: column; gap: 24px; }
-.person-hero-info > div > h1 { margin-bottom: 12px; }
 
 /* ── EDUCATION CARD VARIATIONS ───────────────── */
 .edu-degree { font-size: 16px; font-weight: 400; color: black; line-height: 1.4; }
