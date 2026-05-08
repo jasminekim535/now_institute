@@ -311,12 +311,13 @@ ul { list-style: none; }
 .project-section-text { font-size: 16px; line-height: 1.55; }
 
 /* ── RESEARCH PAGE ───────────────────────────── */
-.research-page { max-width: 1247px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 40px; }
+.research-page { max-width: 1247px; margin: 0 auto; padding: 80px 96px 120px; display: flex; flex-direction: column; gap: 24px; }
 .research-title { font-size: 26px; font-weight: 700; }
-.research-img-wrap { display: flex; flex-direction: column; gap: 24px; }
-.research-img { background: #d9d9d9; width: 100%; height: 524px; }
-.research-quote { font-size: 15px; font-style: italic; color: #525252; line-height: 1.6; }
-.research-text { font-size: 16px; line-height: 1.55; }
+.research-body { display: flex; flex-direction: column; gap: 40px; }
+.research-image-block { display: flex; flex-direction: column; gap: 24px; }
+.research-image-block img { width: 100%; height: auto; display: block; }
+.research-caption { font-size: 15px; font-style: italic; color: #525252; line-height: 1.6; }
+.research-text { font-size: 16px; line-height: 1.6; }
 .research-text strong { font-weight: 700; }
 
 /* ── ADVISORY BOARD ──────────────────────────── */
@@ -422,6 +423,8 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
 
   /* Fix negative-margin bleed box */
   .project-vol2-box { margin: 0 -24px; padding: 32px 24px; }
+
+  .research-page { padding: 48px 24px 80px; }
 
   .footer-inner { padding: 0 32px; }
   .footer-top { flex-direction: column; gap: 32px; }
@@ -554,14 +557,4 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
 .project-subtitle-questions { display: flex; flex-direction: column; gap: 8px; }
 .project-question { font-size: 15px; font-style: italic; color: #525252; line-height: 1.5; }
 
-/* ── RESEARCH PAGE ───────────────────────────── */
-.research-page { max-width: 1100px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 48px; }
-.research-header { display: flex; flex-direction: column; gap: 12px; }
-.research-title { font-size: 26px; font-weight: 700; }
-.research-subtitle { font-size: 15px; color: #525252; }
-.research-image-placeholder { background: #d9d9d9; width: 100%; height: 480px; }
-.research-body { display: flex; flex-direction: column; gap: 40px; }
-.research-quote { border-left: 3px solid black; padding: 16px 32px; font-size: 15px; font-style: italic; line-height: 1.6; color: #404040; }
-.research-quote cite { display: block; margin-top: 12px; font-style: normal; font-size: 13px; color: #525252; }
-.research-section { display: flex; flex-direction: column; gap: 20px; }
 
