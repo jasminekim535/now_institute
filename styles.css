@@ -139,9 +139,10 @@ ul { list-style: none; }
   display: flex; flex-direction: column; gap: 40px; align-items: center;
   color: white; text-align: center;
 }
-.hero-about-intro { font-size: 18px; line-height: 1.6; font-weight: 400; }
+.hero-about-text { display: flex; flex-direction: column; gap: 20px; }
+.hero-about-intro { font-size: 18px; line-height: 1.6; font-weight: 400; margin: 0; }
 .hero-about-intro strong { font-weight: 700; }
-.hero-about-body { font-size: 15px; line-height: 1.6; font-weight: 400; }
+.hero-about-body { font-size: 15px; line-height: 1.6; font-weight: 400; margin: 0; }
 
 /* ── BUTTON ──────────────────────────────────── */
 .btn-outline {
