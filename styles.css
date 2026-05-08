@@ -476,8 +476,10 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
 /* ── PERSON CONTENT SECTIONS ─────────────────── */
 .person-content { max-width: 1235px; margin: 0 auto; padding: 64px 100px; display: flex; flex-direction: column; gap: 64px; }
 .person-content .section-header { text-align: left; }
+.person-content .section-header h2 { font-size: 30px; font-weight: 500; margin-bottom: 12px; }
 .person-content .underline-bar { margin: 0; }
 .person-section { display: flex; flex-direction: column; gap: 24px; }
+.person-hero-info > div > h1 { margin-bottom: 12px; }
 
 /* ── EDUCATION CARD VARIATIONS ───────────────── */
 .edu-degree { font-size: 24px; font-weight: 400; color: black; line-height: 1.4; }
