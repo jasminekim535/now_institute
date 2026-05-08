@@ -202,6 +202,15 @@
     document.body.style.overflow = isOpen ? 'hidden' : '';
   }
   document.getElementById('megaNav').addEventListener('keydown', e => { if (e.key === 'Escape') toggleNav(); });
+
+  const heroAbout = document.querySelector('.hero-about');
+  const observer = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) {
+      heroAbout.classList.add('visible');
+      observer.disconnect();
+    }
+  }, { threshold: 0.1 });
+  observer.observe(heroAbout);
 </script>
 </body>
 </html>
