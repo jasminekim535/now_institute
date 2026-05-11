@@ -26,12 +26,13 @@ ul { list-style: none; }
 .main-nav-item { position: relative; }
 .main-nav-link {
   font-family: 'Sofia Sans', sans-serif;
-  font-size: 15px; font-weight: 600; color: black;
+  font-size: 16px; font-weight: 600; color: black;
   text-decoration: none; display: block; padding: 10px 14px;
   letter-spacing: 0.04em; white-space: nowrap;
 }
 .main-nav-link:hover { text-decoration: underline; }
-.main-nav-link.active { font-weight: 800; text-decoration: underline; }
+.main-nav-link.active { font-weight: 800; }
+.nav-dropdown li a.active { font-weight: 700; }
 /* Invisible bridge so hover stays alive while mouse moves into dropdown */
 .main-nav-item::after {
   content: ''; position: absolute;
