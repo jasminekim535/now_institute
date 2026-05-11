@@ -602,4 +602,10 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
   .assoc-grid { grid-template-columns: 1fr; }
 }
 
+/* ── MOBILE: always show image text (no hover on touch) ── */
+@media (hover: none) {
+  .photo-overlay, .photo-label,
+  .uni-overlay, .uni-label { opacity: 1; }
+}
+
 
