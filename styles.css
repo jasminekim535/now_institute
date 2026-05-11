@@ -474,6 +474,8 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
   .about-body { font-size: 14px; }
   .hero-about { padding: 32px 16px; }
   .hero-about-inner { padding: 28px 24px; }
+  .hero-about-body { display: none; }
+  .hero-about-inner .btn-outline { display: none; }
   .hero-about-intro { font-size: 15px; }
   .hero-about-body { font-size: 13px; }
 
