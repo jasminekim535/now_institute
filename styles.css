@@ -97,15 +97,17 @@ ul { list-style: none; }
   display: flex; flex-direction: column; gap: 16px;
 }
 .photo-row { display: flex; gap: 16px; }
-.photo-cell { flex: 1; }
+.photo-cell { flex: 1; position: relative; overflow: hidden; }
 .photo-row.row-1 .photo-cell { height: 194px; }
 .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 296px; }
 .photo-cell-linked {
-  position: relative; overflow: hidden; display: block; text-decoration: none; height: 100%;
+  position: relative; overflow: hidden; display: block; text-decoration: none;
 }
 .photo-cell-linked img {
-  display: block; position: absolute; inset: 0;
-  width: 100%; height: 100%; object-fit: cover;
+  display: block;
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
   transition: transform 0.3s;
 }
 .photo-cell-linked:hover img { transform: scale(1.03); }
