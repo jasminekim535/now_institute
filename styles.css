@@ -362,7 +362,7 @@ ul { list-style: none; }
 
 /* ── FOOTER ──────────────────────────────────── */
 footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; margin-top: 80px; }
-.footer-inner { max-width: 1247px; margin: 0 auto; padding: 0 75px; display: flex; flex-direction: column; gap: 40px; }
+.footer-inner { max-width: 1440px; margin: 0 auto; padding: 0 100px; display: flex; flex-direction: column; gap: 40px; }
 .footer-top { display: flex; align-items: flex-start; justify-content: space-between; }
 .footer-logo { height: 78px; width: auto; flex-shrink: 0; }
 .footer-links { display: flex; gap: 140px; }
