@@ -479,7 +479,7 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
   .hero-about-intro { font-size: 15px; }
   .hero-about-body { font-size: 13px; }
 
-  .uni-grid { grid-template-columns: 1fr; }
+  .uni-grid { grid-template-columns: repeat(2, 1fr); }
 
   .person-card { height: 360px; }
   .person-text { font-size: 13px; gap: 4px; }
