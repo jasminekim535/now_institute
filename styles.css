@@ -370,7 +370,7 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
 /* ── PROJECT ROW (responsive side-by-side layouts) ── */
 .project-row { display: flex; }
 .project-vol2-box { background: black; padding: 40px 60px; }
-.project-vol2-box > div { color: white; display: flex; flex-direction: column; gap: 24px; text-align: center; align-items: center; }
+.project-vol2-box > div { color: white; display: flex; flex-direction: column; gap: 24px; }
 .project-img-pair { display: flex; gap: 20px; flex-shrink: 0; }
 
 /* ── RESPONSIVE ──────────────────────────────── */
