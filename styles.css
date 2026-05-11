@@ -345,8 +345,12 @@ ul { list-style: none; }
 .page-content { max-width: 1247px; margin: 0 auto; padding: 64px 24px 80px; }
 
 /* ── CONTACT ─────────────────────────────────── */
+.page-heading { display: flex; flex-direction: column; gap: 16px; margin-bottom: 24px; }
+.page-accent-bar { width: 64px; height: 4px; background: black; }
+.page-title { font-size: 26px; font-weight: 700; margin: 0; }
+
 .contact-section { max-width: 1247px; margin: 80px auto 0; padding: 0 24px 80px; }
-.contact-section h2 { font-size: 26px; font-weight: 700; margin-bottom: 32px; }
+.contact-section h2 { font-size: 26px; font-weight: 700; margin: 0; }
 .contact-section p { font-size: 16px; font-weight: 400; line-height: 1.7; }
 .contact-section a { text-decoration: underline; color: black; }
 
