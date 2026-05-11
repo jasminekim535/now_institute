@@ -585,4 +585,21 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
 .project-subtitle-questions { display: flex; flex-direction: column; gap: 8px; }
 .project-question { font-size: 15px; font-style: italic; color: #525252; line-height: 1.5; }
 
+/* ── PEOPLE PAGES RESPONSIVE (must come after base CSS) ── */
+@media (max-width: 900px) {
+  .person-hero { flex-direction: column; padding: 40px 32px; gap: 32px; }
+  .person-hero > img { width: 100%; max-width: 100%; height: auto; flex-shrink: 1; object-fit: cover; object-position: top center; }
+  .person-hero-info { width: 100%; }
+  .person-content { padding: 40px 32px; }
+}
+
+@media (max-width: 600px) {
+  .person-hero { padding: 32px 16px; gap: 24px; }
+  .person-hero > img { width: 100%; height: 340px; object-fit: cover; object-position: top center; }
+  .person-content { padding: 32px 16px; }
+  .edu-card { max-width: 100%; width: 100%; }
+  .awards-grid { grid-template-columns: 1fr; }
+  .assoc-grid { grid-template-columns: 1fr; }
+}
+
 
