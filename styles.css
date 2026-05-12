@@ -382,6 +382,17 @@ ul { list-style: none; }
 .page-home .people-grid { justify-content: flex-start; }
 .page-home .hero-about-inner { text-align: left; align-items: flex-start; }
 
+/* ── HOME PAGE PEOPLE BAND ───────────────────── */
+.page-home .people-section {
+  max-width: none;
+  margin-top: 120px;
+  padding: 80px 0;
+  background: black;
+}
+.page-home .people-section .section-header h2 { color: white; }
+.page-home .people-section .underline-bar { background: white; }
+.people-inner { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+
 /* ── RESEARCH NETWORK PAGE LEFT ALIGNMENT ─────── */
 .page-research-network .section-header { text-align: left; }
 .page-research-network .underline-bar { margin: 0; }
