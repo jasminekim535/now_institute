@@ -375,6 +375,12 @@ ul { list-style: none; }
 .contact-section a { text-decoration: underline; color: black; }
 
 /* ── FOOTER ──────────────────────────────────── */
+/* ── HOME PAGE LEFT ALIGNMENT ────────────────── */
+.page-home .section-header { text-align: left; }
+.page-home .underline-bar { margin: 0; }
+.page-home .see-more-wrap { text-align: left; }
+.page-home .people-grid { justify-content: flex-start; }
+
 footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; margin-top: 120px; }
 .footer-inner { max-width: 1440px; margin: 0 auto; padding: 0 100px; display: flex; flex-direction: column; gap: 40px; }
 .footer-top { display: flex; align-items: flex-start; justify-content: space-between; }
