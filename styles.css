@@ -385,9 +385,8 @@ ul { list-style: none; }
 .page-home .section-header { text-align: left; }
 .page-home .underline-bar { margin: 0; }
 .page-home .see-more-wrap { text-align: left; }
-.page-home .people-inner { display: flex; flex-direction: column; align-items: center; }
 .page-home .people-grid { justify-content: flex-start; }
-.page-home .people-section .section-header { text-align: left; width: 904px; }
+.page-home .people-section .section-header { text-align: left; }
 .page-home .people-section .underline-bar { margin: 0; }
 .page-home .hero-about-inner { text-align: left; align-items: flex-start; }
 
@@ -438,7 +437,6 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 @media (max-width: 1100px) {
   .people-grid { gap: 24px; }
   .person-card { flex: 1; width: auto; min-width: 0; }
-  .page-home .people-section .section-header { width: 100%; }
   .footer-top { gap: 80px; }
   .footer-links { gap: 60px; }
   .awards-grid { grid-template-columns: 1fr; }
