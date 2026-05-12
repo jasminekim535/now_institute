@@ -375,6 +375,12 @@ ul { list-style: none; }
 .contact-section a { text-decoration: underline; color: black; }
 
 /* ── FOOTER ──────────────────────────────────── */
+/* ── HOME PAGE BUTTONS (filled) ─────────────── */
+.page-home .btn-outline { background: black; color: white; border-color: black; }
+.page-home .btn-outline:hover { background: #333; border-color: #333; }
+.page-home .btn-outline-white { background: white; color: black; border-color: white; }
+.page-home .btn-outline-white:hover { background: #e5e5e5; border-color: #e5e5e5; }
+
 /* ── HOME PAGE LEFT ALIGNMENT ────────────────── */
 .page-home .section-header { text-align: left; }
 .page-home .underline-bar { margin: 0; }
@@ -404,16 +410,17 @@ ul { list-style: none; }
 .page-research-staff .staff-block-desc { text-align: left; margin: 0; max-width: none; }
 .page-research-staff .staff-grid { justify-content: flex-start; margin: 0; max-width: none; padding: 0; }
 
-footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; margin-top: 120px; }
+footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-top: 120px; }
 .footer-inner { max-width: 1440px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 40px; }
 .footer-top { display: flex; align-items: flex-start; justify-content: space-between; }
 .footer-logo { height: 78px; width: auto; flex-shrink: 0; }
 .footer-links { display: flex; gap: 140px; }
 .footer-col { display: flex; flex-direction: column; gap: 16px; }
-.footer-col p, .footer-col a { font-size: 15px; font-weight: 400; line-height: 1.45; color: black; }
+.footer-col p, .footer-col a { font-size: 15px; font-weight: 400; line-height: 1.45; color: white; }
 .footer-col a { text-decoration: underline; }
 .footer-copyright { font-size: 13px; font-weight: 400; }
-.footer-copyright a { text-decoration: underline; color: black; }
+.footer-copyright { color: white; }
+.footer-copyright a { text-decoration: underline; color: white; }
 
 /* ── PROJECT ROW (responsive side-by-side layouts) ── */
 .project-row { display: flex; }
