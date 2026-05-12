@@ -385,9 +385,10 @@ ul { list-style: none; }
 .page-home .section-header { text-align: left; }
 .page-home .underline-bar { margin: 0; }
 .page-home .see-more-wrap { text-align: left; }
-.page-home .people-grid { justify-content: center; }
-.page-home .people-section .section-header { text-align: center; }
-.page-home .people-section .underline-bar { margin: 0 auto; }
+.page-home .people-inner { display: flex; flex-direction: column; align-items: center; }
+.page-home .people-grid { justify-content: flex-start; }
+.page-home .people-section .section-header { text-align: left; width: 904px; }
+.page-home .people-section .underline-bar { margin: 0; }
 .page-home .hero-about-inner { text-align: left; align-items: flex-start; }
 
 /* ── HOME PAGE PEOPLE BAND ───────────────────── */
