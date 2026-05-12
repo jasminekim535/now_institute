@@ -140,15 +140,15 @@ ul { list-style: none; }
 .hero-about.visible { transform: translateY(0); }
 .hero-about-inner {
   background: rgba(0,0,0,0.8);
-  padding: 48px 60px;
-  max-width: 860px; margin: 0 auto;
+  padding: 48px 100px;
+  max-width: 906px; margin: 0 auto;
   display: flex; flex-direction: column; gap: 40px; align-items: center;
   color: white; text-align: center;
 }
 .hero-about-text { display: flex; flex-direction: column; gap: 20px; }
-.hero-about-intro { font-size: 18px; line-height: 1.6; font-weight: 400; margin: 0; }
-.hero-about-intro strong { font-weight: 700; }
-.hero-about-body { font-size: 15px; line-height: 1.6; font-weight: 400; margin: 0; }
+.hero-about-intro { font-size: 24px; line-height: 1.5; font-weight: 700; margin: 0; }
+.hero-about-body { font-size: 24px; line-height: 1.5; font-weight: 700; margin: 0; }
+.hero-btn { font-size: 24px; padding: 6px 28px; }
 
 /* ── BUTTON ──────────────────────────────────── */
 .btn-outline {
@@ -407,8 +407,9 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
 
   .hero-about { padding: 40px 24px; }
   .hero-about-inner { padding: 36px 32px; }
-  .hero-about-intro { font-size: 16px; }
-  .hero-about-body { font-size: 14px; }
+  .hero-about-intro { font-size: 18px; }
+  .hero-about-body { font-size: 18px; }
+  .hero-btn { font-size: 18px; }
 
   .projects-section { margin-top: 48px; padding: 0 24px; }
 
@@ -475,8 +476,8 @@ footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; marg
   .hero-about { padding: 32px 16px; }
   .hero-about-inner { padding: 28px 24px; }
   .hero-about-body { display: none; }
-  .hero-about-intro { font-size: 15px; }
-  .hero-about-body { font-size: 13px; }
+  .hero-about-intro { font-size: 16px; }
+  .hero-btn { font-size: 16px; }
 
   .uni-grid { grid-template-columns: repeat(2, 1fr); }
 
