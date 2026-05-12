@@ -443,7 +443,8 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
   .footer-links { gap: 60px; }
   .awards-grid { grid-template-columns: 1fr; }
   .assoc-grid { grid-template-columns: 1fr; }
-  .person-hero { padding: 60px 48px; gap: 48px; }
+  .person-hero { padding: 60px 48px; gap: 40px; }
+  .person-hero > img { height: 440px; }
   .person-content { padding: 60px 48px; }
 }
 
@@ -595,8 +596,8 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
   width: 100%; padding: 77px 48px;
   display: flex; gap: 94px; align-items: center; justify-content: center; background: black;
 }
-.person-hero > img { width: 495px; height: 540px; object-fit: cover; object-position: top center; flex-shrink: 0; }
-.person-hero-info { display: flex; flex-direction: column; gap: 24px; width: 495px; flex-shrink: 0; }
+.person-hero > img { flex: 0 1 495px; min-width: 0; height: 540px; object-fit: cover; object-position: top center; }
+.person-hero-info { display: flex; flex-direction: column; gap: 24px; flex: 0 1 495px; min-width: 0; }
 .person-hero-name { display: flex; flex-direction: column; gap: 16px; }
 .person-hero-info h1 { font-size: 28px; font-weight: 700; margin: 0; color: white; }
 .person-roles { display: flex; flex-direction: column; gap: 20px; }
