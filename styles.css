@@ -192,7 +192,7 @@ ul { list-style: none; }
 .see-more-wrap { text-align: center; }
 
 /* ── PEOPLE (LANDING) ────────────────────────── */
-.research-cards-section { max-width: 1343px; margin: 120px auto 0; padding: 0 24px 120px; }
+.research-cards-section { max-width: 1343px; margin: 120px auto 0; padding: 0 24px; }
 .research-cards-section .section-header { margin-bottom: 48px; }
 .research-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .research-card { height: 220px; }
