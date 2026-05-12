@@ -77,13 +77,13 @@ ul { list-style: none; }
 
 /* ── HERO ────────────────────────────────────── */
 .hero {
-  position: relative; width: 100%; height: 1046px;
+  position: relative; width: 100%; height: 800px;
   display: flex; flex-direction: column; justify-content: flex-end;
   background: #d9d9d9;
 }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 55%; }
 .hero-logo-wrap {
-  position: absolute; left: 50%; top: calc(50% - 200px);
+  position: absolute; left: 50%; top: calc(50% - 240px);
   transform: translate(-50%, -50%);
 }
 .hero-logo { height: 105px; width: auto; }
@@ -140,7 +140,7 @@ ul { list-style: none; }
 .hero-about.visible { transform: translateY(0); }
 .hero-about-inner {
   background: rgba(0,0,0,0.8);
-  padding: 48px 120px 48px 96px;
+  padding: 48px 96px;
   max-width: 860px; margin: 0 auto;
   display: flex; flex-direction: column; gap: 40px; align-items: center;
   color: white; text-align: center;
