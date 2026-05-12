@@ -94,9 +94,9 @@ ul { list-style: none; }
 
 /* ── PHOTO GRID ──────────────────────────────── */
 .photo-grid {
-  display: flex; flex-direction: column; gap: 16px;
+  display: flex; flex-direction: column; gap: 24px;
 }
-.photo-row { display: flex; gap: 16px; }
+.photo-row { display: flex; gap: 24px; }
 .photo-cell { flex: 1; position: relative; overflow: hidden; }
 .photo-row.row-1 .photo-cell { height: 194px; }
 .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 296px; }
