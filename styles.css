@@ -380,7 +380,7 @@ ul { list-style: none; }
 .page-home .underline-bar { margin: 0; }
 .page-home .see-more-wrap { text-align: left; }
 .page-home .people-grid { justify-content: flex-start; }
-.page-home .hero-about-inner { margin: 0; text-align: left; align-items: flex-start; }
+.page-home .hero-about-inner { text-align: left; align-items: flex-start; }
 
 /* ── RESEARCH NETWORK PAGE LEFT ALIGNMENT ─────── */
 .page-research-network .section-header { text-align: left; }
