@@ -166,7 +166,7 @@ ul { list-style: none; }
 .section-header { text-align: center; margin-bottom: 48px; }
 .section-header h2 { font-size: 26px; font-weight: 700; margin-bottom: 16px; }
 .underline-bar { width: 60px; height: 3px; background: black; margin: 0 auto; }
-.underline-bar-sm { width: 48px; height: 3px; background: black; }
+.underline-bar-sm { width: 48px; height: 3px; background: white; }
 
 /* ── UNIVERSITY GRID ─────────────────────────── */
 .uni-section { max-width: 1440px; margin: 120px auto 0; padding: 0 48px; }
@@ -218,7 +218,7 @@ ul { list-style: none; }
 /* ── PERSON BIO PAGE ─────────────────────────── */
 .person-bg-top { background: black; }
 .person-hero {
-  max-width: 1440px; margin: 0 auto; padding: 77px 48px;
+  width: 100%; padding: 77px 48px;
   display: flex; gap: 94px; align-items: center; justify-content: center; background: black;
 }
 .person-photo { width: 495px; height: 540px; flex-shrink: 0; overflow: hidden; position: relative; }
@@ -583,11 +583,11 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 
 /* ── PERSON HERO (new layout) ────────────────── */
 .person-hero {
-  max-width: 1440px; margin: 0 auto; padding: 77px 48px;
+  width: 100%; padding: 77px 48px;
   display: flex; gap: 94px; align-items: center; justify-content: center; background: black;
 }
 .person-hero > img { width: 495px; height: 540px; object-fit: cover; object-position: top center; flex-shrink: 0; }
-.person-hero-info { display: flex; flex-direction: column; gap: 24px; }
+.person-hero-info { display: flex; flex-direction: column; gap: 24px; width: 495px; flex-shrink: 0; }
 .person-hero-name { display: flex; flex-direction: column; gap: 16px; }
 .person-hero-info h1 { font-size: 28px; font-weight: 700; margin: 0; color: white; }
 .person-roles { display: flex; flex-direction: column; gap: 20px; }
