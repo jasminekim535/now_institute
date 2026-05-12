@@ -1,6 +1,6 @@
 /* ── RESET ───────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Sofia Sans', sans-serif; background: white; color: black; overflow-x: hidden; }
+body { font-family: 'Space Grotesk', sans-serif; background: white; color: black; overflow-x: hidden; }
 a { text-decoration: none; color: inherit; }
 img { display: block; }
 ul { list-style: none; }
@@ -16,7 +16,7 @@ ul { list-style: none; }
 .menu-toggle {
   display: none;
   background: none; border: none; cursor: pointer;
-  font-family: 'Sofia Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 14px; font-weight: 600; letter-spacing: 0.08em;
 }
 
@@ -25,7 +25,7 @@ ul { list-style: none; }
 .main-nav-list { display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; }
 .main-nav-item { position: relative; }
 .main-nav-link {
-  font-family: 'Sofia Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 16px; font-weight: 600; color: black;
   text-decoration: none; display: block; padding: 10px 14px;
   letter-spacing: 0.04em; white-space: nowrap;
@@ -154,7 +154,7 @@ ul { list-style: none; }
 .btn-outline {
   display: inline-block; padding: 7px 28px;
   border: 1px solid #525252; border-radius: 26px;
-  font-family: 'Sofia Sans', sans-serif; font-size: 15px; font-weight: 400;
+  font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 400;
   background: white; color: black; cursor: pointer; transition: background 0.15s;
   text-decoration: none;
 }
