@@ -155,7 +155,7 @@ ul { list-style: none; }
   border: 1px solid #525252; border-radius: 26px;
   font-family: 'Jost', sans-serif; font-size: 15px; font-weight: 400;
   background: white; color: black; cursor: pointer; transition: background 0.15s;
-  text-decoration: none;
+  text-decoration: none; text-transform: capitalize;
 }
 .btn-outline:hover { background: #f4f4f4; }
 .btn-outline-white { border-color: white; color: white; background: transparent; }
