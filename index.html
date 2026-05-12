@@ -263,13 +263,13 @@
   document.getElementById('megaNav').addEventListener('keydown', e => { if (e.key === 'Escape') toggleNav(); });
 
   const heroAbout = document.querySelector('.hero-about');
-  const observer = new IntersectionObserver(([entry]) => {
-    if (entry.isIntersecting) {
+  let heroRevealed = false;
+  window.addEventListener('scroll', function() {
+    if (!heroRevealed && window.scrollY > 60) {
       heroAbout.classList.add('visible');
-      observer.disconnect();
+      heroRevealed = true;
     }
-  }, { threshold: 0.1 });
-  observer.observe(heroAbout);
+  }, { passive: true });
 </script>
 </body>
 </html>

@@ -79,7 +79,7 @@ ul { list-style: none; }
 .hero {
   position: relative; width: 100%; height: 900px;
   display: flex; flex-direction: column; justify-content: flex-end;
-  background: #d9d9d9;
+  background: #d9d9d9; overflow: hidden;
 }
 .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 55%; }
 .hero-logo-wrap {
@@ -133,15 +133,14 @@ ul { list-style: none; }
 
 /* ── HERO ABOUT DARK BAND ────────────────────── */
 .hero-about {
-  padding: 64px 48px; position: relative; flex-shrink: 0;
+  padding: 56px 48px; position: relative; flex-shrink: 0;
+  background: rgba(0,0,0,0.85);
   transform: translateY(100%);
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .hero-about.visible { transform: translateY(0); }
 .hero-about-inner {
-  background: rgba(0,0,0,0.8);
-  padding: 48px 96px;
-  max-width: 860px; margin: 0 auto;
+  max-width: 1100px; margin: 0 auto;
   display: flex; flex-direction: column; gap: 40px; align-items: center;
   color: white; text-align: center;
 }
@@ -461,7 +460,6 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
   .mega-nav-links { gap: 32px; flex-wrap: wrap; }
 
   .hero-about { padding: 40px 24px; }
-  .hero-about-inner { padding: 36px 32px; max-width: 100%; }
   .hero-about-intro { font-size: 16px; }
   .hero-about-body { font-size: 14px; }
 
@@ -535,7 +533,6 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
   .about-intro { font-size: 16px; }
   .about-body { font-size: 14px; }
   .hero-about { padding: 32px 16px; }
-  .hero-about-inner { padding: 28px 20px; }
   .hero-about-body { display: none; }
   .hero-about-intro { font-size: 15px; }
 
