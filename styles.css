@@ -385,6 +385,7 @@ ul { list-style: none; }
 .page-home .section-header { text-align: left; }
 .page-home .underline-bar { margin: 0; }
 .page-home .see-more-wrap { text-align: left; }
+.page-home .people-content-wrap { width: fit-content; margin: 0 auto; }
 .page-home .people-grid { justify-content: flex-start; }
 .page-home .people-section .section-header { text-align: left; }
 .page-home .people-section .underline-bar { margin: 0; }
@@ -483,6 +484,7 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
   .page-research-staff .staff-grid { grid-template-columns: repeat(2, 1fr); }
 
   .people-inner { padding: 0 24px; }
+  .page-home .people-content-wrap { width: 100%; }
   .page-home .people-section { padding: 60px 0 80px; }
   .people-grid { flex-direction: column; align-items: center; }
   .person-card { width: 100%; max-width: 495px; height: 460px; }
