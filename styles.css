@@ -381,6 +381,17 @@ ul { list-style: none; }
 .page-home .see-more-wrap { text-align: left; }
 .page-home .people-grid { justify-content: flex-start; }
 
+/* ── RESEARCH NETWORK PAGE LEFT ALIGNMENT ─────── */
+.page-research-network .section-header { text-align: left; }
+.page-research-network .underline-bar { margin: 0; }
+
+/* ── RESEARCH STAFF PAGE LEFT ALIGNMENT ──────── */
+.page-research-staff .staff-block-header { align-items: flex-start; }
+.page-research-staff .staff-block-title { text-align: left; }
+.page-research-staff .underline-bar { margin: 0; }
+.page-research-staff .staff-block-desc { text-align: left; margin: 0; max-width: none; }
+.page-research-staff .staff-grid { justify-content: flex-start; }
+
 footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; margin-top: 120px; }
 .footer-inner { max-width: 1440px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 40px; }
 .footer-top { display: flex; align-items: flex-start; justify-content: space-between; }
