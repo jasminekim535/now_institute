@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Hydroponics in South LA – The Now Institute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html"><img class="header-logo" src="https://www.figma.com/api/mcp/asset/f188a5b9-c3b6-474c-b470-6fefd36b1540" alt="The Now Institute"></a>
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li class="main-nav-item"><a href="../about.html" class="main-nav-link">About</a><ul class="nav-dropdown"><li><a href="../about.html">Overview</a></li><li><a href="../research-network.html">Research Network</a></li><li><a href="../clientele.html">Clientele</a></li></ul></li>
+      <li class="main-nav-item"><a href="../people/thom-mayne.html" class="main-nav-link">People</a><ul class="nav-dropdown"><li><a href="../people/thom-mayne.html">Thom Mayne</a></li><li><a href="../people/eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="../people/research-staff.html">Research Staff</a></li></ul></li>
+      <li class="main-nav-item"><a href="../projects/haiti-now.html" class="main-nav-link">Projects</a><ul class="nav-dropdown"><li><a href="../projects/haiti-now.html">Haiti Now</a></li><li><a href="../projects/culture-now.html">Culture Now</a></li><li><a href="../projects/new-orleans-now.html">New Orleans Now</a></li><li><a href="../projects/madrid-now.html">Madrid Now</a></li><li><a href="../projects/la-now.html">L.A. Now</a></li></ul></li>
+      <li class="main-nav-item"><a href="post-industrial-city.html" class="main-nav-link active">Research</a><ul class="nav-dropdown"><li><a href="post-industrial-city.html">Post-Industrial City</a></li><li><a href="emerging-asia.html">Emerging Asia</a></li><li><a href="informal-settlements.html">Informal Settlements / Post-Disaster Setting</a></li><li><a href="hsinta-ecological-powerplant.html">Hsinta Ecological Powerplant</a></li><li><a href="south-sea-pearl-artificial-island.html">South Sea Pearl Artificial Island</a></li><li><a href="art-by-wash.html">Art By WASH</a></li><li><a href="urban-hydroponics-south-la.html" class="active">Urban Hydroponics in South LA</a></li><li><a href="building-forward-regulatory-reform.html">Building Forward: Regulatory Reform</a></li></ul></li>
+      <li class="main-nav-item"><a href="../contact.html" class="main-nav-link">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="menu-toggle" onclick="toggleNav()" aria-label="Open navigation">MENU</button>
+</header>
+
+<nav class="mega-nav" id="megaNav" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <div class="mega-nav-header">
+    <a href="../index.html" onclick="toggleNav()"><img class="logo" src="https://www.figma.com/api/mcp/asset/f188a5b9-c3b6-474c-b470-6fefd36b1540" alt="The Now Institute"></a>
+    <button class="close-btn" onclick="toggleNav()">&#x2715;</button>
+  </div>
+  <div class="mega-nav-links">
+    <div class="nav-col"><p class="nav-col-title"><a href="../about.html">About</a></p><ul><li><a href="../about.html">Overview</a></li><li><a href="../research-network.html">Research Network</a></li><li><a href="../clientele.html">Clientele</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../people/thom-mayne.html">People</a></p><ul><li><a href="../people/thom-mayne.html">Thom Mayne</a></li><li><a href="../people/eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="../people/research-staff.html">Research Staff</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../projects/haiti-now.html">Projects</a></p><ul><li><a href="../projects/haiti-now.html">Haiti Now</a></li><li><a href="../projects/culture-now.html">Culture Now</a></li><li><a href="../projects/new-orleans-now.html">New Orleans Now</a></li><li><a href="../projects/madrid-now.html">Madrid Now</a></li><li><a href="../projects/la-now.html">L.A. Now</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="post-industrial-city.html">Research</a></p><ul><li><a href="post-industrial-city.html">Post-Industrial City</a></li><li><a href="emerging-asia.html">Emerging Asia</a></li><li><a href="informal-settlements.html">Informal Settlements / Post-Disaster Setting</a></li><li><a href="hsinta-ecological-powerplant.html">Hsinta Ecological Powerplant</a></li><li><a href="south-sea-pearl-artificial-island.html">South Sea Pearl Artificial Island</a></li><li><a href="art-by-wash.html">Art By WASH</a></li><li><a href="urban-hydroponics-south-la.html" class="active">Urban Hydroponics in South LA</a></li><li><a href="building-forward-regulatory-reform.html">Building Forward: Regulatory Reform</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../contact.html">Contact</a></p></div>
+  </div>
+</nav>
+
+<div class="research-page">
+  <div class="project-accent"></div>
+  <h1 class="research-title">Urban Hydroponics in South LA</h1>
+  <div class="research-body">
+    <div class="research-text">
+      <p>The global food system is ripe for disruption. Agriculture is the world's second-largest carbon emitter, after the energy sector. The heavy footprint of soil-based farming accounts for 80% of tropical deforestation, is the primary cause of oxygen-depleted dead zones in coastal regions, is the largest freshwater consumer (using 80% of California's limited supply), is the largest culprit of nitrous oxide (a GHG with 300 times the heat-trapping power of CO2) and is hyper-dependent on emissions-heavy transportation like trucks and planes — with the average American meal traveling about 1,500 miles from farm to plate. Because of transit damage and having a short shelf life in retail stores upon arrival, more than 40% of food is wasted. Furthermore, food is highly climate-sensitive, with poor safeguards against the unpredictable future of Earth's temperature and fresh water supply. Organizationally, it is middleman-heavy and labor-intensive, driving up costs to consumers. High produce prices drive consumers to less healthy choices causing major health consequences nationwide.</p>
+    </div>
+    <div class="research-split">
+      <div class="research-split-img">
+        <img src="https://www.figma.com/api/mcp/asset/8b6dd997-5f10-48d6-912f-5593fb4fabd3" alt="Urban Hydroponics Entry">
+      </div>
+      <div class="research-split-text">
+        <p>The predicted world population of 9 billion people in 2050 will affect the amount of sufficient resources to produce enough food for everyone. An alternative to traditional agriculture is needed as population growth in urban areas is outpacing and decreasing agricultural land availability. In the event of catastrophic climate change or any natural/man-made catastrophe, investing in hydroponics functions as humankind's insurance policy. A diversity of agricultural technologies decouples human success from the environment and sets up proactive resilience measures in the event of catastrophe.</p>
+      </div>
+    </div>
+    <div class="research-text">
+      <p>Four different schemes regarding Social Service, Educational Outreach, Economic Development, and Cultural Branding are implemented on pilot sites which include a public school, a commercial-driven district, a church, and an industrial warehouse to generate build-and-deploy strategies that will impact on five levels:</p>
+      <p>(1) on-site, to have an economic impact on groceries or can function as a supplementary income stream;<br>
+      (2) in the community, to have a public health and education impact by teaching urban agriculture and providing quality produce in areas with limited access to fresh food;<br>
+      (3) in the city, to remove emissions-heavy delivery trucks from the road;<br>
+      (4) nationally, to help restore the environment since hydroponic systems use 95% less water (especially crucial in the West), no pesticides, no energy (in combination with rooftop solar), and virtually no land;<br>
+      (5) globally, to eliminate transportation and storage-related carbon dioxide. The various strategic initiatives will test production, distribution, and utility to address global issues in food access and climate change.</p>
+    </div>
+    <div class="research-split">
+      <div class="research-split-text">
+        <p><strong>I. Social Service + Food Equity — Transcendent Campus</strong><br>Team: Baocheng Yang, Luyan Shen, Jihun Son, Sara Jafarpour</p>
+        <p><strong>II. Educational Outreach — Urban Canopy</strong><br>Team: John Paul Salcido, Kevin Sherrod, Ran Israeli</p>
+        <p><strong>III. Economic Development — Agri-Industrialism</strong><br>Team: Deborah Liu, Niloufar Golkar, Yake Wang</p>
+        <p>Distribution problems regarding spoilage and costs continue to increase when farms are further away from the metropolis. Furthermore, due to rapid urban expansion, cities now heavily rely on fragile food supply chains. Folding the farm back into the city to alleviate the issue of distribution is proposed through the following 4 strategies: Analyze found conditions; Occupy found conditions; Reactivate environment and land value; Transform economy. Using the rapidly growing developments in Downtown Los Angeles' Arts District as a catalyst for hydroponics forms a new way of looking at Arts Districts and strengthens the relationship between agriculture and city resiliency.</p>
+        <p><strong>IV. Cultural Branding — Branding Farming</strong><br>Team: Barak Kazenelenbogen, Dunia Abu Shanab, Pegah Koulaeian</p>
+        <p><strong>V. Making Healthy Food Accessible — Farm Box</strong></p>
+      </div>
+      <div class="research-split-img" style="display:flex;flex-direction:column;gap:24px;">
+        <img src="https://www.figma.com/api/mcp/asset/08e6a543-fbe6-44cd-a4eb-16ba0eda1e0c" alt="Urban Hydroponics Street">
+        <img src="https://www.figma.com/api/mcp/asset/b9fc2da4-fdfb-4be6-8e2a-f2bb0de84b76" alt="Urban Hydroponics Diagram">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img class="footer-logo" src="https://www.figma.com/api/mcp/asset/157b4caf-6815-47e1-b1dc-1c11db6bb06d" alt="The Now Institute">
+      <div class="footer-links">
+        <div class="footer-col"><p><a href="../about.html">About</a></p><p><a href="../people/thom-mayne.html">People</a></p><p><a href="../projects/haiti-now.html">Projects</a></p><p><a href="post-industrial-city.html">Research</a></p></div>
+        <div class="footer-col"><p><a href="../contact.html">Contact</a></p><a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a><p>+1 (424) 258-6209</p><p>3440 Wesley Street<br>Culver City, CA 90232</p></div>
+      </div>
+    </div>
+    <p class="footer-copyright">Copyright &copy; 2016 <a href="https://www.thenowinstitute.org/" target="_blank" rel="noopener">The Now Institute</a></p>
+  </div>
+</footer>
+
+<script>
+  function toggleNav(){const n=document.getElementById('megaNav');const o=n.classList.toggle('open');document.body.style.overflow=o?'hidden':'';}
+  document.getElementById('megaNav').addEventListener('keydown',e=>{if(e.key==='Escape')toggleNav();});
+</script>
+</body>
+</html>
