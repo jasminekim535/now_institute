@@ -410,7 +410,8 @@ ul { list-style: none; }
 .page-research-staff .staff-block-title { text-align: left; }
 .page-research-staff .underline-bar { margin: 0; }
 .page-research-staff .staff-block-desc { text-align: left; margin: 0; max-width: none; }
-.page-research-staff .staff-grid { justify-content: flex-start; margin: 0; max-width: none; padding: 0; }
+.page-research-staff .staff-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 0; max-width: none; padding: 0; }
+.page-research-staff .staff-card { width: auto; }
 
 footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-top: 120px; }
 .footer-inner { max-width: 1440px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 40px; }
@@ -478,6 +479,8 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
   .uni-section { padding: 0 24px; }
   .uni-grid { grid-template-columns: repeat(2, 1fr); }
 
+  .page-research-staff .staff-grid { grid-template-columns: repeat(2, 1fr); }
+
   .people-inner { padding: 0 24px; }
   .page-home .people-section { padding: 60px 0 80px; }
   .people-grid { flex-direction: column; align-items: center; }
@@ -532,6 +535,8 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
   .hero-about-inner { padding: 28px 20px; }
   .hero-about-body { display: none; }
   .hero-about-intro { font-size: 15px; }
+
+  .page-research-staff .staff-grid { grid-template-columns: repeat(1, 1fr); }
 
   .research-cards-section { padding: 0 16px; }
   .uni-section { padding: 0 16px; }
