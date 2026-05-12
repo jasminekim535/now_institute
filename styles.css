@@ -289,7 +289,7 @@ ul { list-style: none; }
 
 /* ── STAFF GRID ──────────────────────────────── */
 .staff-section { background: #fafafa; padding: 80px 0; }
-.staff-inner { max-width: 1440px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 64px; }
+.staff-inner { max-width: 1100px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 64px; }
 .staff-block { display: flex; flex-direction: column; gap: 24px; }
 .staff-block-header { display: flex; flex-direction: column; gap: 16px; align-items: center; }
 .staff-block-title { font-size: 26px; font-weight: 700; text-align: center; }
