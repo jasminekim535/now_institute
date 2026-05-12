@@ -391,7 +391,7 @@ ul { list-style: none; }
 .page-research-staff .staff-block-title { text-align: left; }
 .page-research-staff .underline-bar { margin: 0; }
 .page-research-staff .staff-block-desc { text-align: left; margin: 0; max-width: none; }
-.page-research-staff .staff-grid { justify-content: flex-start; }
+.page-research-staff .staff-grid { justify-content: flex-start; margin: 0; max-width: none; padding: 0; }
 
 footer { background: white; border-top: 1px solid #e5e5e5; padding: 48px 0; margin-top: 120px; }
 .footer-inner { max-width: 1440px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 40px; }
