@@ -404,6 +404,7 @@ ul { list-style: none; }
 .people-inner { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
 
 /* ── RESEARCH NETWORK PAGE LEFT ALIGNMENT ─────── */
+.page-research-network .uni-section { max-width: 1100px; margin: 0 auto; padding: 80px 48px; }
 .page-research-network .section-header { text-align: left; margin-bottom: 0; }
 .page-research-network .underline-bar { margin: 0; }
 
