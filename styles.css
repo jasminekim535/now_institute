@@ -381,7 +381,7 @@ ul { list-style: none; }
 .page-home .btn-outline-white:hover { background: #e5e5e5; border-color: #e5e5e5; }
 
 /* ── HOME PAGE LEFT ALIGNMENT ────────────────── */
-.page-home .section-header { text-align: left; }
+.page-home .section-header { text-align: left; margin-bottom: 0; }
 .page-home .underline-bar { display: none; }
 .page-home .see-more-wrap { text-align: left; }
 .page-home .people-content-wrap { width: fit-content; margin: 0 auto; }
@@ -399,8 +399,8 @@ ul { list-style: none; }
 }
 .page-home .people-section .section-header h2 { color: white; }
 .page-home .people-section .underline-bar { display: none; background: white; }
-.people-desc { font-size: 16px; line-height: 1.6; color: white; margin: 20px 0 40px; max-width: 640px; }
-.section-desc { font-size: 16px; line-height: 1.6; color: #525252; margin: 20px 0 40px; max-width: 640px; }
+.people-desc { font-size: 16px; line-height: 1.6; color: white; margin: 12px 0 40px; max-width: 640px; }
+.section-desc { font-size: 16px; line-height: 1.6; color: #525252; margin: 12px 0 40px; max-width: 640px; }
 .people-inner { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
 
 /* ── RESEARCH NETWORK PAGE LEFT ALIGNMENT ─────── */
