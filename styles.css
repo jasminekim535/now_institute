@@ -405,12 +405,12 @@ ul { list-style: none; }
 
 /* ── RESEARCH NETWORK PAGE LEFT ALIGNMENT ─────── */
 .page-research-network .section-header { text-align: left; }
-.page-research-network .underline-bar { display: none; }
+.page-research-network .underline-bar { margin: 0; }
 
 /* ── RESEARCH STAFF PAGE LEFT ALIGNMENT ──────── */
 .page-research-staff .staff-block-header { align-items: flex-start; }
 .page-research-staff .staff-block-title { text-align: left; }
-.page-research-staff .underline-bar { display: none; }
+.page-research-staff .underline-bar { margin: 0; }
 .page-research-staff .staff-block-desc { text-align: left; margin: 0; max-width: none; }
 .page-research-staff .staff-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 0; max-width: none; padding: 0; }
 .page-research-staff .staff-card { width: auto; }
