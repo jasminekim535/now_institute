@@ -327,7 +327,7 @@ ul { list-style: none; }
 .project-section-text { font-size: 16px; line-height: 1.55; }
 .project-row { display: flex; gap: 40px; align-items: flex-start; }
 .project-row > * { min-width: 0; }
-.project-row img { display: block; object-fit: cover; height: auto; max-width: 55%; }
+.project-row img { display: block; object-fit: cover; height: auto; max-width: 100%; }
 
 /* ── RESEARCH PAGE ───────────────────────────── */
 .research-page { max-width: 1100px; margin: 0 auto; padding: 80px 48px 120px; display: flex; flex-direction: column; gap: 24px; }
@@ -454,7 +454,7 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 
   /* Project rows: allow images and divs to shrink proportionally */
   .project-row { gap: 24px; }
-  .project-row img { flex-shrink: 1 !important; max-width: 50% !important; height: auto !important; }
+  .project-row img { flex-shrink: 1 !important; height: auto !important; }
   .project-row > div { flex-shrink: 1 !important; }
   .project-row > h2 { flex-shrink: 1 !important; width: auto !important; }
 }
