@@ -44,6 +44,7 @@ ul { list-style: none; }
   background: white; border: 1px solid #e5e5e5;
   min-width: 220px; max-width: 240px; padding: 8px 0;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08); z-index: 300;
+  max-height: calc(100vh - 80px); overflow-y: auto;
 }
 .main-nav-item:hover .nav-dropdown { display: block; }
 .main-nav-item:last-child .nav-dropdown,
