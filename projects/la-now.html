@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L.A. Now – The Now Institute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .la-now-img-wrap { flex-shrink: 0; position: relative; overflow: hidden; }
+    .la-now-img-wrap img { position: absolute; top: 0; max-width: none; }
+    @media (max-width: 1100px) { .la-now-img-wrap { flex-shrink: 1; } }
+    @media (max-width: 900px) { .la-now-img-wrap { width: 100% !important; height: 300px !important; } }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html"><img class="header-logo" src="../images/white%20logo.png" alt="The Now Institute"></a>
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li class="main-nav-item"><a href="../about.html" class="main-nav-link">About</a><ul class="nav-dropdown"><li><a href="../about.html">Overview</a></li><li><a href="../research-network.html">Research Network</a></li><li><a href="../clientele.html">Clientele</a></li></ul></li>
+      <li class="main-nav-item"><a href="../people/thom-mayne.html" class="main-nav-link">People</a><ul class="nav-dropdown"><li><a href="../people/thom-mayne.html">Thom Mayne</a></li><li><a href="../people/eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="../people/research-staff.html">Research Staff</a></li></ul></li>
+      <li class="main-nav-item"><a href="haiti-now.html" class="main-nav-link active">Projects</a><ul class="nav-dropdown"><li><a href="haiti-now.html">Haiti Now</a></li><li><a href="culture-now.html">Culture Now</a></li><li><a href="new-orleans-now.html">New Orleans Now</a></li><li><a href="madrid-now.html">Madrid Now</a></li><li><a href="la-now.html" class="active">L.A. Now</a></li><li><a href="hsinta-ecological-powerplant.html">Hsinta Ecological Powerplant</a></li><li><a href="south-sea-pearl-artificial-island.html">South Sea Pearl Artificial Island</a></li><li><a href="art-by-wash.html">Art By WASH</a></li><li><a href="urban-hydroponics-south-la.html">Urban Hydroponics in South LA</a></li><li><a href="building-forward-regulatory-reform.html">Building Forward: Regulatory Reform</a></li></ul></li>
+      <li class="main-nav-item"><a href="../research/post-industrial-city.html" class="main-nav-link">Research</a><ul class="nav-dropdown"><li><a href="../research/post-industrial-city.html">Post-Industrial City</a></li><li><a href="../research/emerging-asia.html">Emerging Asia</a></li><li><a href="../research/informal-settlements.html">Informal Settlements / Post-Disaster Setting</a></li></ul></li>
+      <li class="main-nav-item"><a href="../contact.html" class="main-nav-link">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="menu-toggle" onclick="toggleNav()" aria-label="Open navigation">MENU</button>
+</header>
+
+<nav class="mega-nav" id="megaNav" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <div class="mega-nav-header">
+    <a href="../index.html" onclick="toggleNav()"><img class="logo" src="../images/white%20logo.png" alt="The Now Institute"></a>
+    <button class="close-btn" onclick="toggleNav()">&#x2715;</button>
+  </div>
+  <div class="mega-nav-links">
+    <div class="nav-col"><p class="nav-col-title"><a href="../about.html">About</a></p><ul><li><a href="../about.html">Overview</a></li><li><a href="../research-network.html">Research Network</a></li><li><a href="../clientele.html">Clientele</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../people/thom-mayne.html">People</a></p><ul><li><a href="../people/thom-mayne.html">Thom Mayne</a></li><li><a href="../people/eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="../people/research-staff.html">Research Staff</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="haiti-now.html">Projects</a></p><ul><li><a href="haiti-now.html">Haiti Now</a></li><li><a href="culture-now.html">Culture Now</a></li><li><a href="new-orleans-now.html">New Orleans Now</a></li><li><a href="madrid-now.html">Madrid Now</a></li><li><a href="la-now.html" class="active">L.A. Now</a></li><li><a href="hsinta-ecological-powerplant.html">Hsinta Ecological Powerplant</a></li><li><a href="south-sea-pearl-artificial-island.html">South Sea Pearl Artificial Island</a></li><li><a href="art-by-wash.html">Art By WASH</a></li><li><a href="urban-hydroponics-south-la.html">Urban Hydroponics in South LA</a></li><li><a href="building-forward-regulatory-reform.html">Building Forward: Regulatory Reform</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../research/post-industrial-city.html">Research</a></p><ul><li><a href="../research/post-industrial-city.html">Post-Industrial City</a></li><li><a href="../research/emerging-asia.html">Emerging Asia</a></li><li><a href="../research/informal-settlements.html">Informal Settlements / Post-Disaster Setting</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="../contact.html">Contact</a></p></div>
+  </div>
+</nav>
+
+<div class="project-page">
+  <div class="project-body">
+
+    <div class="project-section">
+      <div class="project-accent"></div>
+      <h1 class="project-title">L.A. Now</h1>
+      <p class="project-subtitle">What is a city? The experience, memory, parameters, systems and personality of Los Angeles are collapsed in 4 volumes of conceptual and graphic almanacs and research proposals.</p>
+      <img src="../images/la_now_model%201.png" alt="L.A. Now Model" style="width:100%;max-height:691px;object-fit:cover;object-position:center;">
+    </div>
+
+    <div class="project-section">
+      <div class="project-row" style="display:flex;gap:40px;align-items:flex-start;">
+        <div style="flex:1;display:flex;flex-direction:column;gap:24px;">
+          <h2 class="project-section-title">Volume 1</h2>
+          <p>In 2002, the L.A. Now series was launched as a collaboration between the NOW Institute, UCLA, and RAND to define Los Angeles as both a city and a system. The project combined data analysis with design research to explore how the city functions and how it might evolve.</p>
+          <p>Across four volumes developed over four years, L.A. Now translated large-scale urban data into visual and spatial analysis, examining the region's structure, challenges, and identity. The work received wide recognition and was awarded the Progressive Architecture Award in 2006.</p>
+          <p>Volume 1 presents a comprehensive visual atlas of Los Angeles at the start of the 21st century. It organizes complex urban data into four key categories: the city as a whole, its habitats, its people, and its economy. The result is a portrait of Los Angeles as fragmented, heterogeneous, and constantly evolving.</p>
+          <p>At the core of the study is a central challenge: Los Angeles continues to grow rapidly while its infrastructure remains under strain. With millions of additional residents projected, the city must rethink its planning strategies, particularly the role of downtown as both a symbolic and functional center that can reconnect its dispersed urban regions.</p>
+          <p>The project frames downtown Los Angeles as a potential "connective tissue" for the wider metropolis, where design, data, and urban planning converge to support future growth and integration.</p>
+        </div>
+        <div class="la-now-img-wrap" style="width:432px;height:612px;">
+          <img src="../images/la-now-1-cover%201.png" alt="L.A. Now Volume 1 Cover" style="width:100%;height:100%;object-fit:cover;object-position:center;left:0;">
+        </div>
+      </div>
+    </div>
+
+    <div class="project-vol2-box">
+      <div style="display:flex;flex-direction:column;gap:24px;color:white;max-width:1117px;">
+        <h2 style="font-size:30px;font-weight:500;margin:0;">Volume 2</h2>
+        <p style="font-size:20px;line-height:1.6;margin:0;">From the research and analysis compiled in the first step, LA Now Volume 2 was a proposal for interpretive strategies that would accommodate the city's fragmentation, heterogeneity, emergent orders and non-linearity. The resulting projects have optimistic and ambitious aspirations, but they are not utopian in ideology. Operating with found logics, they engage tactics that promote fluidity, flexibility, and interaction of economic, social, and financial forces.</p>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2 class="project-section-title">Volume 3+4</h2>
+      <div class="project-row" style="display:flex;gap:40px;align-items:flex-start;">
+        <div style="flex:1;display:flex;flex-direction:column;gap:18px;">
+          <p>The research and speculations from Volume 1 &amp; 2 were expanded in <strong>LA Now Volume 3+4</strong> with a deliberate focus on revitalizing the Arts District, Little Tokyo and the LA River in downtown Los Angeles. As the last of the series, this volume continues explorations on Los Angeles' future, focusing on the Chavez Ravine. Centrally located and gifted with commanding high view of the city, the project proposes the relocation of Dodger Stadium to downtown and the infusion of a 30,000 resident community on the site that integrates and expands Elysian Park's potential.</p>
+          <p><strong>L.A. Now: Volume 3</strong> develops a set of housing proposals grounded in research and analysis, focused on introducing residential density into the downtown Los Angeles core.</p>
+          <p>The site is located in the Arts District, bounded by the 101 Freeway, the Los Angeles River, Alameda Street, and 4th Street. It sits at a key threshold between downtown Los Angeles and East Los Angeles, acting as a mediator between two distinct urban conditions.</p>
+          <p>In response to growing population pressure and increasing demand for central housing, the volume examines the feasibility of expanding residential development to the edges of the downtown core. The proposals leverage the site's proximity to culturally active neighborhoods, including the Southern California Institute of Architecture and planned transit expansion through the Gold Line connection from Pasadena.</p>
+          <p>Although the Arts District currently has a fragmented and underdefined identity, the research positions it as a strategic opportunity for transformation—capable of evolving into a major residential and cultural anchor within downtown Los Angeles.</p>
+        </div>
+        <div class="la-now-img-wrap" style="width:424px;height:570px;">
+          <img src="../images/la-now-3-cover%201.png" alt="L.A. Now Volume 3 Cover" style="width:100%;height:100%;object-fit:cover;object-position:center;left:0;">
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:18px;">
+        <p><strong>L.A. Now: Volume 4</strong> continues the series' speculation on the future of Los Angeles, extending the conceptual framework developed in the earlier volumes while shifting focus to Chavez Ravine as a new geographic and cultural node within the metropolitan region.</p>
+        <p>The volume proposes the relocation of Los Angeles Dodgers Stadium to downtown Los Angeles, alongside the development of a new residential district within Elysian Park. This dual proposal repositions Chavez Ravine as a site of both infrastructure and housing, reactivating its historical identity as a former residential landscape.</p>
+        <p>The project explores how high-intensity programs such as a stadium interact with surrounding urban systems, particularly in terms of density, access, and land use. It reframes the relationship between program and site as a productive tension that can generate new forms of urban structure.</p>
+        <p>At its core, Volume 4 investigates how infrastructure—ecological, cultural, and transportation networks—can be integrated into large-scale housing and stadium development. The result is a speculative model for layering nature, public space, and urban density within a single continuous system.</p>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h2 class="project-section-title">Volume 5</h2>
+      <p>In 2013, UCLA launched its first Grand Challenge: transforming Los Angeles into the world's first sustainable megacity. The goal — 100% renewable energy, 100% local water, and enhanced ecosystem health by 2050 — was built around a simple premise: LA must change or suffer the consequences of its own growth.</p>
+      <p>By 2050, LA County will have 1.5 million additional residents and two to three times as many extreme heat days. Already the smoggiest large city in America as of 2015, pollution-related deaths in the county run at roughly double the rate of vehicle fatalities. Without intervention, an additional one million vehicles will be on the road by 2050, generating emissions equivalent to four coal-burning power plants.</p>
+      <p>The research identified strategies across four systems:</p>
+      <p><strong>(1) Energy &amp; Transportation:</strong> Electrifying all vehicles in LA County by 2050 could reduce transportation energy demand by 80%. Researchers are also developing low-carbon biofuels as a complement to electrification. Crucially, transit ridership alone — even if every new resident used it — would reduce energy demand by only 10%, underscoring the need for broader electrification.</p>
+      <p><strong>(2) Buildings:</strong> Without action, building-related emissions in 2050 would equal the output of ten coal-burning power plants. A 30% improvement in building energy efficiency would cut demand by 25%; solar panels on every compatible rooftop would add 25% to the energy supply; and solar thermal generation on less than 1% of the region's land could meet 100% of LA County's energy needs.</p>
+      <p><strong>(3) Local Water:</strong> LA currently depends on imported water from distant, expensive sources. Per capita consumption of 139 gallons per day, multiplied by projected population growth, will require an additional 75 billion gallons per year by 2050. Five strategies address the gap: reducing indoor residential use by 25%, shifting to native landscaping, capturing local rainfall (sufficient to meet twice LA's 2050 needs), recycling water back into the local supply, and restoring groundwater quality to make currently unusable sources available.</p>
+      <p><strong>(4) Ecosystem Health:</strong> California's floristic province is one of only 35 biodiversity hotspots in the world, yet much of it remains unprotected and under development pressure. The strategies: protect all non-urbanized land by doubling the county's protected natural landscape, and ensure every Angeleno lives within a quarter-mile of a park by building 2.5 times the number of parks that exist today.</p>
+    </div>
+
+    <div class="project-section" style="padding-top:0;">
+      <img src="../images/NOW_GrandChallenges%201.png" alt="NOW Grand Challenges" style="width:100%;max-height:632px;object-fit:cover;object-position:center;">
+    </div>
+
+    <div class="project-section">
+      <h2 class="project-section-title">Volume 6</h2>
+      <p>LA can absorb its projected 1.5 million new residents by densifying less than 1% of its land — preserving the other 99% entirely. Volume 6 tests this thesis through a detailed study of the Wilshire Corridor.</p>
+      <p>The study analyzes three urban growth scenarios, with its central demonstration proposing that concentrating new density along Wilshire at a level comparable to Manhattan would accommodate the full population increase while leaving the vast majority of LA County unchanged. The Now Institute's proposal pairs this densification with an extension of the Purple Metro line, creating a high-density, transit-connected urban community along one of the city's most storied boulevards.</p>
+      <p>Connecting three cities and thirteen neighborhoods, Wilshire is a microcosm of LA's cultural, economic, and physical diversity — an ideal laboratory for studying the relationship between density, demographics, transit access, and resource distribution. The corridor is benchmarked against comparable streets in global cities, including Barcelona's Avinguda Diagonal and New York's Broadway, drawing on real-world responses to growth that offer more sustainable models for Los Angeles.</p>
+      <p>The findings are compiled in a working publication: <em>99% Preservation, 1% Densification: A Case for 2050 Sustainability Through a Denser, More Connected Los Angeles.</em></p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img class="footer-logo" src="../images/b48ff48b-4b5d-402b-81db-7ae0b9ae3f49.png" alt="The Now Institute">
+      <div class="footer-links">
+        <div class="footer-col"><p><a href="../about.html">About</a></p><p><a href="../people/thom-mayne.html">People</a></p><p><a href="haiti-now.html">Projects</a></p><p><a href="../research/post-industrial-city.html">Research</a></p></div>
+        <div class="footer-col"><p><a href="../contact.html">Contact</a></p><a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a><p>+1 (424) 258-6209</p><p>3440 Wesley Street<br>Culver City, CA 90232</p></div>
+      </div>
+    </div>
+    <p class="footer-copyright">Copyright &copy; 2016 <a href="https://www.thenowinstitute.org/" target="_blank" rel="noopener">The Now Institute</a></p>
+  </div>
+</footer>
+
+<script>
+  function toggleNav(){const n=document.getElementById('megaNav');const o=n.classList.toggle('open');document.body.style.overflow=o?'hidden':'';}
+  document.getElementById('megaNav').addEventListener('keydown',e=>{if(e.key==='Escape')toggleNav();});
+</script>
+</body>
+</html>

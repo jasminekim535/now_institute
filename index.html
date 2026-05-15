@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Now Institute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-home">
+
+<header class="site-header">
+  <a href="index.html"><img class="header-logo" src="images/white%20logo.png" alt="The Now Institute"></a>
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li class="main-nav-item"><a href="about.html" class="main-nav-link">About</a><ul class="nav-dropdown"><li><a href="about.html">Overview</a></li><li><a href="research-network.html">Research Network</a></li><li><a href="clientele.html">Clientele</a></li></ul></li>
+      <li class="main-nav-item"><a href="people/thom-mayne.html" class="main-nav-link">People</a><ul class="nav-dropdown"><li><a href="people/thom-mayne.html">Thom Mayne</a></li><li><a href="people/eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="people/research-staff.html">Research Staff</a></li></ul></li>
+      <li class="main-nav-item"><a href="projects/haiti-now.html" class="main-nav-link">Projects</a><ul class="nav-dropdown"><li><a href="projects/haiti-now.html">Haiti Now</a></li><li><a href="projects/culture-now.html">Culture Now</a></li><li><a href="projects/new-orleans-now.html">New Orleans Now</a></li><li><a href="projects/madrid-now.html">Madrid Now</a></li><li><a href="projects/la-now.html">L.A. Now</a></li><li><a href="projects/hsinta-ecological-powerplant.html">Hsinta Ecological Powerplant</a></li><li><a href="projects/south-sea-pearl-artificial-island.html">South Sea Pearl Artificial Island</a></li><li><a href="projects/art-by-wash.html">Art By WASH</a></li><li><a href="projects/urban-hydroponics-south-la.html">Urban Hydroponics in South LA</a></li><li><a href="projects/building-forward-regulatory-reform.html">Building Forward: Regulatory Reform</a></li></ul></li>
+      <li class="main-nav-item"><a href="research/post-industrial-city.html" class="main-nav-link">Research</a><ul class="nav-dropdown"><li><a href="research/post-industrial-city.html">Post-Industrial City</a></li><li><a href="research/emerging-asia.html">Emerging Asia</a></li><li><a href="research/informal-settlements.html">Informal Settlements / Post-Disaster Setting</a></li></ul></li>
+      <li class="main-nav-item"><a href="contact.html" class="main-nav-link">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="menu-toggle" onclick="toggleNav()" aria-label="Open navigation">MENU</button>
+</header>
+
+<nav class="mega-nav" id="megaNav" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <div class="mega-nav-header">
+    <a href="index.html" onclick="toggleNav()"><img class="logo" src="images/white%20logo.png" alt="The Now Institute"></a>
+    <button class="close-btn" onclick="toggleNav()" aria-label="Close">&#x2715;</button>
+  </div>
+  <div class="mega-nav-links">
+    <div class="nav-col">
+      <p class="nav-col-title"><a href="about.html">About</a></p>
+      <ul>
+        <li><a href="about.html">Overview</a></li>
+        <li><a href="research-network.html">Research Network</a></li>
+        <li><a href="clientele.html">Clientele</a></li>
+      </ul>
+    </div>
+    <div class="nav-col">
+      <p class="nav-col-title"><a href="people/thom-mayne.html">People</a></p>
+      <ul>
+        <li><a href="people/thom-mayne.html">Thom Mayne</a></li>
+        <li><a href="people/eui-sung-yi.html">Eui-Sung Yi</a></li>
+        <li><a href="people/research-staff.html">Research Staff</a></li>
+      </ul>
+    </div>
+    <div class="nav-col">
+      <p class="nav-col-title"><a href="projects/haiti-now.html">Projects</a></p>
+      <ul>
+        <li><a href="projects/haiti-now.html">Haiti Now</a></li>
+        <li><a href="projects/culture-now.html">Culture Now</a></li>
+        <li><a href="projects/new-orleans-now.html">New Orleans Now</a></li>
+        <li><a href="projects/madrid-now.html">Madrid Now</a></li>
+        <li><a href="projects/la-now.html">L.A. Now</a></li><li><a href="projects/hsinta-ecological-powerplant.html">Hsinta Ecological Powerplant</a></li><li><a href="projects/south-sea-pearl-artificial-island.html">South Sea Pearl Artificial Island</a></li><li><a href="projects/art-by-wash.html">Art By WASH</a></li><li><a href="projects/urban-hydroponics-south-la.html">Urban Hydroponics in South LA</a></li><li><a href="projects/building-forward-regulatory-reform.html">Building Forward: Regulatory Reform</a></li>
+      </ul>
+    </div>
+    <div class="nav-col">
+      <p class="nav-col-title"><a href="research/post-industrial-city.html">Research</a></p>
+      <ul>
+        <li><a href="research/post-industrial-city.html">Post-Industrial City</a></li>
+        <li><a href="research/emerging-asia.html">Emerging Asia</a></li>
+        <li><a href="research/informal-settlements.html">Informal Settlements / Post-Disaster Setting</a></li>
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+    <div class="nav-col">
+      <p class="nav-col-title"><a href="contact.html">Contact</a></p>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO + ABOUT BAND (combined — image extends behind dark band) -->
+<section class="hero">
+  <img class="hero-bg" src="images/large%20aerial.jpg" alt="Aerial city view">
+  <div class="hero-logo-wrap">
+    <img class="hero-logo" src="images/b48ff48b-4b5d-402b-81db-7ae0b9ae3f49.png" alt="NOW">
+  </div>
+  <div class="hero-about">
+    <div class="hero-about-inner">
+      <div class="hero-about-text">
+        <p class="hero-about-intro">The NOW Institute is the urban research wing at Morphosis Architects located in Culver City, CA.</p>
+        <p class="hero-about-body">We are dedicated to understanding and improving urban environments through sustainable solutions across the globe. From Port-au-Prince, Cap Haitiën, New Orleans, Madrid, Beijing to Los Angeles, we work with urban communities and institutions to produce interdisciplinary strategies.</p>
+      </div>
+      <a href="about.html" class="btn-outline btn-outline-white hero-btn">learn more</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section">
+  <div class="section-header">
+    <h2>Projects</h2>
+    <div class="underline-bar"></div>
+  </div>
+  <p class="section-desc">Our projects synthesize research to identify opportunities for physical planning interventions in cities around the world.</p>
+  <div class="photo-grid">
+    <div class="photo-row row-1">
+      <a href="projects/haiti-now.html" class="photo-cell photo-cell-linked">
+        <img src="images/haitinow_cover.jpg" alt="Haiti Now">
+        <div class="photo-overlay"></div>
+        <span class="photo-label">Haiti Now</span>
+      </a>
+      <a href="projects/culture-now.html" class="photo-cell photo-cell-linked">
+        <img src="images/Culture+Now+Project+book+spreads_Page_001.webp" alt="Culture Now">
+        <div class="photo-overlay"></div>
+        <span class="photo-label">Culture Now</span>
+      </a>
+      <a href="projects/new-orleans-now.html" class="photo-cell photo-cell-linked">
+        <img src="images/katrina-new-orleans-flooding3-2005.jpg" alt="New Orleans Now">
+        <div class="photo-overlay"></div>
+        <span class="photo-label">New Orleans Now</span>
+      </a>
+    </div>
+    <div class="photo-row row-2">
+      <a href="projects/madrid-now.html" class="photo-cell photo-cell-linked">
+        <div style="position:absolute;inset:0;overflow:hidden;">
+          <img src="images/madrid-now-cover_future8-9.jpg" alt="Madrid Now" style="position:absolute;width:170.74%;height:311.47%;left:-32.88%;top:-9.9%;">
+        </div>
+        <div class="photo-overlay"></div>
+        <span class="photo-label">Madrid Now</span>
+      </a>
+      <a href="projects/la-now.html" class="photo-cell photo-cell-linked">
+        <div style="position:absolute;inset:0;overflow:hidden;">
+          <img src="images/LA_Skyline_Mountains2.webp" alt="L.A. Now" style="position:absolute;width:175.1%;height:319.43%;left:-35.76%;top:-200.68%;">
+        </div>
+        <div class="photo-overlay"></div>
+        <span class="photo-label">L.A. Now</span>
+      </a>
+    </div>
+    <div class="photo-row row-3">
+      <a href="projects/hsinta-ecological-powerplant.html" class="photo-cell photo-cell-linked">
+        <img src="images/haikou+2.webp" alt="Hsinta Ecological Powerplant">
+        <div class="photo-overlay"></div>
+        <span class="photo-label">Hsinta Ecological Powerplant</span>
+      </a>
+      <a href="projects/south-sea-pearl-artificial-island.html" class="photo-cell photo-cell-linked">
+        <img src="images/mad-05phmod21-3008x1960%201.png" alt="South Sea Pearl Artificial Island">
+        <div class="photo-overlay"></div>
+        <span class="photo-label">South Sea Pearl Artificial Island</span>
+      </a>
+      <a href="projects/art-by-wash.html" class="photo-cell photo-cell-linked">
+        <img src="images/A06_revised.webp" alt="Art By WASH">
+        <div class="photo-overlay"></div>
+        <span class="photo-label">Art By WASH</span>
+      </a>
+    </div>
+    <div class="photo-row row-3">
+      <a href="projects/urban-hydroponics-south-la.html" class="photo-cell photo-cell-linked">
+        <img src="images/2+entry_this.webp" alt="Urban Hydroponics in South LA">
+        <div class="photo-overlay"></div>
+        <span class="photo-label">Urban Hydroponics in South LA</span>
+      </a>
+      <a href="projects/building-forward-regulatory-reform.html" class="photo-cell photo-cell-linked">
+        <img src="images/downtown-1+skyline+2%20(1).webp" alt="Building Forward: Regulatory Reform">
+        <div class="photo-overlay"></div>
+        <span class="photo-label">Building Forward: Regulatory Reform</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section class="people-section">
+  <div class="people-inner">
+    <div class="people-content-wrap">
+    <div class="section-header">
+      <h2>People</h2>
+      <div class="underline-bar"></div>
+    </div>
+    <p class="people-desc">Our team, led by Pritzker Prize-winner Thom Mayne and Eui-Sung Yi, comprises advocates and thinkers from different fields and backgrounds.</p>
+    <div class="people-grid">
+      <a href="people/thom-mayne.html" class="person-card">
+        <img src="images/2020_Thom-Mayne_Portrait_Credit-Michael-Powers.jpg" alt="Thom Mayne">
+        <div class="person-info">
+          <div class="person-bar"></div>
+          <div class="person-text"><p>Thom Mayne</p><p>Founding Executive Director</p></div>
+        </div>
+      </a>
+      <a href="people/eui-sung-yi.html" class="person-card">
+        <img src="images/Eui-Sung-Yi_sq.webp" alt="Eui-Sung Yi">
+        <div class="person-info">
+          <div class="person-bar"></div>
+          <div class="person-text"><p>Eui-Sung Yi</p><p>Director</p></div>
+        </div>
+      </a>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="research-cards-section">
+  <div class="section-header">
+    <h2>Research</h2>
+    <div class="underline-bar"></div>
+  </div>
+  <p class="section-desc">Explore our research-driven studies—from post-industrial cities to informal settlements and ecological design systems.</p>
+  <div class="research-cards-grid">
+    <a href="research/post-industrial-city.html" class="photo-cell photo-cell-linked research-card">
+      <img src="images/flint_03_02%201.png" alt="The Post-Industrial City">
+      <div class="photo-overlay"></div>
+      <span class="photo-label research-card-label">The Post-Industrial City</span>
+    </a>
+    <a href="research/emerging-asia.html" class="photo-cell photo-cell-linked research-card">
+      <img src="images/%EB%8D%95%EC%88%98%EA%B6%81-1z-2%201.png" alt="Emerging Asia">
+      <div class="photo-overlay"></div>
+      <span class="photo-label research-card-label">Emerging Asia</span>
+    </a>
+    <a href="research/informal-settlements.html" class="photo-cell photo-cell-linked research-card">
+      <img src="images/haiti_0938_21%201.png" alt="Informal Settlements / Post-Disaster Settings">
+      <div class="photo-overlay"></div>
+      <span class="photo-label research-card-label">Informal Settlements / Post-Disaster Settings</span>
+    </a>
+  </div>
+</section>
+
+<!-- RESEARCH NETWORK -->
+<section class="uni-section">
+  <div class="section-header">
+    <h2>Research Network</h2>
+    <div class="underline-bar"></div>
+  </div>
+  <p class="section-desc">Supported by 13 schools of architecture across the country.</p>
+  <div class="uni-grid">
+    <div class="uni-card"><img src="images/Rectangle%205.png" alt="Columbia"><div class="uni-overlay"></div><div class="uni-label">Columbia</div></div>
+    <div class="uni-card"><img src="images/Rectangle%208.png" alt="Cornell"><div class="uni-overlay"></div><div class="uni-label">Cornell</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2010.png" alt="Harvard GSD"><div class="uni-overlay"></div><div class="uni-label">Harvard GSD</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2011.png" alt="University of Kentucky"><div class="uni-overlay"></div><div class="uni-label">University of Kentucky</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2012.png" alt="University of Pennsylvania"><div class="uni-overlay"></div><div class="uni-label">University of Pennsylvania</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2013.png" alt="Pratt"><div class="uni-overlay"></div><div class="uni-label">Pratt</div></div>
+  </div>
+  <div class="see-more-wrap"><a href="research-network.html" class="btn-outline">see more</a></div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img class="footer-logo" src="images/b48ff48b-4b5d-402b-81db-7ae0b9ae3f49.png" alt="The Now Institute">
+      <div class="footer-links">
+        <div class="footer-col">
+          <p><a href="about.html">About</a></p>
+          <p><a href="people/thom-mayne.html">People</a></p>
+          <p><a href="projects/haiti-now.html">Projects</a></p>
+          <p><a href="research/post-industrial-city.html">Research</a></p>
+        </div>
+        <div class="footer-col">
+          <p><a href="contact.html">Contact</a></p>
+          <a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a>
+          <p>+1 (424) 258-6209</p>
+          <p>3440 Wesley Street<br>Culver City, CA 90232</p>
+        </div>
+      </div>
+    </div>
+    <p class="footer-copyright">Copyright &copy; 2016 <a href="https://www.thenowinstitute.org/" target="_blank" rel="noopener">The Now Institute</a></p>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    const nav = document.getElementById('megaNav');
+    const isOpen = nav.classList.toggle('open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+  document.getElementById('megaNav').addEventListener('keydown', e => { if (e.key === 'Escape') toggleNav(); });
+
+  const heroAbout = document.querySelector('.hero-about');
+  let heroRevealed = false;
+  window.addEventListener('scroll', function() {
+    if (!heroRevealed && window.scrollY > 60) {
+      heroAbout.classList.add('visible');
+      heroRevealed = true;
+    }
+  }, { passive: true });
+</script>
+</body>
+</html>
