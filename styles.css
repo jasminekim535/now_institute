@@ -193,7 +193,7 @@ ul { list-style: none; }
 /* ── PEOPLE (LANDING) ────────────────────────── */
 .research-cards-section { max-width: 1440px; margin: 120px auto 0; padding: 0 48px; }
 .research-cards-section .section-header { margin-bottom: 48px; }
-.research-cards-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.research-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .research-card { height: 220px; }
 .research-card-label { font-size: 15px; font-weight: 500; padding: 0 16px; line-height: 1.3; }
 
