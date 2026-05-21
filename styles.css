@@ -305,7 +305,7 @@ ul { list-style: none; }
 }
 .staff-name { font-size: 18px; font-weight: 400; color: black; }
 .staff-role { font-size: 15px; color: #525252; }
-.researcher-name { font-size: 18px; font-weight: 400; color: black; text-align: center; }
+.researcher-name { font-size: 18px; font-weight: 400; color: black; text-align: left; }
 
 /* ── PROJECT PAGE ────────────────────────────── */
 .project-page { max-width: 1440px; margin: 0 auto; }
