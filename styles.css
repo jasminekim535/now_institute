@@ -396,10 +396,16 @@ ul { list-style: none; }
 .page-home .people-section .underline-bar { margin: 0; }
 .page-home .hero-about-inner { text-align: left; align-items: flex-start; }
 
+/* ── HOME PAGE SPACING ───────────────────────── */
+.page-home .projects-section,
+.page-home .research-cards-section,
+.page-home .uni-section { margin-top: 96px; }
+.page-home .section-desc { margin-bottom: 48px; }
+
 /* ── HOME PAGE PEOPLE BAND ───────────────────── */
 .page-home .people-section {
   max-width: none;
-  margin-top: 120px;
+  margin-top: 96px;
   padding: 80px 0 120px;
   background: black;
 }
