@@ -395,6 +395,7 @@ ul { list-style: none; }
 .page-home .people-section .section-header { text-align: left; }
 .page-home .people-section .underline-bar { margin: 0; }
 .page-home .hero-about-inner { text-align: left; align-items: flex-start; }
+.page-home .people-desc { max-width: 520px; }
 
 /* ── HOME PAGE SPACING ───────────────────────── */
 .page-home .projects-section,
