@@ -311,7 +311,7 @@ ul { list-style: none; }
 .project-page { max-width: 1440px; margin: 0 auto; }
 .project-header { max-width: 875px; margin: 0 auto; padding: 87px 48px 40px; display: flex; flex-direction: column; gap: 40px; }
 .project-header-inner { display: flex; flex-direction: column; gap: 24px; }
-.project-accent { width: 40px; height: 3px; background: black; }
+.project-accent { display: none; }
 .project-title { font-size: 34px; font-weight: 700; }
 .project-subtitle { font-size: 15px; color: #525252; font-style: italic; line-height: 1.5; }
 .project-intro { font-size: 16px; line-height: 1.45; }
