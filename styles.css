@@ -165,7 +165,7 @@ ul { list-style: none; }
 /* ── SECTION HEADER ──────────────────────────── */
 .section-header { text-align: center; margin-bottom: 48px; }
 .section-header h2 { font-size: 34px; font-weight: 700; margin-bottom: 16px; }
-.underline-bar { width: 60px; height: 3px; background: black; margin: 0 auto; }
+.underline-bar { display: none; }
 .underline-bar-sm { width: 48px; height: 3px; background: white; }
 
 /* ── UNIVERSITY GRID ─────────────────────────── */
