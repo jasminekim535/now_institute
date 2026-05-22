@@ -392,8 +392,8 @@ ul { list-style: none; }
 .advisory-card-role { font-size: 14px; color: #525252; line-height: 1.4; }
 
 /* ── PARTNERS & ADVISORS PAGE ────────────────── */
-.pa-section-title { font-size: 34px; font-weight: 700; margin: 0 0 32px; }
-.pa-partner-logos { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; }
+.pa-section-title { font-size: 34px; font-weight: 700; margin: 0 0 32px; text-align: center; }
+.pa-partner-logos { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center; }
 .pa-partner-logo { flex: 1 1 100px; max-width: 160px; display: flex; align-items: center; }
 .pa-partner-logo img { width: 100%; height: auto; max-height: 70px; object-fit: contain; display: block; }
 .pa-support-text { display: flex; flex-direction: column; gap: 20px; font-size: 15px; line-height: 1.7; }
@@ -473,6 +473,7 @@ ul { list-style: none; }
 .page-research-staff .staff-card { width: auto; }
 .page-research-staff .staff-section:last-of-type { padding-bottom: 120px; }
 .page-research-staff footer { margin-top: 0; }
+.page-partners-advisors footer { margin-top: 0; }
 
 footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-top: 120px; }
 .footer-inner { max-width: 1440px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 40px; }
