@@ -392,23 +392,27 @@ ul { list-style: none; }
 .advisory-card-role { font-size: 14px; color: #525252; line-height: 1.4; }
 
 /* ── PARTNERS & ADVISORS PAGE ────────────────── */
-.pa-page { max-width: 1440px; margin: 0 auto; padding: 60px 48px 120px; display: flex; flex-direction: column; gap: 80px; }
-.pa-section-title { font-size: 34px; font-weight: 700; margin: 0 0 40px; }
+.pa-section-title { font-size: 34px; font-weight: 700; margin: 0 0 32px; }
 .pa-partner-logos { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; }
-.pa-partner-logo { flex: 1 1 120px; max-width: 180px; display: flex; align-items: center; justify-content: center; }
-.pa-partner-logo img { width: 100%; height: auto; max-height: 80px; object-fit: contain; display: block; }
-.pa-support-text { font-size: 15px; line-height: 1.8; color: #1a1a1a; display: flex; flex-direction: column; gap: 12px; }
+.pa-partner-logo { flex: 1 1 100px; max-width: 160px; display: flex; align-items: center; }
+.pa-partner-logo img { width: 100%; height: auto; max-height: 70px; object-fit: contain; display: block; }
+.pa-support-text { display: flex; flex-direction: column; gap: 20px; font-size: 15px; line-height: 1.7; }
+.pa-support-text p { margin: 0; }
+.pa-support-text ul { margin: 8px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.pa-support-text li { line-height: 1.6; }
 .pa-support-text a { color: black; }
-.pa-board-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
-.pa-board-card { border: 2px solid #e5e5e5; display: flex; flex-direction: column; align-items: center; padding: 40px 24px; gap: 24px; }
-.pa-board-photo { width: 200px; height: 200px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+.pa-board-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.pa-board-card { border: 2px solid #e5e5e5; background: white; display: flex; flex-direction: row; gap: 20px; align-items: flex-start; padding: 24px; }
+.pa-board-photo { width: 90px; height: 90px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
 .pa-board-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.pa-board-info { display: flex; flex-direction: column; gap: 10px; align-items: center; text-align: center; }
-.pa-board-name { font-size: 22px; font-weight: 500; color: black; }
-.pa-board-role { font-size: 15px; color: #525252; line-height: 1.5; }
-.pa-advisors-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
-.pa-advisor-cell { border: 2px solid #e5e5e5; display: flex; align-items: center; justify-content: center; padding: 24px 12px; min-height: 90px; }
-.pa-advisor-cell p { font-size: 15px; font-weight: 400; color: black; text-align: center; line-height: 1.4; margin: 0; }
+.pa-board-info { display: flex; flex-direction: column; gap: 6px; }
+.pa-board-name { font-size: 18px; font-weight: 500; color: black; margin: 0; }
+.pa-board-role { font-size: 14px; color: #525252; line-height: 1.5; margin: 0; }
+.page-partners-advisors .staff-section:first-child { margin-top: 80px; }
+.page-partners-advisors .staff-section:last-child { padding-bottom: 120px; }
+.page-partners-advisors .staff-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; justify-items: stretch; max-width: none; margin: 0; padding: 0; }
+.page-partners-advisors .staff-card { width: auto; height: auto; min-height: 80px; text-align: left; align-items: flex-start; padding: 16px 20px; }
+.page-partners-advisors .staff-name { font-size: 15px; }
 
 /* ── PAGE HEADER (inner pages) ───────────────── */
 .page-hero { background: #fafafa; padding: 64px 48px; text-align: center; }
@@ -592,12 +596,11 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 
 /* Mobile (≤ 600px) */
 @media (max-width: 768px) {
-  .pa-page { padding: 40px 24px 80px; gap: 60px; }
   .pa-board-grid { grid-template-columns: 1fr; }
-  .pa-advisors-grid { grid-template-columns: repeat(2, 1fr); }
+  .page-partners-advisors .staff-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 480px) {
-  .pa-advisors-grid { grid-template-columns: 1fr; }
+  .page-partners-advisors .staff-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
