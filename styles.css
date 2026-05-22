@@ -362,7 +362,8 @@ ul { list-style: none; }
 .pub-page { max-width: 1440px; margin: 0 auto; padding: 60px 48px 120px; display: flex; flex-direction: column; gap: 32px; }
 .pub-page .pub-title { font-size: 34px; font-weight: 700; margin: 0; }
 .pub-img-full { width: 100%; max-height: 580px; object-fit: cover; object-position: center; display: block; }
-.pub-body { display: flex; flex-direction: column; gap: 20px; }
+.pub-body { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+.pub-split-body .btn-outline { align-self: flex-start; }
 .pub-body p, .pub-split-body p { font-size: 15px; line-height: 1.7; margin: 0; }
 .pub-split { display: flex; gap: 48px; align-items: flex-start; }
 .pub-split-img { flex: 0 0 44%; max-width: 44%; }
