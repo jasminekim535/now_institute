@@ -407,8 +407,6 @@ ul { list-style: none; }
 .pa-board-name { font-size: 16px; font-weight: 500; color: black; margin: 0; }
 .pa-board-role { font-size: 13px; color: #525252; line-height: 1.5; margin: 0; }
 .pa-advisors-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
-.page-partners-advisors .staff-section:first-child { margin-top: 80px; }
-.page-partners-advisors .staff-section:last-child { padding-bottom: 120px; }
 
 /* ── PAGE HEADER (inner pages) ───────────────── */
 .page-hero { background: #fafafa; padding: 64px 48px; text-align: center; }
