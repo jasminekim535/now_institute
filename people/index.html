@@ -8,21 +8,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
   <style>
-    .people-overview { max-width: 1100px; margin: 0 auto; padding: 80px 48px; }
-    .people-overview .section-header { margin-bottom: 12px; text-align: left; }
-    .people-overview .section-desc { margin-bottom: 48px; max-width: 520px; }
-    .people-overview-grid { display: flex; gap: 24px; flex-wrap: wrap; }
-    .people-overview-grid .person-card { width: 340px; height: 460px; }
-    @media (max-width: 768px) {
-      .people-overview { padding: 48px 24px; }
-      .people-overview-grid .person-card { width: 100%; max-width: 495px; height: 400px; }
+    .page-people .people-section {
+      max-width: none;
+      margin-top: 0;
+      padding: 80px 0 120px;
+      background: black;
+    }
+    .page-people .people-section .section-header { text-align: left; }
+    .page-people .people-section .section-header h2 { color: white; }
+    .page-people .people-content-wrap { width: fit-content; margin: 0 auto; }
+    .page-people .people-grid { justify-content: flex-start; }
+    .page-people .staff-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .page-people .staff-card { width: auto; }
+    @media (max-width: 900px) {
+      .page-people .staff-grid { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 480px) {
-      .people-overview { padding: 40px 16px; }
+      .page-people .people-section { padding: 60px 0 80px; }
+      .page-people .staff-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
-<body>
+<body class="page-people">
 
 <header class="site-header">
   <a href="../index.html"><img class="header-logo" src="../images/b48ff48b-4b5d-402b-81db-7ae0b9ae3f49.png" alt="The Now Institute"></a>
@@ -52,28 +59,32 @@
   </div>
 </nav>
 
-<div class="people-overview">
-  <div class="section-header">
-    <h2>People</h2>
-  </div>
-  <p class="section-desc">Our team, led by Pritzker Prize-winner Thom Mayne and Eui-Sung Yi, comprises advocates and thinkers from different fields and backgrounds.</p>
-  <div class="people-overview-grid">
-    <a href="thom-mayne.html" class="person-card">
-      <img src="../images/2020_Thom-Mayne_Portrait_Credit-Michael-Powers.jpg" alt="Thom Mayne">
-      <div class="person-info">
-        <div class="person-bar"></div>
-        <div class="person-text"><p>Thom Mayne</p><p>Founding Executive Director</p></div>
+<section class="people-section">
+  <div class="people-inner">
+    <div class="people-content-wrap">
+      <div class="section-header">
+        <h2>People</h2>
       </div>
-    </a>
-    <a href="eui-sung-yi.html" class="person-card">
-      <img src="../images/ESY_IMG_3469_MP.JPG" alt="Eui-Sung Yi">
-      <div class="person-info">
-        <div class="person-bar"></div>
-        <div class="person-text"><p>Eui-Sung Yi</p><p>Director</p></div>
+      <p class="people-desc">Our team, led by Pritzker Prize-winner Thom Mayne and Eui-Sung Yi, comprises advocates and thinkers from different fields and backgrounds.</p>
+      <div class="people-grid">
+        <a href="thom-mayne.html" class="person-card">
+          <img src="../images/2020_Thom-Mayne_Portrait_Credit-Michael-Powers.jpg" alt="Thom Mayne">
+          <div class="person-info">
+            <div class="person-bar"></div>
+            <div class="person-text"><p>Thom Mayne</p><p>Founding Executive Director</p></div>
+          </div>
+        </a>
+        <a href="eui-sung-yi.html" class="person-card">
+          <img src="../images/ESY_IMG_3469_MP.JPG" alt="Eui-Sung Yi">
+          <div class="person-info">
+            <div class="person-bar"></div>
+            <div class="person-text"><p>Eui-Sung Yi</p><p>Director</p></div>
+          </div>
+        </a>
       </div>
-    </a>
+    </div>
   </div>
-</div>
+</section>
 
 <div class="staff-section">
   <div class="staff-inner">
