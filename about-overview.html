@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clientele – The Now Institute</title>
+  <title>About – The Now Institute</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .clientele-page { max-width: 1440px; margin: 0 auto; padding: 80px 48px; }
-    .clientele-content { display: flex; flex-direction: column; gap: 24px; }
-    .clientele-content .page-heading { margin-bottom: 0; }
+    .about-overview-section { max-width: 1440px; margin: 0 auto; padding: 80px 48px; display: flex; flex-direction: column; gap: 27px; }
+    .about-overview-section .page-heading { margin-bottom: 0; }
+    .about-overview-divider { border: none; border-top: 1px solid #e5e5e5; margin: 0; }
+    .clientele-overview { max-width: 1440px; margin: 0 auto; padding: 80px 48px; display: flex; flex-direction: column; gap: 24px; }
+    .clientele-overview .page-heading { margin-bottom: 0; }
+    .page-about-overview footer { margin-top: 0; }
   </style>
 </head>
-<body>
+<body class="page-about-overview">
 
 <header class="site-header">
   <a href="index.html"><img class="header-logo" src="images/b48ff48b-4b5d-402b-81db-7ae0b9ae3f49.png" alt="The Now Institute"></a>
   <nav class="main-nav">
     <ul class="main-nav-list">
-      <li class="main-nav-item"><a href="about-overview.html" class="main-nav-link active">About</a><ul class="nav-dropdown"><li><a href="about.html">Overview</a></li><li><a href="research-network.html">Research Network</a></li><li><a href="clientele.html" class="active">Clientele</a></li></ul></li>
+      <li class="main-nav-item"><a href="about-overview.html" class="main-nav-link active">About</a><ul class="nav-dropdown"><li><a href="about.html">Overview</a></li><li><a href="research-network.html">Research Network</a></li><li><a href="clientele.html">Clientele</a></li></ul></li>
       <li class="main-nav-item"><a href="people/index.html" class="main-nav-link">People</a><ul class="nav-dropdown"><li><a href="people/thom-mayne.html">Thom Mayne</a></li><li><a href="people/eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="people/research-staff.html">Research Staff</a></li><li><a href="people/partners-advisors.html">Partners &amp; Advisors</a></li></ul></li>
       <li class="main-nav-item"><a href="projects/index.html" class="main-nav-link">Projects</a><ul class="nav-dropdown"><li><a href="projects/haiti-now.html">Haiti Now</a></li><li><a href="projects/culture-now.html">Culture Now</a></li><li><a href="projects/new-orleans-now.html">New Orleans Now</a></li><li><a href="projects/madrid-now.html">Madrid Now</a></li><li><a href="projects/la-now.html">L.A. Now</a></li><li><a href="projects/hsinta-ecological-powerplant.html">Hsinta Ecological Powerplant</a></li><li><a href="projects/south-sea-pearl-artificial-island.html">South Sea Pearl Artificial Island</a></li><li><a href="projects/art-by-wash.html">Art By WASH</a></li><li><a href="projects/urban-hydroponics-south-la.html">Urban Hydroponics in South LA</a></li><li><a href="projects/building-forward-regulatory-reform.html">Building Forward: Regulatory Reform</a></li><li><a href="projects/irwindale-now.html">Irwindale Now</a></li><li><a href="projects/noto.html">Noto</a></li><li><a href="projects/unhoused-housing.html">Unhoused Housing</a></li></ul></li>
       <li class="main-nav-item"><a href="research/index.html" class="main-nav-link">Research</a><ul class="nav-dropdown"><li><a href="research/post-industrial-city.html">Post-Industrial City</a></li><li><a href="research/emerging-asia.html">Emerging Asia</a></li><li><a href="research/informal-settlements.html">Informal Settlements / Post-Disaster Setting</a></li></ul></li>
@@ -35,7 +38,7 @@
     <button class="close-btn" onclick="toggleNav()">&#x2715;</button>
   </div>
   <div class="mega-nav-links">
-    <div class="nav-col"><p class="nav-col-title"><a href="about-overview.html">About</a></p><ul><li><a href="about.html">Overview</a></li><li><a href="research-network.html">Research Network</a></li><li><a href="clientele.html" class="active">Clientele</a></li></ul></div>
+    <div class="nav-col"><p class="nav-col-title"><a href="about-overview.html">About</a></p><ul><li><a href="about.html">Overview</a></li><li><a href="research-network.html">Research Network</a></li><li><a href="clientele.html">Clientele</a></li></ul></div>
     <div class="nav-col"><p class="nav-col-title"><a href="people/index.html">People</a></p><ul><li><a href="people/thom-mayne.html">Thom Mayne</a></li><li><a href="people/eui-sung-yi.html">Eui-Sung Yi</a></li><li><a href="people/research-staff.html">Research Staff</a></li><li><a href="people/partners-advisors.html">Partners &amp; Advisors</a></li></ul></div>
     <div class="nav-col"><p class="nav-col-title"><a href="projects/index.html">Projects</a></p><ul><li><a href="projects/haiti-now.html">Haiti Now</a></li><li><a href="projects/culture-now.html">Culture Now</a></li><li><a href="projects/new-orleans-now.html">New Orleans Now</a></li><li><a href="projects/madrid-now.html">Madrid Now</a></li><li><a href="projects/la-now.html">L.A. Now</a></li><li><a href="projects/hsinta-ecological-powerplant.html">Hsinta Ecological Powerplant</a></li><li><a href="projects/south-sea-pearl-artificial-island.html">South Sea Pearl Artificial Island</a></li><li><a href="projects/art-by-wash.html">Art By WASH</a></li><li><a href="projects/urban-hydroponics-south-la.html">Urban Hydroponics in South LA</a></li><li><a href="projects/building-forward-regulatory-reform.html">Building Forward: Regulatory Reform</a></li><li><a href="projects/irwindale-now.html">Irwindale Now</a></li><li><a href="projects/noto.html">Noto</a></li><li><a href="projects/unhoused-housing.html">Unhoused Housing</a></li></ul></div>
     <div class="nav-col"><p class="nav-col-title"><a href="research/index.html">Research</a></p><ul><li><a href="research/post-industrial-city.html">Post-Industrial City</a></li><li><a href="research/emerging-asia.html">Emerging Asia</a></li><li><a href="research/informal-settlements.html">Informal Settlements / Post-Disaster Setting</a></li></ul></div>
@@ -43,17 +46,63 @@
   </div>
 </nav>
 
-<div class="clientele-page">
-  <div class="clientele-content">
-    <div class="page-heading">
-      <div class="page-accent-bar"></div>
-      <h1 class="page-title">Clientele</h1>
+<!-- Overview -->
+<div class="about-overview-section">
+  <div class="page-heading">
+    <div class="page-accent-bar"></div>
+    <h1 class="page-title">Overview</h1>
+  </div>
+  <div class="about-body" style="display:flex;flex-direction:column;gap:20px;">
+    <p>The NOW Institute is the urban research wing at Morphosis Architects located in Culver City, CA. We are dedicated to understanding and improving urban environments through sustainable solutions across the globe. From Port-au-Prince, Cap Haitiën, New Orleans, Madrid, Beijing to Los Angeles, we work with urban communities and institutions to produce interdisciplinary strategies. We engage in emerging economies to post industrial cities, analyzing each location from a cultural, socio-economic, and community-based lens. With the values of equity, higher quality of life, and sustainability at our forefront, we are committed to partnering with entities that have limited resources for strategy development and envisioning. We have worked with local and national governments, social and cultural institutions, assisted in community outreach, and tested both trends and hypotheses to find the right way to go ahead. Rather than a single solution, we focus on elastic strategies—or tactics, that can adapt to the appropriate user group, territory, timing and unforeseeable future circumstances.</p>
+    <p>Historically, the NOW institute has collaborated with graduate, research and city design programs at academic institutions in the United States and abroad. Initiated in 2001, we produced the eponymous cultural and geospatial almanac L.A. NOW in collaboration with the Southern California Institute of Architecture (SCI-Arc), University of California Los Angeles (UCLA), California Institute of the Arts (CalArts), and ArtCenter College of Design. The NOW has partnered with many universities, most prominently with UCLA's School of the Arts and Architecture. Other academic partners include UPenn's Weitzman School of Design, MIT, Rice, Syracuse University, Pratt Institute, and Harvard GSD.</p>
+    <p>Now, we are an independent entity and have chosen to focus on our research within Morphosis Architects, in addition to academic institutions. As a part of Morphosis Architects, we have enhanced our capacities and resources to engage in our projects.</p>
+  </div>
+</div>
+
+<hr class="about-overview-divider">
+
+<!-- Research Network -->
+<section class="uni-section">
+  <div class="section-header">
+    <h2>Research Network</h2>
+    <div class="underline-bar"></div>
+  </div>
+  <p class="section-desc">Supported by 13 schools of architecture across the country.</p>
+  <div class="uni-grid">
+    <div class="uni-card"><img src="images/9782223a-469e-45f8-a634-d5fd0759d54d%201.png" alt="Columbia"><div class="uni-overlay"></div><div class="uni-label">Columbia</div></div>
+    <div class="uni-card"><img src="images/1_JiD3_Vof-Fy71LVbHSAaVQ%201.png" alt="Cornell"><div class="uni-overlay"></div><div class="uni-label">Cornell</div></div>
+    <div class="uni-card"><img src="images/Gund_Hall_Aerial%201.png" alt="Harvard GSD"><div class="uni-overlay"></div><div class="uni-label">Harvard GSD</div></div>
+    <div class="uni-card"><img src="images/157085_hero%201.png" alt="University of Kentucky" style="object-position:center;"><div class="uni-overlay"></div><div class="uni-label">University of Kentucky</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2010.png" alt="University of Pennsylvania"><div class="uni-overlay"></div><div class="uni-label">University of Pennsylvania</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2011.png" alt="Pratt"><div class="uni-overlay"></div><div class="uni-label">Pratt</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2012.png" alt="MIT"><div class="uni-overlay"></div><div class="uni-label">MIT</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2013.png" alt="Princeton"><div class="uni-overlay"></div><div class="uni-label">Princeton</div></div>
+    <div class="uni-card"><img src="images/0x0.jpeg" alt="Rensselaer Polytechnic"><div class="uni-overlay"></div><div class="uni-label">Rensselaer Polytechnic</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2015.png" alt="Rice University"><div class="uni-overlay"></div><div class="uni-label">Rice University</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2016.png" alt="Syracuse"><div class="uni-overlay"></div><div class="uni-label">Syracuse</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2017.png" alt="University of Michigan"><div class="uni-overlay"></div><div class="uni-label">University of Michigan</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2018.png" alt="Art Center College of Design"><div class="uni-overlay"></div><div class="uni-label">Art Center College of Design</div></div>
+    <div class="uni-card"><img src="images/Rectangle%2019.png" alt="California Institute of the Arts (CalArts)"><div class="uni-overlay"></div><div class="uni-label">California Institute of the Arts (CalArts)</div></div>
+    <div class="uni-card"><img src="images/1777066479356.png" alt="RAND Corporation"><div class="uni-overlay"></div><div class="uni-label">RAND Corporation</div></div>
+    <div class="uni-row-last">
+      <div class="uni-card"><img src="images/Rectangle%2021.png" alt="Inha University"><div class="uni-overlay"></div><div class="uni-label">Inha University</div></div>
+      <div class="uni-card"><img src="images/Rectangle%2022.png" alt="Beijing University of Technology"><div class="uni-overlay"></div><div class="uni-label">Beijing University of Technology</div></div>
     </div>
-    <p class="about-intro"><strong>The Now Institute</strong> offers urban research, planning and design services for the benefit of cross-sectoral partners, including governing authorities, cultural institutions, community groups and international non-governmental organizations.</p>
-    <div class="about-body" style="display:flex;flex-direction:column;gap:18px;">
-      <p>Embedded in UCLA's SUPRASTUDIO, the university's premier cross-disciplinary R&amp;D program located at the Department of Architecture and Urban Design, The Now Institute seeks to approach the complex problems in our urban environment through engagement with diverse and intelligent partners, which in the past have included the Mayor's Institute on City Design, UNESCO, the Make it Right Foundation and the City of Los Angeles Department of Cultural Affairs.</p>
-      <p>Representatives of visionary organizations with interest in the consequences and potentials of integrative urban solutions are encouraged to contact <a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a> for more information.</p>
-    </div>
+  </div>
+</section>
+
+<hr class="about-overview-divider">
+
+<!-- Clientele -->
+<div class="clientele-overview">
+  <div class="page-heading">
+    <div class="page-accent-bar"></div>
+    <h1 class="page-title">Clientele</h1>
+  </div>
+  <p class="about-intro"><strong>The Now Institute</strong> offers urban research, planning and design services for the benefit of cross-sectoral partners, including governing authorities, cultural institutions, community groups and international non-governmental organizations.</p>
+  <div class="about-body" style="display:flex;flex-direction:column;gap:18px;">
+    <p>Embedded in UCLA's SUPRASTUDIO, the university's premier cross-disciplinary R&amp;D program located at the Department of Architecture and Urban Design, The Now Institute seeks to approach the complex problems in our urban environment through engagement with diverse and intelligent partners, which in the past have included the Mayor's Institute on City Design, UNESCO, the Make it Right Foundation and the City of Los Angeles Department of Cultural Affairs.</p>
+    <p>Representatives of visionary organizations with interest in the consequences and potentials of integrative urban solutions are encouraged to contact <a href="mailto:info@thenowinstitute.org">info@thenowinstitute.org</a> for more information.</p>
   </div>
 </div>
 
