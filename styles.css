@@ -230,7 +230,7 @@ ul { list-style: none; }
 .person-bio-roles { display: flex; flex-direction: column; gap: 4px; }
 .person-bio-role-label { font-size: 13px; color: #525252; line-height: 1.4; }
 .person-bio-role-org { font-size: 16px; color: black; line-height: 1.4; margin-bottom: 8px; }
-.person-content { max-width: 1100px; margin: 0 auto; padding: 64px 48px; display: flex; flex-direction: column; gap: 64px; }
+.person-content { max-width: 1440px; margin: 0 auto; padding: 64px 48px; display: flex; flex-direction: column; gap: 64px; }
 .person-content .section-header { text-align: left; }
 .person-content .underline-bar { margin: 0; }
 .person-section { display: flex; flex-direction: column; gap: 24px; }
@@ -291,7 +291,7 @@ ul { list-style: none; }
 
 /* ── STAFF GRID ──────────────────────────────── */
 .staff-section { background: #fafafa; padding: 80px 0; }
-.staff-inner { max-width: 1100px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 64px; }
+.staff-inner { max-width: 1440px; margin: 0 auto; padding: 0 48px; display: flex; flex-direction: column; gap: 64px; }
 .staff-block { display: flex; flex-direction: column; gap: 24px; }
 .staff-block-header { display: flex; flex-direction: column; gap: 16px; align-items: center; }
 .staff-block-title { font-size: 34px; font-weight: 700; text-align: center; }
@@ -321,7 +321,7 @@ ul { list-style: none; }
   padding: 20px 40px; font-size: 15px; line-height: 1.6; max-width: 865px;
 }
 .project-image-placeholder { background: #d9d9d9; width: 100%; }
-.project-body { max-width: 1100px; margin: 0 auto; padding: 80px 48px; display: flex; flex-direction: column; gap: 64px; }
+.project-body { max-width: 1440px; margin: 0 auto; padding: 80px 48px; display: flex; flex-direction: column; gap: 64px; }
 .project-body p { font-size: 16px; line-height: 1.6; }
 .project-body ul, .project-body ol { font-size: 16px; line-height: 1.6; padding-left: 24px; }
 .project-body-text { font-size: 16px; line-height: 1.6; max-width: 1263px; }
@@ -333,7 +333,7 @@ ul { list-style: none; }
 .project-row img { display: block; object-fit: cover; height: auto; max-width: 100%; }
 
 /* ── RESEARCH PAGE ───────────────────────────── */
-.research-page { max-width: 1100px; margin: 0 auto; padding: 80px 48px 120px; display: flex; flex-direction: column; gap: 24px; }
+.research-page { max-width: 1440px; margin: 0 auto; padding: 80px 48px 120px; display: flex; flex-direction: column; gap: 24px; }
 .research-title { font-size: 34px; font-weight: 700; }
 .research-body { display: flex; flex-direction: column; gap: 40px; }
 .research-image-block { display: flex; flex-direction: column; gap: 24px; }
@@ -374,7 +374,7 @@ ul { list-style: none; }
 .page-accent-bar { display: none; }
 .page-title { font-size: 34px; font-weight: 700; margin: 0; }
 
-.contact-section { max-width: 1100px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 80px 48px; flex: 1; }
+.contact-section { max-width: 1440px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 80px 48px; flex: 1; }
 .contact-section h2 { font-size: 34px; font-weight: 700; margin: 0; }
 .contact-section p { font-size: 16px; font-weight: 400; line-height: 1.7; }
 .contact-section a { text-decoration: underline; color: black; }
@@ -414,10 +414,10 @@ ul { list-style: none; }
 .page-home .people-section .underline-bar { margin: 0; background: white; }
 .people-desc { font-size: 16px; line-height: 1.6; color: white; margin: 12px 0 40px; max-width: 480px; }
 .section-desc { font-size: 16px; line-height: 1.6; color: #525252; margin: 12px 0 40px; max-width: 480px; }
-.people-inner { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+.people-inner { max-width: 1440px; margin: 0 auto; padding: 0 48px; }
 
 /* ── RESEARCH NETWORK PAGE ────────────────────── */
-.page-research-network .uni-section { max-width: 1100px; margin: 0 auto; padding: 80px 48px; }
+.page-research-network .uni-section { max-width: 1440px; margin: 0 auto; padding: 80px 48px; }
 .page-research-network .section-header { text-align: left; margin-bottom: 12px; }
 .page-research-network .underline-bar { margin: 0; }
 .page-research-network .section-desc { text-align: left; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 48px; }
@@ -629,7 +629,7 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 .person-role-org { font-size: 15px; color: white; line-height: 1.4; font-weight: 500; }
 
 /* ── PERSON CONTENT SECTIONS ─────────────────── */
-.person-content { max-width: 1100px; margin: 0 auto; padding: 64px 48px; display: flex; flex-direction: column; gap: 64px; }
+.person-content { max-width: 1440px; margin: 0 auto; padding: 64px 48px; display: flex; flex-direction: column; gap: 64px; }
 .person-content .section-header { text-align: left; margin-bottom: 0; }
 .person-content .section-header h2 { font-size: 24px; font-weight: 500; margin-bottom: 0; }
 .person-content .underline-bar { margin: 0; }
