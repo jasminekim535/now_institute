@@ -263,16 +263,16 @@ ul { list-style: none; }
 .awards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .award-card {
   display: flex; gap: 12px; align-items: flex-start;
-  border: 1px solid #e5e5e5; padding: 14px 16px; min-height: 72px;
+  border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 14px 16px; min-height: 72px;
 }
-.award-year { font-size: 13px; font-weight: 400; min-width: 44px; color: black; }
-.award-desc { font-size: 14px; font-weight: 400; color: black; line-height: 1.4; }
+.award-year { font-size: 13px; font-weight: 400; min-width: 44px; color: #525252; }
+.award-desc { font-size: 16px; font-weight: 400; color: black; line-height: 1.4; }
 
 /* ── ASSOCIATIONS GRID ───────────────────────── */
 .assoc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .assoc-card {
   display: flex; border: 1px solid #e5e5e5;
-  align-items: center; font-size: 14px;
+  align-items: center; font-size: 16px;
   padding: 14px 20px; min-height: 72px; border-left: 3px solid black;
 }
 .assoc-card p { font-size: 14px; font-weight: 400; line-height: 1.4; }
@@ -700,10 +700,10 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 .edu-card { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; border: 1px solid #e5e5e5; padding: 14px 20px; border-left: 3px solid black; min-height: 72px; }
 
 /* ── AWARD CARD PLAIN ────────────────────────── */
-.award-card { border: 1px solid #e5e5e5; padding: 14px 16px; min-height: 72px; display: flex; align-items: flex-start; gap: 12px; font-size: 14px; line-height: 1.4; }
+.award-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 14px 16px; min-height: 72px; display: flex; align-items: flex-start; gap: 12px; line-height: 1.4; }
 
 /* ── ASSOC CARD PLAIN ────────────────────────── */
-.assoc-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 14px 20px; min-height: 72px; display: flex; align-items: center; font-size: 14px; line-height: 1.4; }
+.assoc-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 14px 20px; min-height: 72px; display: flex; align-items: center; font-size: 16px; line-height: 1.4; }
 
 /* ── TEACHING LIST ───────────────────────────── */
 .teaching-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
