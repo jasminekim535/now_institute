@@ -357,7 +357,7 @@ ul { list-style: none; }
 }
 
 /* ── ADVISORY BOARD ──────────────────────────── */
-.advisory-section { max-width: 1100px; margin: 0 auto; padding: 0 48px 80px; display: flex; flex-direction: column; gap: 24px; }
+.advisory-section { max-width: 1440px; margin: 0 auto; padding: 0 48px 80px; display: flex; flex-direction: column; gap: 24px; }
 .advisory-section .section-header { text-align: left; }
 .advisory-section .underline-bar { margin: 0; }
 .advisory-title { font-size: 24px; font-weight: 500; }
