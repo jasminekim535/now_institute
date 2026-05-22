@@ -116,8 +116,12 @@ ul { list-style: none; }
   object-fit: cover;
   transition: transform 0.3s;
 }
+.pub-grid .photo-cell-linked {
+  background: #f0f0f0;
+}
 .pub-grid .photo-cell-linked img {
-  object-position: top center;
+  object-fit: contain;
+  object-position: center;
 }
 .photo-cell-linked:hover img { transform: scale(1.03); }
 .photo-overlay {
