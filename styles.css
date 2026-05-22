@@ -248,11 +248,11 @@ ul { list-style: none; }
 .person-section-text a { text-decoration: underline; }
 
 /* ── EDUCATION / ASSOCIATION CARD ────────────── */
-.edu-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-items: start; }
+.edu-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .edu-card {
   display: flex; border: 1px solid #e5e5e5;
-  position: relative; min-height: 98px; align-items: center;
-  padding: 16px 25px;
+  position: relative; min-height: 72px; align-items: center;
+  padding: 14px 20px;
   border-left: 3px solid black;
 }
 .edu-card-inner { display: flex; flex-direction: column; gap: 4px; }
@@ -260,20 +260,20 @@ ul { list-style: none; }
 .edu-card-school { font-size: 14px; color: #525252; line-height: 1.4; }
 
 /* ── AWARDS GRID ─────────────────────────────── */
-.awards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
+.awards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .award-card {
   display: flex; gap: 12px; align-items: flex-start;
-  border: 1px solid #e5e5e5; padding: 12px 16px;
+  border: 1px solid #e5e5e5; padding: 14px 16px; min-height: 72px;
 }
 .award-year { font-size: 13px; font-weight: 400; min-width: 44px; color: black; }
 .award-desc { font-size: 14px; font-weight: 400; color: black; line-height: 1.4; }
 
 /* ── ASSOCIATIONS GRID ───────────────────────── */
-.assoc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
+.assoc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .assoc-card {
   display: flex; border: 1px solid #e5e5e5;
   align-items: center; font-size: 14px;
-  padding: 12px 20px; border-left: 3px solid black;
+  padding: 14px 20px; min-height: 72px; border-left: 3px solid black;
 }
 .assoc-card p { font-size: 14px; font-weight: 400; line-height: 1.4; }
 
@@ -697,16 +697,16 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 /* ── EDUCATION CARD VARIATIONS ───────────────── */
 .edu-degree { font-size: 16px; font-weight: 400; color: black; line-height: 1.4; }
 .edu-school { font-size: 14px; color: #525252; line-height: 1.4; }
-.edu-card { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; border: 1px solid #e5e5e5; padding: 16px 25px; border-left: 3px solid black; min-height: auto; }
+.edu-card { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; border: 1px solid #e5e5e5; padding: 14px 20px; border-left: 3px solid black; min-height: 72px; }
 
 /* ── AWARD CARD PLAIN ────────────────────────── */
-.award-card { border: 1px solid #e5e5e5; padding: 12px 16px; min-height: 48px; display: flex; align-items: flex-start; gap: 12px; font-size: 14px; line-height: 1.4; }
+.award-card { border: 1px solid #e5e5e5; padding: 14px 16px; min-height: 72px; display: flex; align-items: flex-start; gap: 12px; font-size: 14px; line-height: 1.4; }
 
 /* ── ASSOC CARD PLAIN ────────────────────────── */
-.assoc-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 12px 16px; min-height: 48px; display: flex; align-items: center; font-size: 14px; line-height: 1.4; }
+.assoc-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 14px 20px; min-height: 72px; display: flex; align-items: center; font-size: 14px; line-height: 1.4; }
 
 /* ── TEACHING LIST ───────────────────────────── */
-.teaching-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-items: start; }
+.teaching-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .teaching-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 16px 25px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .teaching-detail { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; }
 .teaching-detail p { font-size: 13px; color: #787878; line-height: 1.5; margin: 0; }
@@ -714,7 +714,7 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 .teaching-school { font-size: 16px; font-weight: 500; }
 
 /* ── PUBLICATION LIST ────────────────────────── */
-.pub-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-items: start; }
+.pub-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .pub-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 16px 25px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
 .pub-title { font-size: 15px; font-weight: 500; }
 .pub-meta { font-size: 13px; color: #525252; }
