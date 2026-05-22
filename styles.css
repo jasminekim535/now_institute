@@ -248,7 +248,7 @@ ul { list-style: none; }
 .person-section-text a { text-decoration: underline; }
 
 /* ── EDUCATION / ASSOCIATION CARD ────────────── */
-.edu-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.edu-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-items: start; }
 .edu-card {
   display: flex; border: 1px solid #e5e5e5;
   position: relative; min-height: 98px; align-items: center;
@@ -260,7 +260,7 @@ ul { list-style: none; }
 .edu-card-school { font-size: 14px; color: #525252; line-height: 1.4; }
 
 /* ── AWARDS GRID ─────────────────────────────── */
-.awards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.awards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
 .award-card {
   display: flex; gap: 12px; align-items: flex-start;
   border: 1px solid #e5e5e5; padding: 12px 16px;
@@ -269,7 +269,7 @@ ul { list-style: none; }
 .award-desc { font-size: 14px; font-weight: 400; color: black; line-height: 1.4; }
 
 /* ── ASSOCIATIONS GRID ───────────────────────── */
-.assoc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.assoc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; align-items: start; }
 .assoc-card {
   display: flex; border: 1px solid #e5e5e5;
   align-items: center; font-size: 14px;
@@ -706,13 +706,15 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 .assoc-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 12px 16px; min-height: 48px; display: flex; align-items: center; font-size: 14px; line-height: 1.4; }
 
 /* ── TEACHING LIST ───────────────────────────── */
-.teaching-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-.teaching-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 16px 25px; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.teaching-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-items: start; }
+.teaching-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 16px 25px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.teaching-detail { display: flex; flex-direction: column; gap: 2px; margin-top: 4px; }
+.teaching-detail p { font-size: 13px; color: #787878; line-height: 1.5; margin: 0; }
 .teaching-role { font-size: 14px; color: #525252; }
 .teaching-school { font-size: 16px; font-weight: 500; }
 
 /* ── PUBLICATION LIST ────────────────────────── */
-.pub-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.pub-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-items: start; }
 .pub-card { border: 1px solid #e5e5e5; border-left: 3px solid black; padding: 16px 25px; display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
 .pub-title { font-size: 15px; font-weight: 500; }
 .pub-meta { font-size: 13px; color: #525252; }
