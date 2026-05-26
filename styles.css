@@ -116,7 +116,7 @@ ul { list-style: none; }
   object-fit: cover;
   transition: transform 0.3s;
 }
-.pub-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.pub-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
 .pub-grid .photo-row { display: contents; }
 .pub-grid .photo-row .photo-cell { aspect-ratio: 2/3; height: auto; flex: none; }
 .photo-cell-linked:hover img { transform: scale(1.03); }
