@@ -116,7 +116,9 @@ ul { list-style: none; }
   object-fit: cover;
   transition: transform 0.3s;
 }
-.pub-grid .photo-row .photo-cell { aspect-ratio: 2/3; height: auto; }
+.pub-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.pub-grid .photo-row { display: contents; }
+.pub-grid .photo-cell { aspect-ratio: 2/3; height: auto; flex: none; }
 .pub-grid .photo-cell-linked img {
   object-position: top center;
 }
@@ -207,7 +209,7 @@ ul { list-style: none; }
 .research-cards-section { max-width: 1440px; margin: 120px auto 0; padding: 0 48px; }
 .research-cards-section .section-header { margin-bottom: 48px; }
 .research-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.research-card { height: 220px; }
+.research-card { height: 260px; }
 .research-card-label { font-size: 15px; font-weight: 500; padding: 0 16px; line-height: 1.3; }
 
 .people-section { max-width: 1440px; margin: 120px auto 0; padding: 0 48px; }
@@ -544,7 +546,7 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 
   .research-cards-section { padding: 0 24px; }
   .research-cards-grid { grid-template-columns: repeat(2, 1fr); }
-  .research-card { height: 180px; }
+  .research-card { height: 200px; }
 
   .about-section { padding-top: 32px; }
 
