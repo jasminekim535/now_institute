@@ -116,6 +116,7 @@ ul { list-style: none; }
   object-fit: cover;
   transition: transform 0.3s;
 }
+.pub-grid .photo-row .photo-cell { height: 380px; }
 .pub-grid .photo-cell-linked img {
   object-position: top center;
 }
@@ -184,7 +185,7 @@ ul { list-style: none; }
 .uni-row-bottom .uni-card { width: calc(33.33% - 16px); }
 .uni-row-last { grid-column: 1 / -1; display: flex; gap: 24px; }
 .uni-row-last .uni-card { flex: 1; }
-.uni-card { position: relative; height: 194px; overflow: hidden; background: #d9d9d9; }
+.uni-card { position: relative; height: 296px; overflow: hidden; background: #d9d9d9; }
 .uni-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
 .uni-card:hover img { transform: scale(1.03); }
 .uni-overlay {
