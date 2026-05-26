@@ -185,23 +185,17 @@ ul { list-style: none; }
 .uni-row-last { grid-column: 1 / -1; display: flex; gap: 24px; }
 .uni-row-last .uni-card { flex: 1; }
 .uni-card { position: relative; height: 260px; overflow: hidden; background: #d9d9d9; }
-.uni-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
-.uni-card:hover img { transform: scale(1.03); }
+.uni-card img { width: 100%; height: 100%; object-fit: cover; }
 .uni-overlay {
-  position: absolute; inset: 0; background: rgba(0,0,0,0.4);
-  opacity: 0; transition: opacity 0.3s;
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 55%);
 }
 .uni-label {
   position: absolute; inset: 0;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; align-items: flex-end; justify-content: center;
   color: white; font-size: 17px; font-weight: 700;
-  text-align: center; padding: 0 16px; z-index: 1;
-  opacity: 0; transition: opacity 0.3s;
+  text-align: center; padding: 0 16px 14px; z-index: 1;
 }
-.uni-overlay { opacity: 1; background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 55%); }
-.uni-label { opacity: 1; align-items: flex-end; padding: 0 16px 14px; }
-.uni-card:hover .uni-overlay,
-.uni-card:hover .uni-label { opacity: 1; }
 .see-more-wrap { text-align: center; }
 
 /* ── PEOPLE (LANDING) ────────────────────────── */
