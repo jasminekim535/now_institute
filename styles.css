@@ -119,8 +119,7 @@ ul { list-style: none; }
 .pub-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
 .pub-grid .photo-row { display: contents; }
 .pub-grid .photo-row .photo-cell { aspect-ratio: 2/3; height: auto; flex: none; }
-.pub-grid .photo-overlay { opacity: 1; background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 55%); }
-.pub-grid .photo-label { opacity: 1; align-items: flex-end; padding: 0 12px 14px; font-size: 13px; }
+.pub-grid .photo-row .photo-cell img { object-fit: contain; }
 .photo-cell-linked:hover img { transform: scale(1.03); }
 .photo-overlay {
   position: absolute; inset: 0; background: rgba(0,0,0,0.4);
