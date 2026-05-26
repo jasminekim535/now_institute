@@ -103,7 +103,7 @@ ul { list-style: none; }
 }
 .photo-row { display: flex; gap: 24px; }
 .photo-cell { flex: 1; position: relative; overflow: hidden; }
-.photo-row.row-1 .photo-cell { height: 194px; }
+.photo-row.row-1 .photo-cell { height: 260px; }
 .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 260px; }
 .photo-cell-linked {
   position: relative; overflow: hidden; display: block; text-decoration: none;
@@ -116,7 +116,7 @@ ul { list-style: none; }
   object-fit: cover;
   transition: transform 0.3s;
 }
-.pub-grid .photo-row .photo-cell { height: 380px; }
+.pub-grid .photo-row .photo-cell { aspect-ratio: 2/3; height: auto; }
 .pub-grid .photo-cell-linked img {
   object-position: top center;
 }
@@ -185,7 +185,7 @@ ul { list-style: none; }
 .uni-row-bottom .uni-card { width: calc(33.33% - 16px); }
 .uni-row-last { grid-column: 1 / -1; display: flex; gap: 24px; }
 .uni-row-last .uni-card { flex: 1; }
-.uni-card { position: relative; height: 296px; overflow: hidden; background: #d9d9d9; }
+.uni-card { position: relative; height: 260px; overflow: hidden; background: #d9d9d9; }
 .uni-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
 .uni-card:hover img { transform: scale(1.03); }
 .uni-overlay {
@@ -539,7 +539,7 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 
   .photo-row { flex-wrap: wrap; }
   .photo-cell { flex: 0 0 calc(50% - 8px); }
-  .photo-row.row-1 .photo-cell { height: 150px; }
+  .photo-row.row-1 .photo-cell { height: 180px; }
   .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 180px; }
 
   .research-cards-section { padding: 0 24px; }
@@ -616,7 +616,7 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 
   .photo-row { flex-direction: column; }
   .photo-cell { flex: none; width: 100%; }
-  .photo-row.row-1 .photo-cell { height: 180px; }
+  .photo-row.row-1 .photo-cell { height: 210px; }
   .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 210px; }
 
   .about-intro { font-size: 16px; }
