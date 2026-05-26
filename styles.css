@@ -104,7 +104,7 @@ ul { list-style: none; }
 .photo-row { display: flex; gap: 24px; }
 .photo-cell { flex: 1; position: relative; overflow: hidden; }
 .photo-row.row-1 .photo-cell { height: 194px; }
-.photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 296px; }
+.photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 260px; }
 .photo-cell-linked {
   position: relative; overflow: hidden; display: block; text-decoration: none;
 }
@@ -540,7 +540,7 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
   .photo-row { flex-wrap: wrap; }
   .photo-cell { flex: 0 0 calc(50% - 8px); }
   .photo-row.row-1 .photo-cell { height: 150px; }
-  .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 200px; }
+  .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 180px; }
 
   .research-cards-section { padding: 0 24px; }
   .research-cards-grid { grid-template-columns: repeat(2, 1fr); }
