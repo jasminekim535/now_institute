@@ -105,7 +105,6 @@ ul { list-style: none; }
 .photo-cell { flex: 1; position: relative; overflow: hidden; }
 .photo-row.row-1 .photo-cell { height: 194px; }
 .photo-row.row-2 .photo-cell, .photo-row.row-3 .photo-cell { height: 296px; }
-.photo-row.row-2 .photo-cell { height: 194px; }
 .photo-cell-linked {
   position: relative; overflow: hidden; display: block; text-decoration: none;
 }
