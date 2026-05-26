@@ -116,12 +116,6 @@ ul { list-style: none; }
   object-fit: cover;
   transition: transform 0.3s;
 }
-.pub-grid { display: grid; grid-template-columns: repeat(4, 1fr); row-gap: 24px; column-gap: 8px; }
-.pub-grid .photo-row { display: contents; }
-.pub-grid .photo-cell { aspect-ratio: 2/3; height: auto; flex: none; }
-.pub-grid .photo-cell-linked img {
-  object-position: top center;
-}
 .photo-cell-linked:hover img { transform: scale(1.03); }
 .photo-overlay {
   position: absolute; inset: 0; background: rgba(0,0,0,0.4);
