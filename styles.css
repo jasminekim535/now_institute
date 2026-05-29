@@ -767,6 +767,15 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
 .pub-title { font-size: 15px; font-weight: 500; }
 .pub-meta { font-size: 13px; color: #525252; }
 
+/* ── PEOPLE PAGE: staff block dividers ──────── */
+.page-people .staff-inner { gap: 0; }
+.page-people .staff-block { padding: 48px 0; }
+.page-people .staff-block:first-child { padding-top: 0; }
+.page-people .staff-block + .staff-block { border-top: 1px solid #e5e5e5; }
+
+/* ── PARTNERS PAGE: section dividers ────────── */
+.page-partners-advisors .staff-section + .staff-section { border-top: 1px solid #e5e5e5; }
+
 /* ── STAFF PAGE ──────────────────────────────── */
 .staff-page { display: flex; flex-direction: column; gap: 0; }
 .staff-section { padding: 80px 0; }
