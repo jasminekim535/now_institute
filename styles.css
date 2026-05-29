@@ -364,7 +364,7 @@ ul { list-style: none; }
 .project-body ul, .project-body ol { font-size: 16px; line-height: 1.6; padding-left: 24px; }
 .project-body-text { font-size: 16px; line-height: 1.6; max-width: 1263px; }
 .project-section { display: flex; flex-direction: column; gap: 24px; }
-.project-section > p { max-width: 760px; }
+.project-section > p { }
 .project-section-title { font-size: 24px; font-weight: 500; line-height: 1.3; margin: 0; }
 .project-section-text { font-size: 16px; line-height: 1.55; }
 .project-row { display: flex; gap: 40px; align-items: flex-start; }
@@ -378,7 +378,7 @@ ul { list-style: none; }
 .research-image-block { display: flex; flex-direction: column; gap: 24px; }
 .research-image-block img { width: 100%; height: auto; display: block; }
 .research-caption { font-size: 15px; font-style: italic; color: #525252; line-height: 1.6; }
-.research-text { font-size: 16px; line-height: 1.6; max-width: 760px; }
+.research-text { font-size: 16px; line-height: 1.6; }
 .research-text strong { font-weight: 700; }
 .research-text p + p { margin-top: 16px; }
 .research-split { display: flex; gap: 40px; align-items: flex-start; }
