@@ -1,6 +1,6 @@
 /* ── RESET ───────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root { --accent: #1e4d7b; }
+
 body { font-family: 'Jost', sans-serif; font-size: 16px; background: white; color: black; overflow-x: hidden; }
 a { text-decoration: none; color: inherit; }
 img { display: block; }
@@ -699,18 +699,6 @@ footer { background: black; border-top: 1px solid #333; padding: 48px 0; margin-
   .project-cols { grid-template-columns: 1fr !important; }
 }
 
-/* ── ACCENT COLOR ────────────────────────────── */
-.edu-card { border-left-color: var(--accent); }
-.advisory-card { border-left-color: var(--accent); }
-.teaching-card { border-left-color: var(--accent); }
-.pub-card { border-left-color: var(--accent); }
-.project-blockquote { border-left-color: var(--accent); }
-.pub-section-head { color: var(--accent); }
-.main-nav-link.active { color: var(--accent); }
-.nav-dropdown li a.active { color: var(--accent); }
-
-/* Card label hover highlight */
-.photo-cell-linked:hover .photo-label { color: var(--accent); }
 
 /* Project page section dividers */
 .project-body > .project-section + .project-section { border-top: 1px solid #e5e5e5; padding-top: 32px; }
