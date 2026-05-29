@@ -194,13 +194,26 @@ ul { list-style: none; }
 .btn-outline {
   display: inline-block; padding: 7px 28px;
   border: 1px solid #525252; border-radius: 26px;
-  font-family: 'Jost', sans-serif; font-size: 15px; font-weight: 400;
+  font-family: 'Jost', sans-serif; font-size: 15px; font-weight: 500;
+  letter-spacing: 0.05em;
   background: white; color: black; cursor: pointer; transition: background 0.15s;
   text-decoration: none; text-transform: capitalize;
 }
 .btn-outline:hover { background: #f4f4f4; }
 .btn-outline-white { border-color: white; color: white; background: transparent; }
 .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
+
+/* ── TEXT LINK BUTTON ────────────────────────── */
+.btn-text {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: 'Jost', sans-serif; font-size: 14px; font-weight: 600;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  color: black; text-decoration: none;
+  border-bottom: 1.5px solid black; padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+.btn-text::after { content: '→'; letter-spacing: 0; font-size: 15px; }
+.btn-text:hover { opacity: 0.5; }
 
 /* ── SECTION HEADER ──────────────────────────── */
 .section-header { text-align: center; margin-bottom: 48px; }
