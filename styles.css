@@ -60,14 +60,17 @@ ul { list-style: none; }
   display: flex; justify-content: space-between; align-items: center;
   padding: 7px 16px; cursor: pointer;
   font-size: 14px; font-weight: 500; color: black;
-  user-select: none; border-top: 1px solid #f0f0f0; margin-top: 4px;
+  user-select: none;
 }
 .nav-la-now-toggle:hover { background: #f4f4f4; }
 .nav-la-now-toggle::after {
-  content: '▼'; font-size: 9px; opacity: 0.8;
-  transition: transform 0.2s; display: inline-block;
+  content: ''; display: inline-block; flex-shrink: 0;
+  width: 6px; height: 6px;
+  border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg); margin-bottom: 3px;
+  transition: transform 0.2s;
 }
-.nav-la-now-toggle.open::after { transform: rotate(180deg); }
+.nav-la-now-toggle.open::after { transform: rotate(225deg); margin-bottom: -1px; }
 .nav-la-now-item { display: none; }
 .nav-la-now-item.open { display: block; }
 .nav-col .nav-la-now-toggle {
