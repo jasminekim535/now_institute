@@ -409,8 +409,6 @@ ul { list-style: none; }
 .pub-img-full.cropped { max-height: 580px; object-fit: cover; object-position: center; }
 .pub-body { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
 .pub-split-body .btn-outline { align-self: flex-start; }
-.pub-page .btn-outline { background: black; color: white; border-color: black; }
-.pub-page .btn-outline:hover { background: #333; border-color: #333; }
 .pub-body p, .pub-split-body p { font-size: 15px; line-height: 1.7; margin: 0; }
 .pub-split { display: flex; gap: 48px; align-items: flex-start; }
 .pub-split-img { flex: 0 0 44%; max-width: 44%; }
