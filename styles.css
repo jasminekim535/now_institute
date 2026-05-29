@@ -64,10 +64,10 @@ ul { list-style: none; }
 }
 .nav-la-now-toggle:hover { background: #f4f4f4; }
 .nav-la-now-toggle::after {
-  content: '▸'; font-size: 10px; opacity: 0.5;
+  content: '▼'; font-size: 9px; opacity: 0.8;
   transition: transform 0.2s; display: inline-block;
 }
-.nav-la-now-toggle.open::after { transform: rotate(90deg); }
+.nav-la-now-toggle.open::after { transform: rotate(180deg); }
 .nav-la-now-item { display: none; }
 .nav-la-now-item.open { display: block; }
 .nav-col .nav-la-now-toggle {
@@ -231,7 +231,7 @@ ul { list-style: none; }
 .research-cards-section .section-header { margin-bottom: 48px; }
 .research-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .research-card { height: 260px; }
-.research-card-label { font-weight: 500; }
+.research-card-label { font-weight: 600; }
 
 .people-section { max-width: 1440px; margin: 120px auto 0; padding: 0 48px; }
 .people-grid { display: flex; gap: 24px; justify-content: center; }
