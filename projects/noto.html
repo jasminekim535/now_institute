@@ -60,7 +60,7 @@
 </footer>
 
 <script>
-  function toggleLaNow(e){var l=e.closest("ul"),o=e.classList.toggle("open");l.querySelectorAll(".nav-la-now-item").forEach(function(i){i.classList.toggle("open",o);});}function toggleNav(){const n=document.getElementById('megaNav');const o=n.classList.toggle('open');document.body.style.overflow=o?'hidden':'';}
+  function toggleLaNow(e){var l=e.closest("ul"),o=e.classList.toggle("open");l.querySelectorAll(".nav-la-now-item").forEach(function(i){i.classList.toggle("open",o);});}document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".nav-la-now-item").forEach(function(item){if(item.querySelector(".active")){var ul=item.closest("ul");ul.querySelector(".nav-la-now-toggle").classList.add("open");ul.querySelectorAll(".nav-la-now-item").forEach(function(i){i.classList.add("open");});}});});function toggleNav(){const n=document.getElementById('megaNav');const o=n.classList.toggle('open');document.body.style.overflow=o?'hidden':'';}
   document.getElementById('megaNav').addEventListener('keydown',e=>{if(e.key==='Escape')toggleNav();});
 </script>
 </body>
